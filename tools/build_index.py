@@ -60,7 +60,7 @@ footer{padding:36px 8px;font-size:13px;line-height:1.7;color:#536C87}
 <header class="top"><a class="logo" href="index.html">anahtar<i>.</i></a><span style="font-size:14px;font-weight:600;color:#536C87">Site haritası · @@TOTAL@@ sayfa</span></header>
 <div class="hero"><h1>Tüm sayfalar tek yerde.</h1>
 <p>Kiracı, ev sahibi, yönetim ve kurumsal paneller dahil @@TOTAL@@ sayfa aşağıda gruplandı. Bir karta tıklayarak sayfayı açabilirsiniz. Sayfalar telefon genişliğinde de çalışır; tarayıcı pencerenizi daraltarak ya da telefondan açarak mobil görünümü inceleyebilirsiniz.</p>
-<div class="row"><a class="btn" href="pages/Main.html">Anasayfayı aç</a><a class="btn alt" href="pages/Ucretler.html">Ücret hesaplayıcı</a></div></div>
+<div class="row"><a class="btn" href="pages/Main.html">Anasayfayı aç</a><a class="btn alt" href="app/index.html">Mobil uygulama ekranları</a><a class="btn alt" href="pages/Ucretler.html">Ücret hesaplayıcı</a></div></div>
 <div class="bar"><input id="q" type="search" placeholder="Sayfa ara: ödeme, depozito, sözleşme…" aria-label="Sayfa ara"><nav class="nav">@@NAV@@</nav></div>
 @@SECS@@
 <div class="empty" id="empty">Aramanızla eşleşen sayfa bulunamadı.</div>

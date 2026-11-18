@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M22 Ödeme özeti · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.radio{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.radio.on{border-color:var(--navy)}.radio.on:after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--navy)}
+.cardchip{width:44px;height:30px;border-radius:6px;background:var(--navy);flex:none;position:relative}
+.cardchip:after{content:"";position:absolute;left:6px;top:8px;width:10px;height:8px;border-radius:2px;background:var(--lime)}
+.cardchip.b{background:var(--blue)}
+.lock{width:11px;height:8px;border-radius:2px;background:currentColor;position:relative;margin-top:4px;flex:none}
+.lock:before{content:"";position:absolute;left:1.5px;top:-6px;width:5px;height:6px;border:2px solid currentColor;border-bottom:0;border-radius:4px 4px 0 0}
+.tl{display:flex;gap:14px}.tl .rail{display:flex;flex-direction:column;align-items:center;width:22px}
+.tl .dot{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.tl .dot.done{background:var(--navy);border-color:var(--navy)}.tl .dot.done:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.tl .dot.now{border-color:var(--navy);box-shadow:0 0 0 4px rgba(211,242,106,.7)}
+.tl .line{flex:1;width:2px;background:var(--line2);min-height:22px}.tl .line.done{background:var(--navy)}
+.tl .txt{padding-bottom:18px;display:flex;flex-direction:column;gap:2px}.tl:last-child .txt{padding-bottom:0}
+.tl .txt b{font-size:15px;color:var(--ink)}.tl .txt span{font-size:13px;color:var(--muted);line-height:1.45}
+.okmark{width:64px;height:64px;border-radius:50%;background:var(--lime);position:relative;flex:none}
+.okmark:after{content:"";position:absolute;left:23px;top:14px;width:15px;height:28px;border:solid var(--ink);border-width:0 4px 4px 0;transform:rotate(45deg)}
+.dim{filter:none}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body pad-b">
+    <div class="nav"><span class="back">Geri</span></div>
+    <div class="large">Ödeme özeti</div>
+    <div style="height:10px"></div>
+    <div class="stack g16">
+<div class="card stack g4">
+  <span class="small" style="font-weight:600">Aralık 2026 kirası · Moda Cad. 24/6, Kadıköy</span>
+  <div class="kv" style="font-size:15px"><span>Kira bedeli</span><b>18.000,00 ₺</b></div>
+  <div class="kv" style="font-size:15px"><span>Hizmet bedeli (%3)</span><b>540,00 ₺</b></div>
+  <div class="kv" style="font-size:15px"><span>Vergiler</span><b>108,00 ₺</b></div>
+  <div class="divider"></div>
+  <div class="kv" style="font-size:17px;align-items:baseline"><span style="font-weight:700;color:var(--navy)">Toplam</span><b style="font:800 24px var(--font-h);color:var(--navy)">18.648,00 ₺</b></div>
+</div>
+<div class="note">Sonradan eklenen kalem olmaz. Yukarıdaki toplam, kartınızdan çekilecek tutarın tamamıdır.</div>
+<div class="list"><div class="item"><span class="cardchip"></span><div class="col"><span class="t">Kart •••• 4821</span><span class="d">Varsayılan kartınız</span></div><span class="small" style="font-weight:700;color:var(--navy)">Değiştir</span></div></div>
+<div class="list"><div class="item"><div class="col"><span class="t">Aktarım süresi</span><span class="d" style="line-height:1.45">Ödeme ev sahibi Mehmet Yılmaz’a en geç 3 iş günü içinde aktarılır.</span></div></div>
+<div class="item"><div class="col"><span class="t">Kart doğrulaması</span><span class="d" style="line-height:1.45">Bankanızın 3D Secure sayfasında telefonunuza gelen kodu gireceksiniz.</span></div></div></div>
+</div>
+  </div>
+<div class="bottom"><span class="btn primary">18.648,00 ₺ öde</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M22 Ödeme özeti</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body pad-b">
+    <div class="nav"><span class="back">Geri</span><span class="title">Ödeme özeti</span></div>
+    <div style="height:14px"></div>
+    <div class="stack g16">
+<div class="card stack g4">
+  <span class="small" style="font-weight:600">Aralık 2026 kirası · Moda Cad. 24/6, Kadıköy</span>
+  <div class="kv" style="font-size:15px"><span>Kira bedeli</span><b>18.000,00 ₺</b></div>
+  <div class="kv" style="font-size:15px"><span>Hizmet bedeli (%3)</span><b>540,00 ₺</b></div>
+  <div class="kv" style="font-size:15px"><span>Vergiler</span><b>108,00 ₺</b></div>
+  <div class="divider"></div>
+  <div class="kv" style="font-size:17px;align-items:baseline"><span style="font-weight:700;color:var(--navy)">Toplam</span><b style="font:800 24px var(--font-h);color:var(--navy)">18.648,00 ₺</b></div>
+</div>
+<div class="note">Sonradan eklenen kalem olmaz. Yukarıdaki toplam, kartınızdan çekilecek tutarın tamamıdır.</div>
+<div class="list"><div class="item"><span class="cardchip"></span><div class="col"><span class="t">Kart •••• 4821</span><span class="d">Varsayılan kartınız</span></div><span class="small" style="font-weight:700;color:var(--navy)">Değiştir</span></div></div>
+<div class="list"><div class="item"><div class="col"><span class="t">Aktarım süresi</span><span class="d" style="line-height:1.45">Ödeme ev sahibi Mehmet Yılmaz’a en geç 3 iş günü içinde aktarılır.</span></div></div>
+<div class="item"><div class="col"><span class="t">Kart doğrulaması</span><span class="d" style="line-height:1.45">Bankanızın 3D Secure sayfasında telefonunuza gelen kodu gireceksiniz.</span></div></div></div>
+</div>
+  </div>
+<div class="bottom"><span class="btn primary">18.648,00 ₺ öde</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M22 Ödeme özeti</div></div>
+
+</div></body></html>

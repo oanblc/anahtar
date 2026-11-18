@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M11b NFC okuma · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>.ph{position:relative;width:132px;height:236px;border-radius:30px;background:#fff;border:2px solid var(--navy);flex:none}
+.ph .cam{position:absolute;left:12px;top:12px;width:40px;height:40px;border-radius:12px;background:var(--sky2);border:1.5px solid var(--line2)}
+.ph .zone{position:absolute;left:50%;top:44px;width:70px;height:70px;margin-left:-35px;border-radius:50%;border:2px dashed var(--blue);background:rgba(211,242,106,.35)}
+.ph .zone:after{content:"";position:absolute;inset:-14px;border-radius:50%;border:1.5px solid var(--line2)}
+.ph .crd{position:absolute;left:-34px;top:70px;width:200px;height:126px;border-radius:12px;background:var(--navy);transform:rotate(-8deg);box-shadow:0 10px 24px rgba(29,54,80,.25)}
+.ph .crd:before{content:"";position:absolute;right:16px;top:16px;width:30px;height:24px;border-radius:5px;background:var(--lime)}
+.ph .crd i{position:absolute;left:14px;height:6px;border-radius:3px;background:rgba(255,255,255,.35)}
+.prog{height:8px;border-radius:4px;background:var(--line2);overflow:hidden}.prog b{display:block;height:100%;width:38%;background:var(--navy);border-radius:4px}
+.dimmed{opacity:1}
+.nfcs{background:#fff;width:100%;border-radius:28px 28px 0 0;padding:26px 24px 40px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.nfcs .tt{font:700 20px var(--font-h);color:var(--ink)}.nfcs .tx{font-size:15px;line-height:1.45;color:var(--text);max-width:280px}
+.nfcs .cn{width:100%;margin-top:10px;background:#EEF2F6;color:#2A6FDB;font:600 17px var(--font-b);padding:15px;border-radius:14px}
+.gd{display:flex;gap:12px;align-items:flex-start}.gd b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--lime);color:var(--ink);font:800 13px var(--font-b);display:flex;align-items:center;justify-content:center}
+.gd span{font-size:14px;line-height:1.45;color:var(--text)}</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span class="small" style="font-weight:600">Adım 3 / 4</span></div>
+    <div class="stack g16" style="padding-top:8px">
+      <h1 class="h1">Kartı telefonun arkasına tutun.</h1>
+      <div class="row" style="justify-content:center;padding:6px 0 0 20px"><div class="ph"><span class="cam"></span><span class="zone"></span><div class="crd"><i style="left:14px;bottom:34px;width:110px"></i><i style="left:14px;bottom:20px;width:84px"></i></div></div></div>
+      <div class="stack g8"><div class="prog"><b></b></div><p class="sub" style="font-weight:600;color:var(--navy)">Kimliğinizi okuyoruz. Kartı hareket ettirmeyin.</p></div>
+    </div>
+  </div>
+  <div class="scrim"><div class="nfcs"><div class="tt">Hazır</div><div class="tx">Kartınızı iPhone'un üst kısmına yaklaştırın.</div><div class="cn">İptal</div></div></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M11b NFC okuma</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span class="title" style="flex:1">Kimlik okuma</span><span class="small" style="font-weight:600">3 / 4</span></div>
+    <div class="stack g16" style="padding-top:10px">
+      <h1 class="h1" style="font-size:28px">Kartı telefonun arkasına tutun.</h1>
+      <div class="row" style="justify-content:center;padding:4px 0 0 20px"><div class="ph"><span class="cam"></span><span class="zone"></span><div class="crd"><i style="left:14px;bottom:34px;width:110px"></i><i style="left:14px;bottom:20px;width:84px"></i></div></div></div>
+      <div class="stack g8"><div class="prog"><b></b></div><p class="sub" style="font-weight:600;color:var(--navy)">Kimliğinizi okuyoruz. Kartı hareket ettirmeyin.</p></div>
+      <div class="card stack g12" style="padding:16px">
+        <div class="gd"><b>1</b><span>Kartın çipli yüzünü telefonun arka tarafına yerleştirin.</span></div>
+        <div class="gd"><b>2</b><span>Kartı, işaretli bölgenin üzerinde sabit tutun.</span></div>
+        <div class="gd"><b>3</b><span>Ekranda onay görünene kadar kartı çekmeyin.</span></div>
+      </div>
+    </div>
+    <div class="bottom"><span class="btn ghost">Vazgeç</span></div>
+  </div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M11b NFC okuma</div></div>
+
+</div></body></html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M25 Ödeme sonucu · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.radio{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.radio.on{border-color:var(--navy)}.radio.on:after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--navy)}
+.cardchip{width:44px;height:30px;border-radius:6px;background:var(--navy);flex:none;position:relative}
+.cardchip:after{content:"";position:absolute;left:6px;top:8px;width:10px;height:8px;border-radius:2px;background:var(--lime)}
+.cardchip.b{background:var(--blue)}
+.lock{width:11px;height:8px;border-radius:2px;background:currentColor;position:relative;margin-top:4px;flex:none}
+.lock:before{content:"";position:absolute;left:1.5px;top:-6px;width:5px;height:6px;border:2px solid currentColor;border-bottom:0;border-radius:4px 4px 0 0}
+.tl{display:flex;gap:14px}.tl .rail{display:flex;flex-direction:column;align-items:center;width:22px}
+.tl .dot{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.tl .dot.done{background:var(--navy);border-color:var(--navy)}.tl .dot.done:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.tl .dot.now{border-color:var(--navy);box-shadow:0 0 0 4px rgba(211,242,106,.7)}
+.tl .line{flex:1;width:2px;background:var(--line2);min-height:22px}.tl .line.done{background:var(--navy)}
+.tl .txt{padding-bottom:18px;display:flex;flex-direction:column;gap:2px}.tl:last-child .txt{padding-bottom:0}
+.tl .txt b{font-size:15px;color:var(--ink)}.tl .txt span{font-size:13px;color:var(--muted);line-height:1.45}
+.okmark{width:64px;height:64px;border-radius:50%;background:var(--lime);position:relative;flex:none}
+.okmark:after{content:"";position:absolute;left:23px;top:14px;width:15px;height:28px;border:solid var(--ink);border-width:0 4px 4px 0;transform:rotate(45deg)}
+.dim{filter:none}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body" style="padding-top:62px"><div style="padding-bottom:150px"><div class="stack g16">
+<div class="stack g12" style="align-items:center;text-align:center;padding-top:6px"><span class="okmark"></span><h1 class="h1" style="font-size:28px">Ödemeniz alındı.</h1><p class="sub" style="max-width:290px">Aralık 2026 kira ödemeniz başarıyla tamamlandı.</p></div>
+<div class="card stack g4">
+  <div class="kv"><span>Tutar</span><b>18.648,00 ₺</b></div><div class="kv"><span>Kart</span><b>•••• 4821</b></div>
+  <div class="kv"><span>Tarih ve saat</span><b>2 Aralık 2026, 14:32</b></div><div class="kv"><span>İşlem no</span><b>ANH-4821-0392</b></div>
+</div>
+<div class="card stack g12" style="padding:18px 18px 20px">
+  <span class="small" style="font-weight:700;color:var(--navy)">Aktarım süreci</span>
+  <div class="stack">
+   <div class="tl"><div class="rail"><span class="dot done"></span><span class="line done"></span></div><div class="txt"><b>Ödeme alındı</b><span>2 Aralık 2026, 14:32</span></div></div>
+   <div class="tl"><div class="rail"><span class="dot now"></span><span class="line"></span></div><div class="txt"><b>Aktarım hazırlanıyor</b><span>Ödemeniz ev sahibine aktarılmak üzere hazırlanıyor.</span></div></div>
+   <div class="tl"><div class="rail"><span class="dot"></span></div><div class="txt"><b>Ev sahibinin hesabında</b><span>En geç 3 iş günü içinde tamamlanır.</span></div></div>
+  </div>
+</div></div></div></div>
+<div class="bottom"><span class="btn primary">Dekontu görüntüle</span><span class="btn ghost">Ana sayfaya dön</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M25 Ödeme sonucu</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body" style="padding-top:56px"><div style="padding-bottom:150px"><div class="stack g16">
+<div class="stack g12" style="align-items:center;text-align:center;padding-top:6px"><span class="okmark"></span><h1 class="h1" style="font-size:28px">Ödemeniz alındı.</h1><p class="sub" style="max-width:290px">Aralık 2026 kira ödemeniz başarıyla tamamlandı.</p></div>
+<div class="card stack g4">
+  <div class="kv"><span>Tutar</span><b>18.648,00 ₺</b></div><div class="kv"><span>Kart</span><b>•••• 4821</b></div>
+  <div class="kv"><span>Tarih ve saat</span><b>2 Aralık 2026, 14:32</b></div><div class="kv"><span>İşlem no</span><b>ANH-4821-0392</b></div>
+</div>
+<div class="card stack g12" style="padding:18px 18px 20px">
+  <span class="small" style="font-weight:700;color:var(--navy)">Aktarım süreci</span>
+  <div class="stack">
+   <div class="tl"><div class="rail"><span class="dot done"></span><span class="line done"></span></div><div class="txt"><b>Ödeme alındı</b><span>2 Aralık 2026, 14:32</span></div></div>
+   <div class="tl"><div class="rail"><span class="dot now"></span><span class="line"></span></div><div class="txt"><b>Aktarım hazırlanıyor</b><span>Ödemeniz ev sahibine aktarılmak üzere hazırlanıyor.</span></div></div>
+   <div class="tl"><div class="rail"><span class="dot"></span></div><div class="txt"><b>Ev sahibinin hesabında</b><span>En geç 3 iş günü içinde tamamlanır.</span></div></div>
+  </div>
+</div></div></div></div>
+<div class="bottom"><span class="btn primary">Dekontu görüntüle</span><span class="btn ghost">Ana sayfaya dön</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M25 Ödeme sonucu</div></div>
+
+</div></body></html>

@@ -1,0 +1,127 @@
+/* Anahtar mobil uygulama: ortak tasarım kiti (iOS + Android önizleme çerçeveleri) */
+:root{
+  --navy:#2B5078;--ink:#1D3650;--text:#3F5A75;--muted:#536C87;--sky:#EAF2FA;--sky2:#D3E3F2;--line:#DCE8F3;--line2:#CBDDEF;
+  --blue:#5489C6;--lime:#D3F26A;--white:#fff;--warn-bg:#FFF1D6;--warn:#8A5A00;--err-bg:#FDE4E0;--err:#9C2F22;--ok-bg:#D3F26A;
+  --font-h:'Bricolage Grotesque',sans-serif;--font-b:'Plus Jakarta Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#C9D6E3;font-family:var(--font-b);color:var(--ink);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.pair{display:flex;gap:48px;justify-content:center;align-items:flex-start;padding:40px 24px;flex-wrap:wrap}
+.cap{font:600 13px var(--font-b);color:var(--muted);text-align:center;margin-top:14px;letter-spacing:.02em}
+.unit{display:flex;flex-direction:column;align-items:center}
+
+/* cihaz çerçevesi */
+.device{position:relative;background:#101820;padding:11px;flex:none}
+.device .screen{position:relative;overflow:hidden;background:var(--sky);display:flex;flex-direction:column}
+.device.ios{border-radius:56px}
+.device.ios .screen{width:390px;height:844px;border-radius:46px}
+.device.android{border-radius:42px}
+.device.android .screen{width:412px;height:892px;border-radius:32px}
+
+/* durum çubuğu */
+.sb{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;font-weight:700;color:var(--ink)}
+.ios .sb{height:54px;padding:6px 34px 0 42px;font-size:16px}
+.android .sb{height:40px;padding:0 24px;font-size:14px}
+.sb .r{display:flex;gap:6px;align-items:center}
+.sb i{display:block;background:currentColor;border-radius:2px}
+.sb .sig{width:18px;height:11px;clip-path:polygon(0 100%,0 70%,25% 70%,25% 100%,35% 100%,35% 45%,60% 45%,60% 100%,70% 100%,70% 0,100% 0,100% 100%)}
+.sb .bat{width:25px;height:12px;border-radius:4px;background:none;border:1.5px solid currentColor;position:relative}
+.sb .bat:after{content:"";position:absolute;inset:1.5px;background:currentColor;border-radius:2px;right:5px}
+.island{position:absolute;top:11px;left:50%;width:118px;height:34px;margin-left:-59px;background:#000;border-radius:20px;z-index:6}
+.punch{position:absolute;top:12px;left:50%;width:15px;height:15px;margin-left:-7px;background:#000;border-radius:50%;z-index:6}
+.home{position:absolute;bottom:8px;left:50%;width:140px;height:5px;margin-left:-70px;border-radius:3px;background:var(--ink);opacity:.9;z-index:7}
+.android .home{width:110px;margin-left:-55px;bottom:10px;opacity:.55}
+
+/* ekran gövdesi */
+.body{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.ios .body{padding:58px 20px 0}
+.android .body{padding:48px 20px 0}
+.pad-b{padding-bottom:110px}
+
+/* üst gezinme */
+.nav{display:flex;align-items:center;min-height:44px;gap:8px;color:var(--navy);font-weight:600}
+.ios .nav{justify-content:space-between}
+.back{font-size:16px;font-weight:600;color:var(--navy);display:inline-flex;align-items:center;gap:4px}
+.back:before{content:"";width:9px;height:9px;border-left:2.2px solid var(--navy);border-bottom:2.2px solid var(--navy);transform:rotate(45deg);margin-right:2px}
+.android .nav .back{font-size:0;width:40px;height:40px;justify-content:center;border-radius:50%}
+.android .nav .back:before{margin:0 0 0 4px}
+.nav .title{font:700 18px var(--font-h);color:var(--navy)}
+.large{font:800 32px/1.1 var(--font-h);letter-spacing:-.03em;color:var(--navy);margin:10px 0 6px}
+.android .large{font-size:28px}
+.h1{font:800 30px/1.1 var(--font-h);letter-spacing:-.03em;color:var(--navy);margin:0}
+.h2{font:700 20px/1.2 var(--font-h);letter-spacing:-.01em;color:var(--navy);margin:0}
+.sub{font-size:15px;line-height:1.55;color:var(--text);margin:0}
+.small{font-size:13px;line-height:1.5;color:var(--muted)}
+.logo{font:800 26px var(--font-h);letter-spacing:-.03em;color:var(--navy)}.logo b{color:var(--blue)}
+.stack{display:flex;flex-direction:column}.g4{gap:4px}.g8{gap:8px}.g12{gap:12px}.g16{gap:16px}.g20{gap:20px}.g24{gap:24px}
+.row{display:flex;align-items:center}.sp{justify-content:space-between}.grow{flex:1}.mt{margin-top:auto}
+
+/* düğmeler */
+.btn{display:flex;align-items:center;justify-content:center;font:700 16px var(--font-b);padding:16px;border-radius:999px;text-align:center;border:0;width:100%}
+.btn.primary{background:var(--lime);color:var(--ink)}
+.btn.dark{background:var(--navy);color:#fff}
+.btn.ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line2)}
+.btn.text{background:none;color:var(--navy);text-decoration:underline;padding:10px}
+.btn.off{background:var(--line);color:#8CA0B5}
+.android .btn{padding:17px;letter-spacing:.01em}
+
+/* alanlar */
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:13px;font-weight:600;color:var(--navy)}
+.input{display:flex;align-items:center;min-height:54px;padding:0 16px;background:#fff;color:var(--ink);font-size:16px}
+.ios .input{border-radius:14px;border:1.5px solid var(--line2)}
+.android .input{border-radius:8px;border:1.5px solid #8CA6BF;position:relative}
+.input.focus{border-color:var(--navy);box-shadow:0 0 0 3px rgba(211,242,106,.6)}
+.input.err{border-color:#C0392B}
+.input .ph{color:#8CA0B5}
+.hint{font-size:12.5px;color:var(--muted)}.hint.err{color:var(--err)}
+.otp{display:flex;gap:8px}.otp span{flex:1;height:60px;border-radius:12px;border:1.5px solid var(--line2);background:#fff;display:flex;align-items:center;justify-content:center;font:800 24px var(--font-h);color:var(--navy)}
+.otp span.on{border-color:var(--navy);box-shadow:0 0 0 3px rgba(211,242,106,.6)}
+.android .otp span{border-radius:8px}
+
+/* kartlar ve listeler */
+.card{background:#fff;border-radius:24px;padding:18px}
+.card.dark{background:var(--navy);color:#fff}
+.android .card{border-radius:20px}
+.list{background:#fff;border-radius:22px;display:flex;flex-direction:column}
+.item{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line)}
+.item:last-child{border-bottom:0}
+.item .t{font-size:15px;font-weight:600;color:var(--ink)}.item .d{font-size:13px;color:var(--muted)}
+.item .col{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.badge{font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;white-space:nowrap}
+.badge.ok{background:var(--lime);color:var(--ink)}.badge.info{background:var(--sky2);color:var(--navy)}
+.badge.warn{background:var(--warn-bg);color:var(--warn)}.badge.err{background:var(--err-bg);color:var(--err)}
+.num{font-variant-numeric:tabular-nums}
+.amount{font:800 44px/1 var(--font-h);letter-spacing:-.035em;font-variant-numeric:tabular-nums}
+.kv{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:var(--text);padding:5px 0}.kv b{color:var(--ink);font-variant-numeric:tabular-nums}
+.divider{height:1px;background:var(--line);margin:8px 0}
+.note{background:var(--sky2);border-radius:16px;padding:14px 16px;font-size:13.5px;line-height:1.5;color:#24425F}
+.note.warn{background:var(--warn-bg);color:var(--warn)}.note.err{background:var(--err-bg);color:var(--err)}
+.check{width:22px;height:22px;border-radius:7px;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.check.on{background:var(--navy);border-color:var(--navy)}
+.check.on:after{content:"";position:absolute;left:6px;top:2px;width:6px;height:11px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.step{display:flex;gap:6px}.step i{flex:1;height:4px;border-radius:2px;background:var(--line2)}.step i.on{background:var(--navy)}
+.avatar{width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;flex:none}
+
+/* alt sekme çubuğu (ikonsuz) */
+.tabs{position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);display:flex;gap:4px;z-index:4}
+.ios .tabs{height:88px;padding:10px 14px 0}
+.android .tabs{height:80px;padding:12px 10px 0;border-top:0;background:#F3F8FD}
+.tabs span{flex:1;text-align:center;font-size:12.5px;font-weight:600;color:var(--muted);padding:10px 0;border-radius:14px}
+.tabs span.on{color:var(--navy);font-weight:700;background:var(--sky)}
+.android .tabs span{border-radius:16px;font-size:12px}
+.android .tabs span.on{background:var(--sky2)}
+
+/* alt sabit düğme alanı */
+.bottom{position:absolute;left:0;right:0;bottom:0;padding:12px 20px 34px;background:linear-gradient(to top,var(--sky) 70%,rgba(234,242,250,0));z-index:3;display:flex;flex-direction:column;gap:8px}
+.android .bottom{padding-bottom:34px}
+
+/* sistem pencereleri */
+.scrim{position:absolute;inset:0;background:rgba(16,24,32,.45);z-index:8;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:#fff;width:100%;border-radius:28px 28px 0 0;padding:22px 20px 40px;display:flex;flex-direction:column;gap:14px}
+.sheet:before{content:"";width:40px;height:4px;border-radius:2px;background:var(--line2);align-self:center;margin-bottom:4px}
+.sysdlg{position:absolute;z-index:9;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;padding:20px;display:flex;flex-direction:column;gap:12px;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.ios .sysdlg{width:270px;border-radius:14px;text-align:center}
+.android .sysdlg{width:312px;border-radius:28px}

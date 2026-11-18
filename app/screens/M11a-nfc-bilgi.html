@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M11a NFC hazırlık · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>.idc{position:relative;background:#fff;border:1.5px solid var(--line2);border-radius:14px;height:176px;padding:14px;overflow:hidden}
+.idc .hd{font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--muted)}
+.idc .chip{position:absolute;right:16px;top:34px;width:34px;height:26px;border-radius:6px;background:var(--sky2);border:1.5px solid var(--line2)}
+.idc .ln{height:6px;border-radius:3px;background:var(--line);margin-top:7px}
+.idc .hl{position:absolute;left:12px;display:flex;align-items:center;gap:8px;font-size:10.5px;font-weight:700;color:var(--ink);background:var(--lime);border-radius:6px;padding:3px 8px}
+.idc .mrz{position:absolute;left:14px;right:14px;bottom:12px;display:flex;flex-direction:column;gap:5px}
+.idc .mrz i{display:block;height:5px;border-radius:2px;background:var(--line2)}
+.nfcnote{display:flex;gap:10px;font-size:13px;line-height:1.5}</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span class="small" style="font-weight:600">Adım 3 / 4</span></div>
+    <div class="stack g16" style="padding-top:14px">
+      <div class="step"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+      <div class="stack g8"><h1 class="h1">Kimliğinizi doğrulayalım.</h1><p class="sub">Çipli T.C. kimlik kartınızın arka yüzündeki üç bilgiyi girin. Ardından kartı telefonun arkasına tutarak okutacaksınız.</p></div>
+      <div class="idc">
+        <div class="hd">T.C. KİMLİK KARTI · ARKA YÜZ</div><span class="chip"></span>
+        <span class="hl" style="top:44px">Belge seri no</span>
+        <span class="hl" style="top:70px">Doğum tarihi</span>
+        <span class="hl" style="top:96px">Son geçerlilik tarihi</span>
+        <div class="mrz"><i style="width:100%"></i><i style="width:92%"></i><i style="width:78%"></i></div>
+      </div>
+      <div class="stack g12">
+        <div class="field"><label>Belge seri no</label><div class="input focus"><span class="num">A12F34567</span></div></div>
+        <div class="row" style="gap:10px">
+          <div class="field grow" style="min-width:0"><label>Doğum tarihi</label><div class="input"><span class="num">14.03.1994</span></div></div>
+          <div class="field grow" style="min-width:0"><label>Son geçerlilik</label><div class="input"><span class="num">02.09.2033</span></div></div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="bottom"><span class="btn primary">NFC ile okumaya başla</span></div>
+  </div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M11a NFC hazırlık, adım 3/4</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span class="title" style="flex:1">Kimlik doğrulama</span><span class="small" style="font-weight:600">3 / 4</span></div>
+    <div class="stack g16" style="padding-top:14px">
+      <div class="step"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+      <div class="stack g8"><h1 class="h1" style="font-size:28px">Kimliğinizi doğrulayalım.</h1><p class="sub">Çipli T.C. kimlik kartınızın arka yüzündeki üç bilgiyi girin. Ardından kartı telefonun arkasına tutarak okutacaksınız.</p></div>
+      <div class="idc">
+        <div class="hd">T.C. KİMLİK KARTI · ARKA YÜZ</div><span class="chip"></span>
+        <span class="hl" style="top:44px">Belge seri no</span>
+        <span class="hl" style="top:70px">Doğum tarihi</span>
+        <span class="hl" style="top:96px">Son geçerlilik tarihi</span>
+        <div class="mrz"><i style="width:100%"></i><i style="width:92%"></i><i style="width:78%"></i></div>
+      </div>
+      <div class="stack g12">
+        <div class="field"><label>Belge seri no</label><div class="input focus"><span class="num">A12F34567</span></div></div>
+        <div class="row" style="gap:10px">
+          <div class="field grow" style="min-width:0"><label>Doğum tarihi</label><div class="input"><span class="num">14.03.1994</span></div></div>
+          <div class="field grow" style="min-width:0"><label>Son geçerlilik</label><div class="input"><span class="num">02.09.2033</span></div></div>
+        </div>
+      </div>
+      <div class="note warn">NFC kapalıysa telefonunuzun Ayarlar bölümünden Bağlı cihazlar altındaki NFC seçeneğini açın.</div>
+    </div>
+    <div class="bottom"><span class="btn primary">NFC ile okumaya başla</span></div>
+  </div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M11a NFC hazırlık, adım 3/4</div></div>
+
+</div></body></html>

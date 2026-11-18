@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M23 Kart seçimi · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.radio{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.radio.on{border-color:var(--navy)}.radio.on:after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--navy)}
+.cardchip{width:44px;height:30px;border-radius:6px;background:var(--navy);flex:none;position:relative}
+.cardchip:after{content:"";position:absolute;left:6px;top:8px;width:10px;height:8px;border-radius:2px;background:var(--lime)}
+.cardchip.b{background:var(--blue)}
+.lock{width:11px;height:8px;border-radius:2px;background:currentColor;position:relative;margin-top:4px;flex:none}
+.lock:before{content:"";position:absolute;left:1.5px;top:-6px;width:5px;height:6px;border:2px solid currentColor;border-bottom:0;border-radius:4px 4px 0 0}
+.tl{display:flex;gap:14px}.tl .rail{display:flex;flex-direction:column;align-items:center;width:22px}
+.tl .dot{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.tl .dot.done{background:var(--navy);border-color:var(--navy)}.tl .dot.done:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.tl .dot.now{border-color:var(--navy);box-shadow:0 0 0 4px rgba(211,242,106,.7)}
+.tl .line{flex:1;width:2px;background:var(--line2);min-height:22px}.tl .line.done{background:var(--navy)}
+.tl .txt{padding-bottom:18px;display:flex;flex-direction:column;gap:2px}.tl:last-child .txt{padding-bottom:0}
+.tl .txt b{font-size:15px;color:var(--ink)}.tl .txt span{font-size:13px;color:var(--muted);line-height:1.45}
+.okmark{width:64px;height:64px;border-radius:50%;background:var(--lime);position:relative;flex:none}
+.okmark:after{content:"";position:absolute;left:23px;top:14px;width:15px;height:28px;border:solid var(--ink);border-width:0 4px 4px 0;transform:rotate(45deg)}
+.dim{filter:none}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+<div class="body" style="opacity:1">
+  <div class="stack g12" style="padding-top:20px"><div class="nav"><span class="back">Geri</span></div><div class="large">Ödeme özeti</div>
+  <div class="card stack g8"><div class="kv"><span>Kira bedeli</span><b>18.000,00 ₺</b></div><div class="kv"><span>Hizmet bedeli (%3)</span><b>540,00 ₺</b></div><div class="kv"><span>Vergiler</span><b>108,00 ₺</b></div></div></div>
+</div>
+  <div class="scrim"><div class="sheet" style="padding-bottom:36px;gap:12px">
+    <div class="row sp" style="margin-top:-6px"><span class="small" style="font-weight:600;color:var(--navy);width:60px">Vazgeç</span><span class="h2" style="font-size:18px">Ödeme kartı</span><span style="width:60px"></span></div>
+    <div class="list" style="background:var(--sky)">
+  <div class="item"><span class="cardchip"></span><div class="col"><span class="t">•••• 4821</span><span class="d">Son kullanma 08/28 · Varsayılan</span></div><span class="radio on"></span></div>
+  <div class="item"><span class="cardchip b"></span><div class="col"><span class="t">•••• 1190</span><span class="d">Son kullanma 03/27</span></div><span class="radio"></span></div>
+</div><div class="stack g12">
+  <h3 class="h2" style="font-size:17px">Yeni kart ekle</h3>
+  <div class="field"><label>Kart numarası</label><div class="input focus num"><span>5412 7534 ••••</span><span style="margin-left:2px;color:var(--navy);font-weight:700">|</span></div></div>
+  <div class="row g12"><div class="field grow"><label>Son kullanma</label><div class="input"><span class="ph num">AA/YY</span></div></div><div class="field grow"><label>CVV</label><div class="input"><span class="ph num">•••</span></div></div></div>
+  <div class="row g12" style="padding:2px 0"><span class="check on"></span><span style="font-size:14px;color:var(--ink)">Kartı sonraki ödemeler için kaydet</span></div>
+</div>
+    <span class="btn primary">Kartı ekle ve seç</span>
+  </div></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M23 Kart seçimi</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+<div class="body" style="opacity:1">
+  <div class="stack g12" style="padding-top:20px"><div class="nav"><span class="back">Geri</span></div><div class="large">Ödeme özeti</div>
+  <div class="card stack g8"><div class="kv"><span>Kira bedeli</span><b>18.000,00 ₺</b></div><div class="kv"><span>Hizmet bedeli (%3)</span><b>540,00 ₺</b></div><div class="kv"><span>Vergiler</span><b>108,00 ₺</b></div></div></div>
+</div>
+  <div class="scrim"><div class="sheet" style="padding-bottom:40px;gap:12px">
+    <div class="row sp"><span class="h2" style="font-size:19px">Ödeme kartı</span><span class="small" style="font-weight:700;color:var(--navy)">Kapat</span></div>
+    <div class="list" style="background:var(--sky)">
+  <div class="item"><span class="cardchip"></span><div class="col"><span class="t">•••• 4821</span><span class="d">Son kullanma 08/28 · Varsayılan</span></div><span class="radio on"></span></div>
+  <div class="item"><span class="cardchip b"></span><div class="col"><span class="t">•••• 1190</span><span class="d">Son kullanma 03/27</span></div><span class="radio"></span></div>
+</div><div class="stack g12">
+  <h3 class="h2" style="font-size:17px">Yeni kart ekle</h3>
+  <div class="field"><label>Kart numarası</label><div class="input focus num"><span>5412 7534 ••••</span><span style="margin-left:2px;color:var(--navy);font-weight:700">|</span></div></div>
+  <div class="row g12"><div class="field grow"><label>Son kullanma</label><div class="input"><span class="ph num">AA/YY</span></div></div><div class="field grow"><label>CVV</label><div class="input"><span class="ph num">•••</span></div></div></div>
+  <div class="row g12" style="padding:2px 0"><span class="check on"></span><span style="font-size:14px;color:var(--ink)">Kartı sonraki ödemeler için kaydet</span></div>
+</div>
+    <span class="btn primary">Kartı ekle ve seç</span>
+  </div></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M23 Kart seçimi</div></div>
+
+</div></body></html>
