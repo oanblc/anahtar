@@ -1,0 +1,565 @@
+[
+ {
+  "title": "Genel web sitesi",
+  "note": "Kamuya açık pazarlama ve bilgi sayfaları",
+  "pages": [
+   {
+    "file": "Main",
+    "title": "01 Anasayfa",
+    "desc": "Hero, rol kartları, dört adım, ürün önizlemeleri, güven, ücret ve SSS",
+    "tags": []
+   },
+   {
+    "file": "Ucretler",
+    "title": "02 Ücretler",
+    "desc": "Çalışan ücret hesaplayıcı, kim ne öder, hizmet kapsamı, SSS",
+    "tags": [
+     "Hesaplayıcı"
+    ]
+   },
+   {
+    "file": "Web-Kiracilar",
+    "title": "03 Kiracılar için",
+    "desc": "Kiracı faydaları, ödeme akışı ve kira dosyası",
+    "tags": []
+   },
+   {
+    "file": "Web-Ev-Sahipleri",
+    "title": "04 Ev sahipleri için",
+    "desc": "Tahsilat takibi, doğrulanmış hesap, aktarım süreci",
+    "tags": []
+   },
+   {
+    "file": "Web-Nasil-Calisir",
+    "title": "05 Nasıl çalışır",
+    "desc": "Dört adımlı süreç, doğrulamanın sınırı, zaman çizelgesi",
+    "tags": []
+   },
+   {
+    "file": "Web-Guvenlik",
+    "title": "06 Güvenlik ve ödeme altyapısı",
+    "desc": "Alınan önlemler, risk kontrolleri, erişim kayıtları",
+    "tags": []
+   },
+   {
+    "file": "Web-Kurumsal",
+    "title": "07 Kurumsal (ön kayıt)",
+    "desc": "Çoklu şube, toplu ödeme ve onay akışı için ön kayıt",
+    "tags": [
+     "Faz 2-3"
+    ]
+   },
+   {
+    "file": "Web-SSS",
+    "title": "08 Sıkça sorulan sorular",
+    "desc": "Kategorili, açılır kapanır 13 soru",
+    "tags": []
+   },
+   {
+    "file": "Web-Iletisim",
+    "title": "09 İletişim",
+    "desc": "İletişim formu ve destek bilgileri",
+    "tags": []
+   },
+   {
+    "file": "Web-Yasal",
+    "title": "10 Yasal bilgiler",
+    "desc": "İçindekiler ve KVKK aydınlatma taslağı",
+    "tags": [
+     "Taslak metin"
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Kimlik ve onboarding",
+  "note": "Giriş, kayıt ve doğrulama akışı",
+  "pages": [
+   {
+    "file": "Giris",
+    "title": "11 Giriş",
+    "desc": "Telefon veya e-posta ile giriş, tek kullanımlık kod",
+    "tags": []
+   },
+   {
+    "file": "Kayit",
+    "title": "12 Kayıt (adım 1)",
+    "desc": "Hesap türü seçimi ve hesap bilgileri",
+    "tags": []
+   },
+   {
+    "file": "Telefon-Dogrulama",
+    "title": "13 Telefon doğrulama (adım 2)",
+    "desc": "6 haneli kod doğrulaması",
+    "tags": []
+   },
+   {
+    "file": "Sifre-Sifirlama",
+    "title": "14 Şifre sıfırlama",
+    "desc": "Telefon veya e-postaya sıfırlama bağlantısı",
+    "tags": []
+   },
+   {
+    "file": "Kimlik-Dogrulama",
+    "title": "15 Kimlik doğrulama (adım 3)",
+    "desc": "T.C. kimlik bilgisi ve kimlik fotoğrafı yükleme",
+    "tags": []
+   },
+   {
+    "file": "Onaylar",
+    "title": "16 Onaylar ve KVKK (adım 4)",
+    "desc": "KVKK aydınlatma ve zorunlu/isteğe bağlı onaylar",
+    "tags": []
+   },
+   {
+    "file": "Dogrulama-Sonucu",
+    "title": "17 Doğrulama sonucu",
+    "desc": "Beklemede, onaylandı, tamamlanamadı durumları",
+    "tags": []
+   },
+   {
+    "file": "Davet",
+    "title": "18 Davet karşılama",
+    "desc": "Ev sahibinin gönderdiği kira dosyası daveti",
+    "tags": []
+   }
+  ]
+ },
+ {
+  "title": "Kiracı paneli",
+  "note": "Elif Kaya olarak kiracı deneyimi",
+  "pages": [
+   {
+    "file": "Kiraci-Panel",
+    "title": "19 Ana sayfa",
+    "desc": "Aralık kirası, son ödemeler, dosya özeti, yaklaşan tarihler",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Kira-Dosyam",
+    "title": "20 Kira dosyam",
+    "desc": "Taşınmaz ve sözleşme bilgileri, belgeler, değişiklik geçmişi",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Sozlesme",
+    "title": "21 Sözleşme detayı",
+    "desc": "Belge görüntüleyici, barkod doğrulama kaydı, sürüm geçmişi",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Odeme",
+    "title": "22 Ödeme",
+    "desc": "Ödeme özeti, kart seçimi, taksit bilgisi, onay",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-3DSecure",
+    "title": "23 3D Secure doğrulama",
+    "desc": "Banka 3D Secure doğrulama ekranı örneği",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Odeme-Sonucu",
+    "title": "24 Ödeme sonucu",
+    "desc": "Başarılı, bekliyor ve başarısız ödeme durumları",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Odeme-Gecmisi",
+    "title": "25 Ödeme geçmişi",
+    "desc": "Ödeme tablosu, filtreler, iade ve yeniden ödeme örnekleri",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Dekont",
+    "title": "26 Dekont detayı",
+    "desc": "Dekont kalemleri, aktarım zaman çizelgesi, indirme",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Depozito",
+    "title": "27 Depozito",
+    "desc": "Depozito kaydı, saklama bilgisi, çıkışta iade akışı",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Demirbas",
+    "title": "28 Demirbaşlar",
+    "desc": "Fotoğraflı demirbaş kartları, detay paneli, not ve itiraz",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Teslim-Tutanagi",
+    "title": "29 Teslim tutanağı",
+    "desc": "Bölümler, sayaç endeksleri, fotoğraflar, taraf onayı",
+    "tags": [
+     "Faz 2"
+    ]
+   },
+   {
+    "file": "Kiraci-Hasar-Karsilastirma",
+    "title": "30 Hasar karşılaştırma",
+    "desc": "Giriş ve çıkış fotoğraflı karşılaştırma, ihtilaf kaydı",
+    "tags": [
+     "Faz 2"
+    ]
+   },
+   {
+    "file": "Kiraci-Ariza-Talepleri",
+    "title": "31 Arıza talepleri",
+    "desc": "Talep listesi, yeni talep formu, durum çizelgesi",
+    "tags": [
+     "Faz 2"
+    ]
+   },
+   {
+    "file": "Kiraci-Mesajlar",
+    "title": "32 Mesajlar",
+    "desc": "Ev sahibi ve destek ekibiyle yazışma",
+    "tags": [
+     "Faz 2"
+    ]
+   },
+   {
+    "file": "Kiraci-Bildirimler",
+    "title": "33 Bildirimler",
+    "desc": "Filtreli bildirim listesi",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Profil",
+    "title": "34 Profil ve ayarlar",
+    "desc": "Kişisel bilgiler, kartlar, tercihler, KVKK",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Destek",
+    "title": "35 Destek",
+    "desc": "Konu kartları, SSS, destek talebi formu",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Odeme-Baglantisi",
+    "title": "36 Herkese açık ödeme bağlantısı",
+    "desc": "Giriş yapmadan kartla ödeme sayfası",
+    "tags": []
+   }
+  ]
+ },
+ {
+  "title": "Ev sahibi paneli",
+  "note": "Mehmet Yılmaz olarak ev sahibi deneyimi",
+  "pages": [
+   {
+    "file": "Ev-Sahibi-Panel",
+    "title": "37 Ana sayfa",
+    "desc": "Aralık tahsilat özeti, mülk kartları, uyarılar",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Mulkler",
+    "title": "38 Mülklerim",
+    "desc": "Mülk listesi, bina fotoğrafları, durumlar",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Mulk-Ekle",
+    "title": "39 Mülk ekle",
+    "desc": "Adres, tür, kira ve IBAN seçimi formu",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Mulk-Detay",
+    "title": "40 Mülk detayı",
+    "desc": "Kiracı, sözleşme, ödeme geçmişi, belgeler",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Kiraci-Davet",
+    "title": "41 Kiracı davet",
+    "desc": "Davet bağlantısı, gönderim, davet durumları",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Sozlesme-Yukle",
+    "title": "42 Sözleşme yükleme",
+    "desc": "PDF yükleme ve doğrulama adımları",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-IBAN",
+    "title": "43 Hesap ve IBAN",
+    "desc": "IBAN doğrulama ve değiştirme akışı",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Tahsilat",
+    "title": "44 Tahsilat takibi",
+    "desc": "Aylık tahsilat tablosu ve durumları",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Aktarimlar",
+    "title": "45 Aktarımlar",
+    "desc": "Aktarım ve dekont geçmişi",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Depozito",
+    "title": "46 Depozito",
+    "desc": "Depozito kaydı ve iade akışı",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Demirbas",
+    "title": "47 Demirbaş yönetimi",
+    "desc": "Fotoğraflı demirbaş listesi, ekleme formu",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Teslim-Tutanagi",
+    "title": "48 Tutanak onayı",
+    "desc": "Kiracının tutanağını inceleme ve onay",
+    "tags": [
+     "Faz 2"
+    ]
+   },
+   {
+    "file": "Ev-Sahibi-Kira-Artisi",
+    "title": "49 Kira artışı",
+    "desc": "Kira artışı hesaplama ve bildirim önizlemesi",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Ariza-Talepleri",
+    "title": "50 Talepler",
+    "desc": "Kiracı talepleri ve servis planı",
+    "tags": [
+     "Faz 2"
+    ]
+   },
+   {
+    "file": "Ev-Sahibi-Bildirimler",
+    "title": "51 Bildirimler",
+    "desc": "Filtreli bildirim listesi",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Profil",
+    "title": "52 Profil ve ayarlar",
+    "desc": "Kişisel, vergi, tercih ve KVKK ayarları",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Destek",
+    "title": "53 Destek",
+    "desc": "Konu kartları, SSS, destek formu",
+    "tags": []
+   }
+  ]
+ },
+ {
+  "title": "Yönetim paneli",
+  "note": "İç operasyon paneli (kamuya kapalı)",
+  "pages": [
+   {
+    "file": "Yonetim-Panel",
+    "title": "54 Gösterge paneli",
+    "desc": "KPI'lar, 14 günlük hacim, dikkat gerektirenler, mutabakat",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Sozlesme-Kuyrugu",
+    "title": "55 Sözleşme kuyruğu",
+    "desc": "SLA'lı sözleşme inceleme kuyruğu",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Sozlesme-Inceleme",
+    "title": "56 Sözleşme inceleme",
+    "desc": "Belge, kontrol listesi, karar düğmeleri",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Risk",
+    "title": "57 Risk ve şüpheli işlemler",
+    "desc": "Kural uyarıları, işlem durdurma, limit özeti",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Kullanicilar",
+    "title": "58 Kullanıcılar",
+    "desc": "Arama, filtre ve kullanıcı tablosu",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Kullanici-Detay",
+    "title": "59 Kullanıcı detayı",
+    "desc": "Doğrulama, işlem, IBAN/kart geçmişi, erişim logları",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-IBAN-Onaylari",
+    "title": "60 IBAN onayları",
+    "desc": "Bekleyen IBAN değişikliklerini onaylama",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Odemeler",
+    "title": "61 Ödemeler",
+    "desc": "İşlem listesi ve yan detay kartı",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Mutabakat",
+    "title": "62 Mutabakat",
+    "desc": "Platform ve ödeme kuruluşu kayıtlarının karşılaştırması",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Iade-Itiraz",
+    "title": "63 İade ve itiraz",
+    "desc": "İade, itiraz ve ters ibraz vakaları",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Emlakci-Primleri",
+    "title": "64 Emlakçı primleri",
+    "desc": "Prim durumları ve manuel ödeme işaretleme",
+    "tags": [
+     "Dahili",
+     "Gizli alan"
+    ]
+   },
+   {
+    "file": "Yonetim-Raporlar",
+    "title": "65 Raporlar",
+    "desc": "Gelir, maliyet ve kârlılık",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Destek",
+    "title": "66 Destek talepleri",
+    "desc": "Destek kuyruğu, iç notlar, hazır yanıtlar",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Ayarlar",
+    "title": "67 Ayarlar",
+    "desc": "Hizmet bedeli, limitler, bildirim şablonları",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Denetim",
+    "title": "68 Yetki ve denetim",
+    "desc": "Rol izin matrisi ve denetim kayıtları",
+    "tags": [
+     "İç panel"
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Kurumsal panel",
+  "note": "Çoklu şube kiracı firma (Faz 2-3)",
+  "pages": [
+   {
+    "file": "Kurumsal-Panel",
+    "title": "69 Genel bakış",
+    "desc": "Aylık kira yükü, şube kartları, onay bekleyenler",
+    "tags": [
+     "Faz 2-3"
+    ]
+   },
+   {
+    "file": "Kurumsal-Portfoy",
+    "title": "70 Şubeler ve mülkler",
+    "desc": "Şube ve mülk tablosu, mülk ekleme",
+    "tags": [
+     "Faz 2-3"
+    ]
+   },
+   {
+    "file": "Kurumsal-Takvim",
+    "title": "71 Ödeme takvimi",
+    "desc": "Aylık takvim ve seçili gün ödemeleri",
+    "tags": [
+     "Faz 2-3"
+    ]
+   },
+   {
+    "file": "Kurumsal-Toplu-Odeme",
+    "title": "72 Toplu ödeme",
+    "desc": "Seçilebilir kalemlerle toplu kira ödemesi",
+    "tags": [
+     "Faz 3"
+    ]
+   },
+   {
+    "file": "Kurumsal-Onay",
+    "title": "73 Onay akışları",
+    "desc": "Onay akışı tanımı, bekleyenler, geçmiş",
+    "tags": [
+     "Faz 2-3"
+    ]
+   },
+   {
+    "file": "Kurumsal-Yetkiler",
+    "title": "74 Kullanıcılar ve yetkiler",
+    "desc": "Kullanıcılar, roller ve davet",
+    "tags": [
+     "Faz 2-3"
+    ]
+   },
+   {
+    "file": "Kurumsal-Raporlar",
+    "title": "75 Raporlar ve muhasebe",
+    "desc": "Şube bazlı gider grafiği ve dışa aktarma",
+    "tags": [
+     "Faz 3"
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Yardımcı",
+  "note": "Ana sayfadaki telefonun içindeki ekran",
+  "pages": [
+   {
+    "file": "Kiraci-Ana-Sayfa",
+    "title": "Hero uygulama ekranı",
+    "desc": "Mobil kiracı ana sayfası (390 × 844), Anasayfa'daki telefonda kullanılır",
+    "tags": [
+     "Mobil"
+    ]
+   }
+  ]
+ }
+]

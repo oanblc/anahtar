@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anahtar Ödeme Geçmişi Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0;background:#fff;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#1D3650}
+a{color:inherit;text-decoration:none}
+button:focus-visible{outline:2px solid #2B5078;outline-offset:3px}
+</style>
+</head>
+<body>
+
+<div style="width:100%;max-width:1440px;margin:0 auto;padding:16px;box-sizing:border-box;display:flex;gap:16px;flex-wrap:wrap;align-items:stretch;background:#fff;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#1D3650">
+
+<aside style="flex:0 0 260px;box-sizing:border-box;background:#2B5078;border-radius:32px;padding:28px 20px;display:flex;flex-direction:column;gap:28px;color:#fff">
+  <a href="Main.html" style="padding:0 12px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:28px;letter-spacing:-0.03em;color:#fff">anahtar<span style="color:#D3F26A">.</span></a>
+  <nav style="display:flex;flex-direction:column;gap:4px">
+    <a href="Kiraci-Panel.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Ana sayfa</a>
+    <a href="Kiraci-Kira-Dosyam.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Kira dosyam</a>
+    <a href="Kiraci-Odeme-Gecmisi.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:700;color:#fff;background:rgba(255,255,255,0.12)"><span style="width:8px;height:8px;border-radius:50%;background:#D3F26A"></span>Ödemeler</a>
+    <a href="Kiraci-Depozito.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Depozito</a>
+    <a href="Kiraci-Demirbas.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Demirbaşlar</a>
+    <a href="Kiraci-Mesajlar.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Mesajlar</a>
+    <a href="Kiraci-Bildirimler.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Bildirimler<span style="margin-left:auto;font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:2px 9px;border-radius:999px">2</span></a>
+    <a href="Kiraci-Destek.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Destek</a>
+    <a href="Kiraci-Profil.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Profil ve ayarlar</a>
+  </nav>
+  <div style="margin-top:auto;background:rgba(255,255,255,0.08);border-radius:20px;padding:14px;display:flex;align-items:center;gap:12px">
+    <span style="flex:none;width:42px;height:42px;border-radius:50%;background:#D3F26A;color:#1D3650;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center">EK</span>
+    <div style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:14px;font-weight:700;color:#fff">Elif Kaya</span><span style="font-size:12px;color:#A8CBE8">Kiracı hesabı</span></div>
+  </div>
+</aside>
+
+<main style="flex:1 1 640px;min-width:0;box-sizing:border-box;background:#EAF2FA;border-radius:32px;padding:32px 36px;display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;flex-direction:column;gap:4px">
+    <h1 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:34px;letter-spacing:-0.03em;color:#2B5078">Ödeme geçmişi</h1>
+    <span style="font-size:15px;color:#3F5A75">Moda Cad. 24/6, Kadıköy · Kira ödemeleriniz, durumları ve dekontları</span>
+  </div>
+
+  <div style="display:flex;gap:20px;flex-wrap:wrap">
+    <div style="flex:1 1 240px;box-sizing:border-box;background:#fff;border-radius:28px;padding:24px 28px;display:flex;flex-direction:column;gap:6px">
+      <span style="font-size:14px;color:#536C87">2026 yılında ödenen toplam</span>
+      <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:32px;letter-spacing:-0.03em;color:#2B5078;font-variant-numeric:tabular-nums">167.832,00 ₺</span>
+      <span style="font-size:13px;color:#536C87">Kira ve hizmet bedeli dahil, iadeler düşüldü</span>
+    </div>
+    <div style="flex:1 1 240px;box-sizing:border-box;background:#fff;border-radius:28px;padding:24px 28px;display:flex;flex-direction:column;gap:6px">
+      <span style="font-size:14px;color:#536C87">Tamamlanan ödeme sayısı</span>
+      <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:32px;letter-spacing:-0.03em;color:#2B5078;font-variant-numeric:tabular-nums">9</span>
+      <span style="font-size:13px;color:#536C87">Mart - Kasım 2026 dönemleri</span>
+    </div>
+    <div style="flex:1 1 240px;box-sizing:border-box;background:#2B5078;border-radius:28px;padding:24px 28px;display:flex;flex-direction:column;gap:6px;color:#fff">
+      <span style="font-size:14px;color:#A8CBE8">Sonraki ödeme</span>
+      <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:32px;letter-spacing:-0.03em;color:#fff;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+      <span style="font-size:13px;color:#C3D6E8">7 Aralık 2026 · 5 gün sonra</span>
+    </div>
+  </div>
+
+  <div style="background:#fff;border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:18px">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+      <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;color:#2B5078">Son 10 kayıt</span>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button type="button" style="font:inherit;font-size:14px;font-weight:700;color:#fff;background:#2B5078;padding:10px 18px;border-radius:999px;border:0;cursor:pointer">Tümü</button>
+        <button type="button" style="font:inherit;font-size:14px;font-weight:600;color:#2B5078;background:#EAF2FA;padding:10px 18px;border-radius:999px;border:0;cursor:pointer">Ödendi</button>
+        <button type="button" style="font:inherit;font-size:14px;font-weight:600;color:#2B5078;background:#EAF2FA;padding:10px 18px;border-radius:999px;border:0;cursor:pointer">Bekliyor</button>
+        <button type="button" style="font:inherit;font-size:14px;font-weight:600;color:#2B5078;background:#EAF2FA;padding:10px 18px;border-radius:999px;border:0;cursor:pointer">İade edildi</button>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column">
+      <div style="display:flex;align-items:center;gap:16px;padding:12px 8px;border-bottom:1px solid #DCE8F3;font-size:12px;font-weight:700;letter-spacing:0.04em;color:#536C87">
+        <span style="flex:1.3 1 0;min-width:0">DÖNEM</span><span style="flex:1.2 1 0;min-width:0">TARİH</span><span style="flex:1.2 1 0;min-width:0">KART</span><span style="flex:1 1 0;min-width:0;text-align:right">TUTAR</span><span style="flex:1.2 1 0;min-width:0">DURUM</span><span style="flex:0.8 1 0;min-width:0;text-align:right">DEKONT</span>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:16px;padding:16px 8px;border-bottom:1px solid #E3EDF6">
+        <span style="flex:1.3 1 0;min-width:0;font-size:15px;font-weight:600;color:#1D3650">Aralık 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">7 Aralık 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">Kart •••• 4821</span><span style="flex:1 1 0;min-width:0;text-align:right;font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+        <span style="flex:1.2 1 0;min-width:0"><span style="display:inline-block;font-size:12px;font-weight:700;color:#2B5078;background:#D3E3F2;padding:5px 12px;border-radius:999px">Bekliyor</span></span><span style="flex:0.8 1 0;min-width:0;text-align:right;font-size:13px;color:#536C87">Henüz yok</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;padding:16px 8px;border-bottom:1px solid #E3EDF6">
+        <span style="flex:1.3 1 0;min-width:0;font-size:15px;font-weight:600;color:#1D3650">Kasım 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">7 Kasım 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">Kart •••• 4821</span><span style="flex:1 1 0;min-width:0;text-align:right;font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+        <span style="flex:1.2 1 0;min-width:0"><span style="display:inline-block;font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:5px 12px;border-radius:999px">Ödendi</span></span><a href="Kiraci-Dekont.html" style="flex:0.8 1 0;min-width:0;text-align:right;font-size:13px;font-weight:600;color:#2B5078;text-decoration:underline">Dekontu aç</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;padding:16px 8px;border-bottom:1px solid #E3EDF6">
+        <span style="flex:1.3 1 0;min-width:0;font-size:15px;font-weight:600;color:#1D3650">Ekim 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">7 Ekim 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">Kart •••• 4821</span><span style="flex:1 1 0;min-width:0;text-align:right;font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+        <span style="flex:1.2 1 0;min-width:0"><span style="display:inline-block;font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:5px 12px;border-radius:999px">Ödendi</span></span><a href="Kiraci-Dekont.html" style="flex:0.8 1 0;min-width:0;text-align:right;font-size:13px;font-weight:600;color:#2B5078;text-decoration:underline">Dekontu aç</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;padding:16px 8px;border-bottom:1px solid #E3EDF6">
+        <span style="flex:1.3 1 0;min-width:0;font-size:15px;font-weight:600;color:#1D3650">Eylül 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">7 Eylül 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">Kart •••• 4821</span><span style="flex:1 1 0;min-width:0;text-align:right;font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+        <span style="flex:1.2 1 0;min-width:0"><span style="display:inline-block;font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:5px 12px;border-radius:999px">Ödendi</span></span><a href="Kiraci-Dekont.html" style="flex:0.8 1 0;min-width:0;text-align:right;font-size:13px;font-weight:600;color:#2B5078;text-decoration:underline">Dekontu aç</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;padding:16px 8px;border-bottom:1px solid #E3EDF6">
+        <span style="flex:1.3 1 0;min-width:0;font-size:15px;font-weight:600;color:#1D3650">Ağustos 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">7 Ağustos 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">Kart •••• 4821</span><span style="flex:1 1 0;min-width:0;text-align:right;font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+        <span style="flex:1.2 1 0;min-width:0"><span style="display:inline-block;font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:5px 12px;border-radius:999px">Ödendi</span></span><a href="Kiraci-Dekont.html" style="flex:0.8 1 0;min-width:0;text-align:right;font-size:13px;font-weight:600;color:#2B5078;text-decoration:underline">Dekontu aç</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;padding:16px 8px;border-bottom:1px solid #E3EDF6;background:#FDF3F0;border-radius:16px">
+        <span style="flex:1.3 1 0;min-width:0;font-size:15px;font-weight:600;color:#1D3650">Temmuz 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">8 Temmuz 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">Kart •••• 1190</span><span style="flex:1 1 0;min-width:0;text-align:right;font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+        <span style="flex:1.2 1 0;min-width:0;display:flex;flex-direction:column;gap:4px;align-items:flex-start"><span style="display:inline-block;font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:5px 12px;border-radius:999px">Ödendi</span><span style="font-size:12px;line-height:1.5;color:#7A2E1F">7 Temmuz'daki ilk deneme başarısız oldu, yeni kartla yeniden ödendi.</span></span><a href="Kiraci-Dekont.html" style="flex:0.8 1 0;min-width:0;text-align:right;font-size:13px;font-weight:600;color:#2B5078;text-decoration:underline">Dekontu aç</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;padding:16px 8px;border-bottom:1px solid #E3EDF6">
+        <span style="flex:1.3 1 0;min-width:0;font-size:15px;font-weight:600;color:#1D3650">Haziran 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">7 Haziran 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">Kart •••• 4821</span><span style="flex:1 1 0;min-width:0;text-align:right;font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+        <span style="flex:1.2 1 0;min-width:0"><span style="display:inline-block;font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:5px 12px;border-radius:999px">Ödendi</span></span><a href="Kiraci-Dekont.html" style="flex:0.8 1 0;min-width:0;text-align:right;font-size:13px;font-weight:600;color:#2B5078;text-decoration:underline">Dekontu aç</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;padding:16px 8px;border-bottom:1px solid #E3EDF6">
+        <span style="flex:1.3 1 0;min-width:0;font-size:15px;font-weight:600;color:#1D3650">Mayıs 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">7 Mayıs 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">Kart •••• 4821</span><span style="flex:1 1 0;min-width:0;text-align:right;font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+        <span style="flex:1.2 1 0;min-width:0"><span style="display:inline-block;font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:5px 12px;border-radius:999px">Ödendi</span></span><a href="Kiraci-Dekont.html" style="flex:0.8 1 0;min-width:0;text-align:right;font-size:13px;font-weight:600;color:#2B5078;text-decoration:underline">Dekontu aç</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;padding:16px 8px;border-bottom:1px solid #E3EDF6">
+        <span style="flex:1.3 1 0;min-width:0;font-size:15px;font-weight:600;color:#1D3650">Nisan 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">7 Nisan 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">Kart •••• 4821</span><span style="flex:1 1 0;min-width:0;text-align:right;font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+        <span style="flex:1.2 1 0;min-width:0"><span style="display:inline-block;font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:5px 12px;border-radius:999px">Ödendi</span></span><a href="Kiraci-Dekont.html" style="flex:0.8 1 0;min-width:0;text-align:right;font-size:13px;font-weight:600;color:#2B5078;text-decoration:underline">Dekontu aç</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;padding:16px 8px">
+        <span style="flex:1.3 1 0;min-width:0;display:flex;flex-direction:column;gap:2px"><span style="font-size:15px;font-weight:600;color:#1D3650">Nisan 2026</span><span style="font-size:12px;color:#536C87">Mükerrer çekim</span></span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">9 Nisan 2026</span><span style="flex:1.2 1 0;min-width:0;font-size:14px;color:#3F5A75">Kart •••• 4821</span><span style="flex:1 1 0;min-width:0;text-align:right;font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">18.648,00 ₺</span>
+        <span style="flex:1.2 1 0;min-width:0"><span style="display:inline-block;font-size:12px;font-weight:700;color:#2B5078;background:#D3E3F2;padding:5px 12px;border-radius:999px">İade edildi</span></span><a href="Kiraci-Dekont.html" style="flex:0.8 1 0;min-width:0;text-align:right;font-size:13px;font-weight:600;color:#2B5078;text-decoration:underline">İade kaydı</a>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-top:6px;border-top:1px solid #E3EDF6">
+      <span style="font-size:13px;line-height:1.6;color:#536C87">Mart 2026 ödemesi ve önceki kayıtlar için tüm geçmişi görüntüleyebilirsiniz. Mükerrer çekim, ödeme kuruluşu üzerinden kartınıza iade edilmiştir.</span>
+      <a href="#" style="font-size:14px;font-weight:600;color:#2B5078;text-decoration:underline">Tüm geçmişi göster</a>
+    </div>
+  </div>
+</main>
+
+</div>
+
+</body>
+</html>

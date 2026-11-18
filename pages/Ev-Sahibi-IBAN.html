@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anahtar Ev Sahibi Hesap ve IBAN Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0;background:#fff;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#1D3650}
+a{color:inherit;text-decoration:none}
+button:focus-visible{outline:2px solid #2B5078;outline-offset:3px}
+</style>
+</head>
+<body>
+
+<div style="width:100%;max-width:1440px;margin:0 auto;padding:16px;box-sizing:border-box;display:flex;gap:16px;flex-wrap:wrap;align-items:stretch;background:#fff;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#1D3650">
+
+<aside style="flex:0 0 260px;box-sizing:border-box;background:#2B5078;border-radius:32px;padding:28px 20px;display:flex;flex-direction:column;gap:28px;color:#fff">
+  <a href="Main.html" style="padding:0 12px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:28px;letter-spacing:-0.03em;color:#fff">anahtar<span style="color:#D3F26A">.</span></a>
+  <nav style="display:flex;flex-direction:column;gap:4px">
+    <a href="Ev-Sahibi-Panel.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Ana sayfa</a>
+    <a href="Ev-Sahibi-Mulkler.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Mülklerim</a>
+    <a href="Ev-Sahibi-Tahsilat.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Tahsilat</a>
+    <a href="Ev-Sahibi-Aktarimlar.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Aktarımlar</a>
+    <a href="Ev-Sahibi-Depozito.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Depozito ve demirbaş</a>
+    <a href="Ev-Sahibi-Ariza-Talepleri.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Talepler</a>
+    <a href="Ev-Sahibi-IBAN.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:700;color:#fff;background:rgba(255,255,255,0.12)"><span style="width:8px;height:8px;border-radius:50%;background:#D3F26A"></span>Hesap ve IBAN</a>
+    <a href="Ev-Sahibi-Bildirimler.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Bildirimler<span style="margin-left:auto;font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:2px 9px;border-radius:999px">3</span></a>
+    <a href="Ev-Sahibi-Destek.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Destek</a>
+    <a href="Ev-Sahibi-Profil.html" style="display:flex;align-items:center;gap:10px;padding:13px 16px;border-radius:14px;font-size:15px;font-weight:600;color:#C3D6E8"><span style="width:8px;height:8px;border-radius:50%;background:transparent"></span>Profil ve ayarlar</a>
+  </nav>
+  <div style="margin-top:auto;background:rgba(255,255,255,0.08);border-radius:20px;padding:14px;display:flex;align-items:center;gap:12px">
+    <span style="flex:none;width:42px;height:42px;border-radius:50%;background:#D3F26A;color:#1D3650;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center">MY</span>
+    <div style="display:flex;flex-direction:column;gap:1px;min-width:0"><span style="font-size:14px;font-weight:700;color:#fff">Mehmet Yılmaz</span><span style="font-size:12px;color:#A8CBE8">Ev sahibi hesabı</span></div>
+  </div>
+</aside>
+
+<main style="flex:1 1 640px;min-width:0;box-sizing:border-box;background:#EAF2FA;border-radius:32px;padding:32px 36px;display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <h1 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:34px;letter-spacing:-0.03em;color:#2B5078">Hesap ve IBAN</h1>
+      <span style="font-size:15px;color:#3F5A75">Kira aktarımlarınızın yapılacağı hesabı buradan yönetebilirsiniz. IBAN numaraları her zaman maskeli gösterilir.</span>
+    </div>
+    <a href="#iban-degistir" style="font-size:16px;font-weight:700;color:#1D3650;background:#D3F26A;padding:15px 28px;border-radius:999px">IBAN değiştir</a>
+  </div>
+
+  <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start">
+    <div style="flex:3 1 520px;min-width:0;display:flex;flex-direction:column;gap:20px">
+
+      <div style="background:#2B5078;border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <span style="font-size:15px;color:#A8CBE8">Aktarım yapılan hesap</span>
+          <span style="font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:5px 12px;border-radius:999px">Sahiplik doğrulandı</span>
+        </div>
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:34px;line-height:1.1;letter-spacing:-0.03em;color:#fff;font-variant-numeric:tabular-nums">TR•• •••• •••• •••• •••• 3307 12</span>
+        <div style="display:flex;gap:32px;flex-wrap:wrap">
+          <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px;color:#A8CBE8">Hesap sahibi</span><span style="font-size:16px;font-weight:600;color:#fff">Mehmet Yılmaz</span></div>
+          <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px;color:#A8CBE8">Ad soyad kontrolü</span><span style="font-size:16px;font-weight:600;color:#fff">Kimlik bilgisiyle eşleşti</span></div>
+          <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px;color:#A8CBE8">Doğrulama tarihi</span><span style="font-size:16px;font-weight:600;color:#fff">14 Şubat 2026</span></div>
+        </div>
+        <span style="font-size:14px;line-height:1.6;color:#D3E3F2">Bu hesap 3 mülkünüzün aktarımları için kullanılıyor. Kira bedelinin tamamı bu hesaba, tahsilattan sonra en geç 3 iş günü içinde aktarılır.</span>
+      </div>
+
+      <div id="iban-degistir" style="background:#fff;border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;color:#2B5078">IBAN değiştirme akışı</span>
+          <span style="font-size:12px;font-weight:700;color:#2B5078;background:#D3E3F2;padding:5px 12px;border-radius:999px">Başvurunuz 3. adımda</span>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <div style="flex:1 1 150px;display:flex;flex-direction:column;gap:10px">
+            <div style="height:8px;border-radius:999px;background:#D3F26A"></div>
+            <div style="display:flex;align-items:center;gap:10px"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#D3F26A;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1D3650" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div style="display:flex;flex-direction:column"><span style="font-size:14px;font-weight:700;color:#1D3650">1. Yeni IBAN gir</span><span style="font-size:12px;color:#536C87">28 Kasım</span></div></div>
+          </div>
+          <div style="flex:1 1 150px;display:flex;flex-direction:column;gap:10px">
+            <div style="height:8px;border-radius:999px;background:#D3F26A"></div>
+            <div style="display:flex;align-items:center;gap:10px"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#D3F26A;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#1D3650" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div style="display:flex;flex-direction:column"><span style="font-size:14px;font-weight:700;color:#1D3650">2. Kimlik doğrula</span><span style="font-size:12px;color:#536C87">28 Kasım</span></div></div>
+          </div>
+          <div style="flex:1 1 150px;display:flex;flex-direction:column;gap:10px">
+            <div style="height:8px;border-radius:999px;background:#5489C6"></div>
+            <div style="display:flex;align-items:center;gap:10px"><span style="flex:none;width:22px;height:22px;border-radius:50%;background:#5489C6;display:flex;align-items:center;justify-content:center"><span style="width:8px;height:8px;border-radius:50%;background:#fff"></span></span><div style="display:flex;flex-direction:column"><span style="font-size:14px;font-weight:700;color:#1D3650">3. Ekip incelemesi</span><span style="font-size:12px;color:#536C87">Şu an burada</span></div></div>
+          </div>
+          <div style="flex:1 1 150px;display:flex;flex-direction:column;gap:10px">
+            <div style="height:8px;border-radius:999px;background:#DCE8F3"></div>
+            <div style="display:flex;align-items:center;gap:10px"><span style="flex:none;width:22px;height:22px;border-radius:50%;border:2px solid #CBDDEF;box-sizing:border-box"></span><div style="display:flex;flex-direction:column"><span style="font-size:14px;font-weight:600;color:#536C87">4. Onay</span><span style="font-size:12px;color:#536C87">Bekleniyor</span></div></div>
+          </div>
+        </div>
+        <div style="background:#EAF2FA;border-radius:20px;padding:18px 20px;display:flex;flex-direction:column;gap:6px">
+          <span style="font-size:15px;font-weight:700;color:#1D3650">İnceleme sürerken aktarımlar nereye yapılır?</span>
+          <span style="font-size:14px;line-height:1.65;color:#3F5A75">İnceleme tamamlanana kadar aktarımlar mevcut doğrulanmış hesaba (••3307 12) yapılır. Yeni hesap onaylandığında, onay tarihinden sonraki aktarımlar yeni hesaba yönlendirilir.</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;padding:16px 18px;border-radius:18px;border:1.5px solid #DCE8F3">
+          <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:13px;color:#536C87">Başvuru yapılan yeni IBAN</span><span style="font-size:15px;font-weight:600;color:#1D3650;font-variant-numeric:tabular-nums">TR•• •••• •••• •••• •••• 9054 28</span></div>
+          <span style="font-size:12px;font-weight:700;color:#2B5078;background:#D3E3F2;padding:5px 12px;border-radius:999px">İncelemede</span>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="#" style="font-size:15px;font-weight:600;color:#1D3650;background:#fff;border:1.5px solid #CBDDEF;padding:13px 24px;border-radius:999px">Başvuruyu iptal et</a>
+          <a href="Ev-Sahibi-Destek.html" style="font-size:14px;font-weight:600;color:#2B5078;text-decoration:underline;align-self:center">Destekle iletişime geç</a>
+        </div>
+      </div>
+
+      <div style="background:#fff;border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:6px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:10px">
+          <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;color:#2B5078">IBAN değişiklik geçmişi</span>
+          <span style="font-size:13px;color:#536C87">Örnek kayıtlar</span>
+        </div>
+        <div style="display:flex;gap:16px;padding:10px 0;font-size:12px;font-weight:700;letter-spacing:0.04em;color:#536C87"><span style="flex:1 1 18%">TARİH</span><span style="flex:1 1 32%">İŞLEM</span><span style="flex:1 1 26%">IBAN</span><span style="flex:1 1 24%;text-align:right">DURUM</span></div>
+        <div style="display:flex;gap:16px;align-items:center;padding:14px 0;border-top:1px solid #E3EDF6;font-size:14px"><span style="flex:1 1 18%;color:#1D3650;font-variant-numeric:tabular-nums">28 Kas 2026</span><span style="flex:1 1 32%;color:#1D3650;font-weight:600">Değiştirme başvurusu</span><span style="flex:1 1 26%;color:#536C87;font-variant-numeric:tabular-nums">••9054 28</span><span style="flex:1 1 24%;text-align:right"><span style="font-size:12px;font-weight:700;color:#2B5078;background:#D3E3F2;padding:4px 11px;border-radius:999px">İncelemede</span></span></div>
+        <div style="display:flex;gap:16px;align-items:center;padding:14px 0;border-top:1px solid #E3EDF6;font-size:14px"><span style="flex:1 1 18%;color:#1D3650;font-variant-numeric:tabular-nums">20 Şub 2026</span><span style="flex:1 1 32%;color:#1D3650;font-weight:600">Değiştirme başvurusu</span><span style="flex:1 1 26%;color:#536C87;font-variant-numeric:tabular-nums">••6120 05</span><span style="flex:1 1 24%;text-align:right"><span style="font-size:12px;font-weight:700;color:#7A2E1F;background:#FBE3DC;padding:4px 11px;border-radius:999px">Reddedildi</span></span></div>
+        <div style="display:flex;gap:16px;align-items:center;padding:14px 0 4px;border-top:1px solid #E3EDF6;font-size:14px"><span style="flex:1 1 18%;color:#1D3650;font-variant-numeric:tabular-nums">14 Şub 2026</span><span style="flex:1 1 32%;color:#1D3650;font-weight:600">İlk IBAN eklendi</span><span style="flex:1 1 26%;color:#536C87;font-variant-numeric:tabular-nums">••3307 12</span><span style="flex:1 1 24%;text-align:right"><span style="font-size:12px;font-weight:700;color:#1D3650;background:#D3F26A;padding:4px 11px;border-radius:999px">Onaylandı</span></span></div>
+        <span style="font-size:13px;line-height:1.6;color:#536C87;padding-top:10px">20 Şubat başvurusu, hesap sahibi adının kimlik bilgisiyle eşleşmemesi nedeniyle reddedildi.</span>
+      </div>
+    </div>
+
+    <div style="flex:2 1 320px;min-width:0;display:flex;flex-direction:column;gap:20px">
+      <div style="background:#FDF3F0;border:1.5px solid #FBE3DC;border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:10px">
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;color:#7A2E1F">Güvenlik uyarısı</span>
+        <span style="font-size:14px;line-height:1.65;color:#7A2E1F">Anahtar ekibi sizden telefonla veya mesajla şifre, doğrulama kodu ya da IBAN değişikliği talep etmez. IBAN değişikliklerini yalnızca bu panelden yapın; şüpheli bir durumda hemen destekle iletişime geçin.</span>
+      </div>
+      <div style="background:#fff;border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;color:#2B5078">Yeni IBAN için gerekenler</span>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:8px;height:8px;margin-top:7px;border-radius:50%;background:#D3F26A"></span><span style="font-size:14px;line-height:1.55;color:#3F5A75">Hesap, adınıza kayıtlı bir TL hesabı olmalıdır.</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:8px;height:8px;margin-top:7px;border-radius:50%;background:#D3F26A"></span><span style="font-size:14px;line-height:1.55;color:#3F5A75">Kimlik doğrulaması yeniden yapılır.</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:8px;height:8px;margin-top:7px;border-radius:50%;background:#D3F26A"></span><span style="font-size:14px;line-height:1.55;color:#3F5A75">Ekip incelemesi için süre değişebilir; sonucu bildirimle iletiriz.</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="flex:none;width:8px;height:8px;margin-top:7px;border-radius:50%;background:#D3F26A"></span><span style="font-size:14px;line-height:1.55;color:#3F5A75">Üçüncü kişi adına kayıtlı hesaplara aktarım yapılmaz.</span></div>
+      </div>
+      <div style="background:#fff;border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:8px">
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:20px;color:#2B5078">Aktarımlarınız</span>
+        <span style="font-size:14px;line-height:1.6;color:#3F5A75">Planlanan ve tamamlanan aktarımlarınızı Aktarımlar sayfasında görebilirsiniz.</span>
+        <a href="Ev-Sahibi-Aktarimlar.html" style="font-size:14px;font-weight:600;color:#2B5078;text-decoration:underline">Aktarımlara git</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+</div>
+
+</body>
+</html>
