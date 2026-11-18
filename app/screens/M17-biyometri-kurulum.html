@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M17 Biyometri kurulumu · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.ios .sysdlg{padding:20px 0 0;gap:0}.ios .sysdlg .tt{font-weight:700;font-size:17px;line-height:1.25;padding:0 18px;color:#000}
+.ios .sysdlg .dm{padding:6px 18px 18px;color:#000;font-size:13px;line-height:1.4}
+.ios .sysdlg .bt{display:flex;border-top:1px solid #D0D4D9}.ios .sysdlg .bt span{flex:1;padding:13px 0;font-size:17px;color:#0A7AFF}.ios .sysdlg .bt span+span{border-left:1px solid #D0D4D9;font-weight:700}
+.android .sysdlg{gap:10px}.android .sysdlg .tt{font:500 17px/1.35 var(--font-b);text-align:center;color:#1D3650}
+.android .sysdlg .ab{display:flex;flex-direction:column;gap:6px;margin-top:6px}.android .sysdlg .ab span{padding:12px;border-radius:999px;text-align:center;font-weight:600;font-size:14.5px;color:var(--navy);border:1px solid var(--line2)}
+.hero{width:96px;height:96px;border-radius:30px;background:var(--navy);position:relative;align-self:flex-start}
+.reason{display:flex;gap:12px;align-items:flex-start}
+.reason .n{width:26px;height:26px;border-radius:50%;background:var(--lime);color:var(--ink);font:800 13px var(--font-h);display:flex;align-items:center;justify-content:center;flex:none}
+.reason b{display:block;font-size:15px;color:var(--ink)}.reason span{font-size:13.5px;color:var(--text);line-height:1.5}
+
+.fid{position:absolute;left:24px;top:24px;width:48px;height:48px}
+.fid:before{content:"";position:absolute;inset:0;border:3.5px solid #fff;border-radius:14px;clip-path:polygon(0 0,35% 0,35% 3.5px,3.5px 3.5px,3.5px 35%,0 35%, 0 65%,3.5px 65%,3.5px calc(100% - 3.5px),35% calc(100% - 3.5px),35% 100%,0 100%, 100% 100%,100% 65%,calc(100% - 3.5px) 65%,calc(100% - 3.5px) calc(100% - 3.5px),65% calc(100% - 3.5px),65% 100%, 65% 0,100% 0,100% 35%,calc(100% - 3.5px) 35%,calc(100% - 3.5px) 3.5px,65% 3.5px,65% 0)}
+.fid i{position:absolute;top:15px;width:4px;height:9px;border-radius:2px;background:var(--lime)}.fid i.a{left:14px}.fid i.b{right:14px}
+.fid u{position:absolute;left:15px;right:15px;bottom:11px;height:7px;border:3px solid #fff;border-top:0;border-radius:0 0 10px 10px}
+.fp{position:absolute;left:24px;top:24px;width:48px;height:48px}
+.fp i{position:absolute;border:3px solid #fff;border-bottom-color:transparent;border-radius:50%}
+.fp i:nth-child(1){inset:0}.fp i:nth-child(2){inset:7px;border-color:var(--lime);border-bottom-color:transparent}.fp i:nth-child(3){inset:14px;border-bottom-color:transparent}.fp i:nth-child(4){inset:21px;border-color:var(--lime);border-bottom-color:transparent;border-top-color:var(--lime)}
+.bio{width:36px;height:36px;border-radius:50%;background:var(--sky2);margin:0 auto;position:relative}
+.bio i{position:absolute;border:2.5px solid var(--navy);border-bottom-color:transparent;border-radius:50%}.bio i:nth-child(1){inset:5px}.bio i:nth-child(2){inset:11px}
+.bsheet{position:absolute;z-index:9;left:0;right:0;bottom:0;background:#fff;border-radius:28px 28px 0 0;padding:26px 24px 40px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.bsheet .tt{font:600 19px var(--font-b);color:var(--ink)}.bsheet .dm{font-size:14px;color:var(--text)}
+.bsheet .ring{width:56px;height:56px;border-radius:50%;background:var(--sky);position:relative;margin:6px 0}
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="stack g20" style="padding-top:40px">
+      <span class="hero"><div class="fid"><i class="a"></i><i class="b"></i><u></u></div></span>
+      <div class="stack g8"><h1 class="h1">Face ID ile giriş yapın.</h1><p class="sub">Uygulamayı her açışınızda şifrenizi girmek yerine yüzünüzle giriş yapabilirsiniz.</p></div>
+      <div class="note">Biyometrik veriniz yalnızca cihazınızda tutulur; Anahtar bu veriye erişmez.</div>
+      <div class="small">Bu ayarı daha sonra Profil bölümünden değiştirebilirsiniz.</div>
+    </div>
+  </div>
+  <div class="bottom" style="padding-bottom:40px"><span class="btn primary">Etkinleştir</span><span class="btn text">Şimdi değil</span></div>
+  <div class="scrim" style="align-items:center"></div>
+  <div class="sysdlg"><div class="tt">“Anahtar” Face ID Kullanmak İstiyor</div><div class="dm">Uygulamaya giriş yapmak için Face ID kullanılır.</div><div class="bt"><span>İzin Verme</span><span>Tamam</span></div></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M17 Biyometri kurulumu</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="stack g20" style="padding-top:44px">
+      <span class="hero"><div class="fp"><i></i><i></i><i></i><i></i></div></span>
+      <div class="stack g8"><h1 class="h1" style="font-size:28px">Parmak izi veya yüz tanıma ile giriş yapın.</h1><p class="sub">Uygulamayı her açışınızda şifrenizi girmek yerine cihazınızda kayıtlı parmak izinizi veya yüzünüzü kullanabilirsiniz.</p></div>
+      <div class="note">Biyometrik veriniz yalnızca cihazınızda tutulur; Anahtar bu veriye erişmez.</div>
+      <div class="small">Bu ayarı daha sonra Profil bölümünden değiştirebilirsiniz.</div>
+    </div>
+  </div>
+  <div class="bottom" style="padding-bottom:40px"><span class="btn primary">Etkinleştir</span><span class="btn text">Şimdi değil</span></div>
+  <div class="scrim" style="align-items:flex-end"></div>
+  <div class="bsheet"><div class="tt">Anahtar</div><div class="dm">Giriş yapmak için parmak izinizi doğrulayın</div><div class="ring"><div class="fp" style="left:4px;top:4px;transform:scale(.96)"><i style="border-color:var(--navy);border-bottom-color:transparent"></i><i style="border-color:var(--navy);border-bottom-color:transparent"></i><i style="border-color:var(--navy);border-bottom-color:transparent"></i></div></div><div class="small">Sensöre dokunun</div><span class="btn text" style="width:auto;padding:8px 20px">İptal</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M17 Biyometri kurulumu</div></div>
+
+</div>
+</body></html>

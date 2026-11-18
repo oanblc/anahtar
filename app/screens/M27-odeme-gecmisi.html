@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M27 Ödeme geçmişi · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.tl{display:flex;gap:14px}.tl .rail{display:flex;flex-direction:column;align-items:center;width:22px}
+.tl .dot{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.tl .dot.done{background:var(--navy);border-color:var(--navy)}.tl .dot.done:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.tl .dot.now{border-color:var(--navy);box-shadow:0 0 0 4px rgba(211,242,106,.7)}
+.tl .line{flex:1;width:2px;background:var(--line2);min-height:22px}.tl .line.done{background:var(--navy)}
+.tl .txt{padding-bottom:12px;display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}.tl:last-child .txt{padding-bottom:0}
+.tl .txt b{font-size:15px;color:var(--ink)}.tl .txt span{font-size:13px;color:var(--muted);line-height:1.45}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:14px;font-weight:600;padding:9px 16px;border-radius:999px;background:#fff;color:var(--navy);border:1.5px solid var(--line2)}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.cta{display:flex;gap:10px}.cta .btn{flex:1;padding:14px 10px;font-size:15px}
+.stepno{width:22px;height:22px;border-radius:50%;background:var(--sky2);color:var(--navy);font:700 12px var(--font-b);display:flex;align-items:center;justify-content:center;flex:none}
+.chev{width:8px;height:8px;border-right:2px solid var(--muted);border-top:2px solid var(--muted);transform:rotate(45deg);flex:none;margin:0 4px}
+.thumb{width:60px;height:60px;border-radius:14px;flex:none}
+.tx{height:5px;border-radius:3px;background:#D5DFEA;margin-top:6px}
+.vwr{background:#8DA2B8;border-radius:22px;padding:16px 0;display:flex;flex-direction:column;align-items:center;gap:10px;position:relative}
+.paper{background:#fff;width:64%;aspect-ratio:1/1.25;box-shadow:0 6px 18px rgba(16,24,32,.28);padding:7% 7%;display:flex;flex-direction:column;overflow:hidden}
+.paper .pt{font:800 9px var(--font-h);letter-spacing:.06em;color:var(--navy);text-align:center}
+.paper .pm{font:700 6px var(--font-b);color:var(--ink);margin-top:9px}
+.paper .bar{margin-top:auto;display:flex;gap:1.5px;height:16px;align-items:stretch}
+.paper .bar i{display:block;background:var(--ink);width:1.5px}.paper .bar i:nth-child(3n){width:3px}.paper .bar i:nth-child(4n){width:1px}
+.pg{background:rgba(16,24,32,.72);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px}
+.ta{min-height:96px;align-items:flex-start;padding:14px 16px;line-height:1.5}
+.ta .ph{color:#8CA0B5;font-size:15px}
+</style></head><body>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span></span></div><div class="large" style="margin:2px 0 12px">Ödeme geçmişi</div>
+    <div class="stack g16">
+<div class="chips"><span class="chip on">Tümü</span><span class="chip">Ödendi</span><span class="chip">İade</span></div>
+<div class="list"><div class="item"><div class="col"><span class="t">Kasım 2026</span><span class="d num">5 Kasım · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div><div class="item"><div class="col"><span class="t">Ekim 2026</span><span class="d num">6 Ekim · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div><div class="item"><div class="col"><span class="t">Ekim 2026 · mükerrer çekim</span><span class="d num">9 Ekim · 18.648,00 ₺</span><span class="d" style="font-size:12px">Kartınıza iade edildi</span></div><span class="badge info">İade edildi</span></div><div class="item"><div class="col"><span class="t">Eylül 2026</span><span class="d num">7 Eylül · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div><div class="item"><div class="col"><span class="t">Ağustos 2026</span><span class="d num">7 Ağustos · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div><div class="item"><div class="col"><span class="t">Temmuz 2026</span><span class="d num">8 Temmuz · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div><div class="item"><div class="col"><span class="t">Haziran 2026</span><span class="d num">7 Haziran · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div></div></div>
+  </div>
+<div class="tabs"><span>Ana sayfa</span><span class="on">Ödemeler</span><span>Dosya</span><span>Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M27 Ödeme geçmişi</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav" style="min-height:48px"><span class="back">Geri</span><span class="title">Ödeme geçmişi</span></div><div style="height:6px"></div>
+    <div class="stack g16">
+<div class="chips"><span class="chip on">Tümü</span><span class="chip">Ödendi</span><span class="chip">İade</span></div>
+<div class="list"><div class="item"><div class="col"><span class="t">Kasım 2026</span><span class="d num">5 Kasım · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div><div class="item"><div class="col"><span class="t">Ekim 2026</span><span class="d num">6 Ekim · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div><div class="item"><div class="col"><span class="t">Ekim 2026 · mükerrer çekim</span><span class="d num">9 Ekim · 18.648,00 ₺</span><span class="d" style="font-size:12px">Kartınıza iade edildi</span></div><span class="badge info">İade edildi</span></div><div class="item"><div class="col"><span class="t">Eylül 2026</span><span class="d num">7 Eylül · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div><div class="item"><div class="col"><span class="t">Ağustos 2026</span><span class="d num">7 Ağustos · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div><div class="item"><div class="col"><span class="t">Temmuz 2026</span><span class="d num">8 Temmuz · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div><div class="item"><div class="col"><span class="t">Haziran 2026</span><span class="d num">7 Haziran · 18.648,00 ₺</span></div><span class="badge ok">Ödendi</span></div></div></div>
+  </div>
+<div class="tabs"><span>Ana sayfa</span><span class="on">Ödemeler</span><span>Dosya</span><span>Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M27 Ödeme geçmişi</div></div>
+
+</div></body></html>

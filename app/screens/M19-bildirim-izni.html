@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M19 Bildirim izni · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.ios .sysdlg{padding:20px 0 0;gap:0}.ios .sysdlg .tt{font-weight:700;font-size:17px;line-height:1.25;padding:0 18px;color:#000}
+.ios .sysdlg .dm{padding:6px 18px 18px;color:#000;font-size:13px;line-height:1.4}
+.ios .sysdlg .bt{display:flex;border-top:1px solid #D0D4D9}.ios .sysdlg .bt span{flex:1;padding:13px 0;font-size:17px;color:#0A7AFF}.ios .sysdlg .bt span+span{border-left:1px solid #D0D4D9;font-weight:700}
+.android .sysdlg{gap:10px}.android .sysdlg .tt{font:500 17px/1.35 var(--font-b);text-align:center;color:#1D3650}
+.android .sysdlg .ab{display:flex;flex-direction:column;gap:6px;margin-top:6px}.android .sysdlg .ab span{padding:12px;border-radius:999px;text-align:center;font-weight:600;font-size:14.5px;color:var(--navy);border:1px solid var(--line2)}
+.hero{width:96px;height:96px;border-radius:30px;background:var(--navy);position:relative;align-self:flex-start}
+.reason{display:flex;gap:12px;align-items:flex-start}
+.reason .n{width:26px;height:26px;border-radius:50%;background:var(--lime);color:var(--ink);font:800 13px var(--font-h);display:flex;align-items:center;justify-content:center;flex:none}
+.reason b{display:block;font-size:15px;color:var(--ink)}.reason span{font-size:13.5px;color:var(--text);line-height:1.5}
+
+.bell{position:absolute;left:30px;top:28px;width:36px;height:34px;border-radius:18px 18px 6px 6px;background:#fff;clip-path:none}
+.bellw{position:absolute;left:41px;top:62px;width:14px;height:7px;border-radius:0 0 8px 8px;background:var(--lime)}
+.bellt{position:absolute;left:44px;top:21px;width:8px;height:8px;border-radius:50%;background:var(--lime)}
+.nt{background:#fff;border-radius:18px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;box-shadow:0 2px 0 var(--line)}
+.nt .a{font-size:12px;font-weight:700;color:var(--muted)}.nt b{font-size:14px;color:var(--ink)}.nt span{font-size:13px;color:var(--text)}
+.ard{font-size:12.5px;color:var(--muted)}
+.hero{position:relative}</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <!-- iOS: sistem izin uyarısı -->
+  <div class="body">
+    <div class="stack g20" style="padding-top:40px">
+      <span class="hero"><i class="bellt"></i><i class="bell"></i><i class="bellw"></i></span>
+      <div class="stack g8"><h1 class="h1">Önemli gelişmelerden haberdar olun.</h1><p class="sub">Bildirimleri yalnızca kira dosyanızla ilgili durumlar için kullanırız.</p></div>
+      <div class="stack g16">
+        <div class="reason"><span class="n">1</span><div><b>Ödeme günü</b><span>Kira ödeme gününüz yaklaştığında hatırlatma alırsınız.</span></div></div>
+        <div class="reason"><span class="n">2</span><div><b>Ödeme sonucu</b><span>Ödemenizin alındığını veya tamamlanamadığını hemen öğrenirsiniz.</span></div></div>
+        <div class="reason"><span class="n">3</span><div><b>Aktarım</b><span>Ödemeniz ev sahibine ulaştığında bilgilendirilirsiniz.</span></div></div>
+      </div>
+      <div class="small">Bildirim tercihlerinizi Profil bölümünden dilediğiniz zaman değiştirebilirsiniz.</div>
+    </div>
+  </div>
+  <div class="bottom" style="padding-bottom:40px"><span class="btn primary">Bildirimlere izin ver</span><span class="btn text">Şimdi değil</span></div>
+  <div class="scrim" style="align-items:center"></div>
+  <div class="sysdlg"><div class="tt">“Anahtar” Size Bildirim Göndermek İstiyor</div><div class="dm">Bildirimler ödeme günü hatırlatmalarını ve ödeme sonuçlarını içerir.</div><div class="bt"><span>İzin Verme</span><span>İzin Ver</span></div></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M19 Bildirim izni</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <!-- Android 13+ (API 33): POST_NOTIFICATIONS çalışma zamanı izni, sistem diyaloğu. Android 12 ve altında diyalog çıkmaz, izin kurulumla verilir; bu ekran yine gösterilir ve düğme ayar bilgisini açar. -->
+  <div class="body">
+    <div class="stack g20" style="padding-top:44px">
+      <span class="hero"><i class="bellt"></i><i class="bell"></i><i class="bellw"></i></span>
+      <div class="stack g8"><h1 class="h1" style="font-size:28px">Önemli gelişmelerden haberdar olun.</h1><p class="sub">Bildirimleri yalnızca kira dosyanızla ilgili durumlar için kullanırız.</p></div>
+      <div class="stack g16">
+        <div class="reason"><span class="n">1</span><div><b>Ödeme günü</b><span>Kira ödeme gününüz yaklaştığında hatırlatma alırsınız.</span></div></div>
+        <div class="reason"><span class="n">2</span><div><b>Ödeme sonucu</b><span>Ödemenizin alındığını veya tamamlanamadığını hemen öğrenirsiniz.</span></div></div>
+        <div class="reason"><span class="n">3</span><div><b>Aktarım</b><span>Ödemeniz ev sahibine ulaştığında bilgilendirilirsiniz.</span></div></div>
+      </div>
+      <div class="small">Bildirim tercihlerinizi Profil bölümünden dilediğiniz zaman değiştirebilirsiniz.</div>
+    </div>
+  </div>
+  <div class="bottom" style="padding-bottom:40px"><span class="btn primary">Bildirimlere izin ver</span><span class="btn text">Şimdi değil</span></div>
+  <div class="scrim" style="align-items:center"></div>
+  <div class="sysdlg"><div class="tt">Anahtar uygulamasının sana bildirim göndermesine izin verilsin mi?</div><div class="ab"><span>İzin ver</span><span>İzin verme</span></div></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M19 Bildirim izni (Android 13 ve üzeri)</div></div>
+
+</div>
+</body></html>

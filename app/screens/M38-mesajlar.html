@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M38 Mesajlar · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+
+.av2{width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;flex:none}
+.av2.s{background:var(--lime);color:var(--ink)}
+.unread{min-width:20px;height:20px;border-radius:10px;background:var(--navy);color:#fff;font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 6px}
+.time{font-size:12px;color:var(--muted)}
+.msgs{display:flex;flex-direction:column;gap:10px}
+.bub{max-width:78%;padding:11px 14px;font-size:14.5px;line-height:1.45;border-radius:18px}
+.bub.in{background:#fff;color:var(--ink);align-self:flex-start;border-bottom-left-radius:6px}
+.bub.out{background:var(--navy);color:#fff;align-self:flex-end;border-bottom-right-radius:6px}
+.bub .tm{display:block;font-size:11px;opacity:.65;margin-top:4px}
+.bub.ph{padding:6px;background:var(--navy)}
+.bub.ph .imgbox{border-radius:14px;width:200px;max-width:100%}
+.day{align-self:center;font-size:12px;font-weight:600;color:var(--muted);background:var(--sky2);padding:4px 12px;border-radius:999px}
+.composer{position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px 14px 34px;display:flex;gap:10px;align-items:center;z-index:3}
+.composer .input{flex:1;min-height:46px;border-radius:999px!important;font-size:15px}
+.send{width:46px;height:46px;border-radius:50%;background:var(--lime);flex:none;position:relative}
+.send:after{content:"";position:absolute;left:15px;top:15px;width:11px;height:11px;border:solid var(--ink);border-width:2.5px 2.5px 0 0;transform:rotate(-45deg) translate(-1px,1px)}
+.plus{width:38px;height:38px;border-radius:50%;background:var(--sky);flex:none;position:relative}
+.plus:before,.plus:after{content:"";position:absolute;background:var(--navy);left:50%;top:50%;transform:translate(-50%,-50%);border-radius:1px}
+.plus:before{width:14px;height:2.5px}.plus:after{width:2.5px;height:14px}
+.search{margin:4px 0 12px}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+<div class="row sp" style="min-height:44px;margin-top:4px"><span class="h1" style="font-size:28px">Mesajlar</span></div><div class="input search" style="min-height:46px"><span class="ph">Sohbetlerde ara</span></div>
+<div class="list">
+ <div class="item"><span class="av2">MY</span><div class="col"><span class="t">Mehmet Yılmaz</span><span class="d" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Salon klimasının fotoğrafını gönderdim.</span></div><div class="stack g4" style="align-items:flex-end"><span class="time">14:20</span><span class="unread">2</span></div></div>
+ <div class="item"><span class="av2 s">A</span><div class="col"><span class="t">Anahtar Destek</span><span class="d" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Kasım dekontunuz dosyanıza eklendi.</span></div><span class="time">Dün</span></div>
+</div>
+<div class="note" style="margin-top:16px">Mesajlarınız kira dosyanızla birlikte saklanır; Anahtar yazışmalarınıza taraf olmaz.</div>
+  </div>
+<div class="tabs"><span>Ana sayfa</span><span>Ödemeler</span><span class="on">Dosya</span><span>Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M38 Mesajlar · Sohbet listesi</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+<div class="row sp" style="min-height:48px"><span class="title" style="font:700 20px var(--font-h);color:var(--navy)">Mesajlar</span></div><div class="input search" style="min-height:46px"><span class="ph">Sohbetlerde ara</span></div>
+<div class="list">
+ <div class="item"><span class="av2">MY</span><div class="col"><span class="t">Mehmet Yılmaz</span><span class="d" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Salon klimasının fotoğrafını gönderdim.</span></div><div class="stack g4" style="align-items:flex-end"><span class="time">14:20</span><span class="unread">2</span></div></div>
+ <div class="item"><span class="av2 s">A</span><div class="col"><span class="t">Anahtar Destek</span><span class="d" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Kasım dekontunuz dosyanıza eklendi.</span></div><span class="time">Dün</span></div>
+</div>
+<div class="note" style="margin-top:16px">Mesajlarınız kira dosyanızla birlikte saklanır; Anahtar yazışmalarınıza taraf olmaz.</div>
+  </div>
+<div class="tabs"><span>Ana sayfa</span><span>Ödemeler</span><span class="on">Dosya</span><span>Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M38 Mesajlar · Sohbet listesi</div></div>
+
+</div>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+<div class="nav" style="margin-top:4px"><span class="back">Geri</span><span class="title">Mehmet Yılmaz</span><span style="width:48px"></span></div><div class="small" style="text-align:center;margin:0 0 8px">Ev sahibi · Moda Cad. 24/6</div>
+<div class="msgs" style="margin-top:6px">
+ <span class="day">Bugün</span>
+ <div class="bub in">Merhaba Elif Hanım, klima bakımı için bir fotoğraf gönderiyorum.<span class="tm">14:12</span></div>
+ <div class="bub in ph" style="background:#fff"><div class="imgbox" style="height:128px"><img src="../../assets/img/C_klima.jpg" alt="" onerror="this.style.display='none'"></div></div>
+ <div class="bub out">Teşekkürler Mehmet Bey, fotoğrafa baktım. Bakım için bu hafta uygun bir gün planlayabiliriz.<span class="tm">14:20</span></div>
+</div>
+  </div>
+<div class="composer"><span class="plus"></span><div class="input"><span class="ph">Mesaj yazın</span></div><span class="send"></span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M38 Mesajlar · Sohbet</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+<div class="nav"><span class="back">Geri</span><span class="av2" style="width:36px;height:36px;font-size:13px">MY</span><span class="title grow">Mehmet Yılmaz</span></div><div class="small" style="text-align:center;margin:0 0 8px">Ev sahibi · Moda Cad. 24/6</div>
+<div class="msgs" style="margin-top:6px">
+ <span class="day">Bugün</span>
+ <div class="bub in">Merhaba Elif Hanım, klima bakımı için bir fotoğraf gönderiyorum.<span class="tm">14:12</span></div>
+ <div class="bub in ph" style="background:#fff"><div class="imgbox" style="height:150px"><img src="../../assets/img/C_klima.jpg" alt="" onerror="this.style.display='none'"></div></div>
+ <div class="bub out">Teşekkürler Mehmet Bey, fotoğrafa baktım. Bakım için bu hafta uygun bir gün planlayabiliriz.<span class="tm">14:20</span></div>
+</div>
+  </div>
+<div class="composer"><span class="plus"></span><div class="input"><span class="ph">Mesaj yazın</span></div><span class="send"></span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M38 Mesajlar · Sohbet</div></div>
+
+</div></body></html>

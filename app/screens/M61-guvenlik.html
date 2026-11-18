@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M61 Güvenlik · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.tog{width:50px;height:30px;border-radius:15px;background:var(--line2);position:relative;flex:none}
+.tog:after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.tog.on{background:var(--navy)}.tog.on:after{left:23px}
+.android .tog{width:52px;height:32px;border-radius:16px}
+.android .tog:after{top:4px;left:4px;width:24px;height:24px;box-shadow:none}
+.android .tog.on{background:var(--navy)}.android .tog.on:after{left:24px;width:24px;background:var(--lime)}
+.chev{width:8px;height:8px;border-right:2px solid #8CA0B5;border-top:2px solid #8CA0B5;transform:rotate(45deg);flex:none;margin:0 4px}
+.sec{font-size:13px;font-weight:700;color:var(--navy);margin:0 4px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--navy);flex:none;margin-top:8px}
+.link{font-size:14px;font-weight:700;color:var(--navy)}
+.btn.err{background:var(--err);color:#fff}
+.btn.errout{background:#fff;color:var(--err);border:1.5px solid #E7B9B2}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span></div>
+    <div class="large">Güvenlik</div>
+    <div class="stack g16">
+<div class="stack g8"><span class="sec">Biyometrik giriş</span><div class="list">
+<div class="item"><div class="col"><span class="t">Face ID ile giriş</span><span class="d" style="line-height:1.45">Uygulamayı Face ID ile açın.</span></div><span class="tog on"></span></div>
+</div></div>
+<div class="stack g8"><span class="sec">PIN ve kilit</span><div class="list">
+<div class="item"><div class="col"><span class="t">Uygulama kilidi</span><span class="d" style="line-height:1.45">Uygulamaya her dönüşte kilit ekranı gösterilir.</span></div><span class="tog on"></span></div>
+<div class="item"><div class="col"><span class="t">PIN’i değiştir</span><span class="d" style="line-height:1.45">6 haneli uygulama PIN’iniz.</span></div><span class="chev"></span></div>
+<div class="item"><div class="col"><span class="t">Kilitleme süresi</span><span class="d" style="line-height:1.45">Arka plana alındıktan 1 dakika sonra</span></div><span class="chev"></span></div>
+</div></div>
+<div class="stack g8"><span class="sec">Oturum açık cihazlar</span><div class="list">
+<div class="item"><div class="col"><span class="t">Bu cihaz · iPhone 15</span><span class="d" style="line-height:1.45">Kadıköy · Şu an açık</span></div><span class="badge ok">Bu cihaz</span></div>
+<div class="item"><div class="col"><span class="t">iPhone 13</span><span class="d" style="line-height:1.45">Son kullanım 28 Kasım 2026</span></div><span class="link">Çıkış yap</span></div>
+<div class="item"><div class="col"><span class="t">Android · Pixel 7</span><span class="d" style="line-height:1.45">Son kullanım 9 Kasım 2026</span></div><span class="link">Çıkış yap</span></div>
+</div></div>
+<span class="btn errout">Tüm cihazlardan çıkış yap</span>
+</div>
+  </div>
+
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M61 Güvenlik</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span class="title">Güvenlik</span></div>
+    <div style="height:10px"></div>
+    <div class="stack g16">
+<div class="stack g8"><span class="sec">Biyometrik giriş</span><div class="list">
+<div class="item"><div class="col"><span class="t">Parmak izi ile giriş</span><span class="d" style="line-height:1.45">Uygulamayı parmak izinizle açın.</span></div><span class="tog on"></span></div>
+</div></div>
+<div class="stack g8"><span class="sec">PIN ve kilit</span><div class="list">
+<div class="item"><div class="col"><span class="t">Uygulama kilidi</span><span class="d" style="line-height:1.45">Uygulamaya her dönüşte kilit ekranı gösterilir.</span></div><span class="tog on"></span></div>
+<div class="item"><div class="col"><span class="t">PIN’i değiştir</span><span class="d" style="line-height:1.45">6 haneli uygulama PIN’iniz.</span></div><span class="chev"></span></div>
+<div class="item"><div class="col"><span class="t">Kilitleme süresi</span><span class="d" style="line-height:1.45">Arka plana alındıktan 1 dakika sonra</span></div><span class="chev"></span></div>
+</div></div>
+<div class="stack g8"><span class="sec">Oturum açık cihazlar</span><div class="list">
+<div class="item"><div class="col"><span class="t">Bu cihaz · Pixel 8</span><span class="d" style="line-height:1.45">Kadıköy · Şu an açık</span></div><span class="badge ok">Bu cihaz</span></div>
+<div class="item"><div class="col"><span class="t">iPhone 13</span><span class="d" style="line-height:1.45">Son kullanım 28 Kasım 2026</span></div><span class="link">Çıkış yap</span></div>
+<div class="item"><div class="col"><span class="t">Android · Galaxy A54</span><span class="d" style="line-height:1.45">Son kullanım 9 Kasım 2026</span></div><span class="link">Çıkış yap</span></div>
+</div></div>
+<span class="btn errout">Tüm cihazlardan çıkış yap</span>
+</div>
+  </div>
+
+  <div class="home"></div>
+</div></div><div class="cap">Android · M61 Güvenlik</div></div>
+
+</div>
+</body></html>

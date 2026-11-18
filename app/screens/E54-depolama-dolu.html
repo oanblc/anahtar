@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E54 Depolama dolu · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.cardchip{width:44px;height:30px;border-radius:6px;background:var(--navy);flex:none;position:relative}
+.cardchip:after{content:"";position:absolute;left:6px;top:8px;width:10px;height:8px;border-radius:2px;background:var(--lime)}
+.band{display:flex;align-items:center;gap:12px;border-radius:16px;padding:12px 14px;font-size:13.5px;line-height:1.45}
+.band .col{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.band b{font-size:14px}
+.band.warn{background:var(--warn-bg);color:var(--warn)}.band.info{background:var(--sky2);color:#24425F}.band.grey{background:#CBD7E4;color:#2F465E}.band.lime{background:var(--lime);color:var(--ink)}
+.band .act{font-weight:700;text-decoration:underline;white-space:nowrap;font-size:13.5px}
+.statusdot{width:10px;height:10px;border-radius:50%;background:currentColor;flex:none}
+.sk{background:linear-gradient(90deg,#DCE8F3 0%,#EAF2FA 50%,#DCE8F3 100%);background-size:200% 100%;border-radius:10px;animation:sh 1.4s linear infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.circle{width:72px;height:72px;border-radius:50%;background:var(--sky2);position:relative;flex:none}
+.circle.warn{background:var(--warn-bg)}
+.circle.lime{background:var(--lime)}
+.annot{max-width:900px;margin:0 auto 40px;padding:20px 24px;background:#fff;border-radius:20px;font-size:14px;line-height:1.6;color:var(--text)}
+.annot b{color:var(--ink)}.annot ul{margin:8px 0 0;padding-left:20px}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span></div><div class="large">Fotoğraf ekle</div>
+    <div style="height:8px"></div>
+    <div class="stack g16">
+      <p class="sub">Moda Cad. 24/6 · Teslim tutanağı, mutfak</p>
+      <div class="row g12" style="gap:12px">
+        <div class="imgbox grow" style="height:120px"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="grow row" style="height:120px;border-radius:20px;border:2px dashed #C0392B;background:var(--err-bg);justify-content:center;color:var(--err);font-weight:700;font-size:14px;text-align:center;padding:8px">Kaydedilemedi</div>
+      </div>
+      <div class="note err"><b>Fotoğraf kaydedilemedi.</b><br>Telefonunuzun depolama alanı dolu. Yarım kalan yükleme silindi; başka bir kayıt etkilenmedi.</div>
+      <div class="list"><div class="item"><div class="col"><span class="t">Yer açmak için</span><span class="d" style="line-height:1.45">Telefonunuzun Ayarlar bölümünden depolama alanını kontrol edin, kullanmadığınız dosya ve uygulamaları kaldırın.</span></div></div></div>
+    </div>
+  </div>
+  <div class="bottom"><span class="btn primary">Tekrar dene</span><span class="btn text">Daha sonra ekle</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · E54 Depolama dolu</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span class="title">Fotoğraf ekle</span></div>
+    <div style="height:8px"></div>
+    <div class="stack g16">
+      <p class="sub">Moda Cad. 24/6 · Teslim tutanağı, mutfak</p>
+      <div class="row g12" style="gap:12px">
+        <div class="imgbox grow" style="height:120px"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div>
+        <div class="grow row" style="height:120px;border-radius:20px;border:2px dashed #C0392B;background:var(--err-bg);justify-content:center;color:var(--err);font-weight:700;font-size:14px;text-align:center;padding:8px">Kaydedilemedi</div>
+      </div>
+      <div class="note err"><b>Fotoğraf kaydedilemedi.</b><br>Telefonunuzun depolama alanı dolu. Yarım kalan yükleme silindi; başka bir kayıt etkilenmedi.</div>
+      <div class="list"><div class="item"><div class="col"><span class="t">Yer açmak için</span><span class="d" style="line-height:1.45">Telefonunuzun Ayarlar bölümünden depolama alanını kontrol edin, kullanmadığınız dosya ve uygulamaları kaldırın.</span></div></div></div>
+    </div>
+  </div>
+  <div class="bottom"><span class="btn primary">Tekrar dene</span><span class="btn text">Daha sonra ekle</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · E54 Depolama dolu</div></div>
+
+</div>
+</body></html>

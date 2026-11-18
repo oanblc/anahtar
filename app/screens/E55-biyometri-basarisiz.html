@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E55 Biyometri başarısız · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.cardchip{width:44px;height:30px;border-radius:6px;background:var(--navy);flex:none;position:relative}
+.cardchip:after{content:"";position:absolute;left:6px;top:8px;width:10px;height:8px;border-radius:2px;background:var(--lime)}
+.band{display:flex;align-items:center;gap:12px;border-radius:16px;padding:12px 14px;font-size:13.5px;line-height:1.45}
+.band .col{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.band b{font-size:14px}
+.band.warn{background:var(--warn-bg);color:var(--warn)}.band.info{background:var(--sky2);color:#24425F}.band.grey{background:#CBD7E4;color:#2F465E}.band.lime{background:var(--lime);color:var(--ink)}
+.band .act{font-weight:700;text-decoration:underline;white-space:nowrap;font-size:13.5px}
+.statusdot{width:10px;height:10px;border-radius:50%;background:currentColor;flex:none}
+.sk{background:linear-gradient(90deg,#DCE8F3 0%,#EAF2FA 50%,#DCE8F3 100%);background-size:200% 100%;border-radius:10px;animation:sh 1.4s linear infinite}
+@keyframes sh{to{background-position:-200% 0}}
+.circle{width:72px;height:72px;border-radius:50%;background:var(--sky2);position:relative;flex:none}
+.circle.warn{background:var(--warn-bg)}
+.circle.lime{background:var(--lime)}
+.annot{max-width:900px;margin:0 auto 40px;padding:20px 24px;background:#fff;border-radius:20px;font-size:14px;line-height:1.6;color:var(--text)}
+.annot b{color:var(--ink)}.annot ul{margin:8px 0 0;padding-left:20px}
+.pins{display:flex;gap:16px;margin:4px 0}.pins i{width:16px;height:16px;border-radius:50%;border:2px solid var(--navy)}.pins i.on{background:var(--navy)}
+.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 14px;margin:auto 0 16px;padding:0 10px}
+.keys span{height:56px;display:flex;align-items:center;justify-content:center;border-radius:999px;background:#fff;font:700 24px var(--font-h);color:var(--navy)}
+.keys span:empty{background:none}
+.android .keys span{height:52px;border-radius:16px}
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="stack g16" style="padding-top:26px;align-items:center;text-align:center">
+      <span class="logo">anahtar<b>.</b></span>
+      <div class="stack g8"><h1 class="h1" style="font-size:26px">Biyometrik doğrulama yapılamadı.</h1><p class="sub">Parmak izi ya da yüz tanıma şu anda kullanılamıyor. PIN kodunuzu girerek devam edebilirsiniz.</p></div>
+      <div class="pins"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+      <span class="badge warn">Kalan deneme hakkı: 4</span>
+    </div>
+    <div class="keys"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span></span><span>0</span><span><span style="display:inline-block;width:20px;height:14px;border:2px solid var(--navy);border-left-width:2px;border-radius:3px 6px 6px 3px"></span></span></div>
+    <div class="note" style="margin:0 0 40px">5 hatalı denemeden sonra güvenliğiniz için oturumunuz kapanır ve yeniden giriş yapmanız gerekir.</div>
+  </div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · E55 Biyometri başarısız</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="stack g16" style="padding-top:24px;align-items:center;text-align:center">
+      <span class="logo">anahtar<b>.</b></span>
+      <div class="stack g8"><h1 class="h1" style="font-size:26px">Biyometrik doğrulama yapılamadı.</h1><p class="sub">Parmak izi ya da yüz tanıma şu anda kullanılamıyor. PIN kodunuzu girerek devam edebilirsiniz.</p></div>
+      <div class="pins"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+      <span class="badge warn">Kalan deneme hakkı: 4</span>
+    </div>
+    <div class="keys"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span></span><span>0</span><span><span style="display:inline-block;width:20px;height:14px;border:2px solid var(--navy);border-left-width:2px;border-radius:3px 6px 6px 3px"></span></span></div>
+    <div class="note" style="margin:0 0 40px">5 hatalı denemeden sonra güvenliğiniz için oturumunuz kapanır ve yeniden giriş yapmanız gerekir.</div>
+  </div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · E55 Biyometri başarısız</div></div>
+
+</div>
+</body></html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E04 Çift dokunma koruması · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.cardchip{width:44px;height:30px;border-radius:6px;background:var(--navy);flex:none;position:relative}
+.cardchip:after{content:"";position:absolute;left:6px;top:8px;width:10px;height:8px;border-radius:2px;background:var(--lime)}
+.radio{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.radio.on{border-color:var(--navy)}.radio.on:after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--navy)}
+.tl{display:flex;gap:14px}.tl .rail{display:flex;flex-direction:column;align-items:center;width:22px}
+.tl .dot{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.tl .dot.done{background:var(--navy);border-color:var(--navy)}.tl .dot.done:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.tl .dot.now{border-color:var(--navy);box-shadow:0 0 0 4px rgba(211,242,106,.7)}
+.tl .line{flex:1;width:2px;background:var(--line2);min-height:22px}.tl .line.done{background:var(--navy)}
+.tl .txt{padding-bottom:18px;display:flex;flex-direction:column;gap:2px;min-width:0}.tl:last-child .txt{padding-bottom:0}
+.tl .txt b{font-size:15px;color:var(--ink)}.tl .txt span{font-size:13px;color:var(--muted);line-height:1.45}
+.mk{width:64px;height:64px;border-radius:50%;position:relative;flex:none}
+.mk.ok{background:var(--lime)}.mk.warn{background:var(--warn-bg)}.mk.err{background:var(--err-bg)}.mk.info{background:var(--sky2)}
+.mk.ok:after{content:"";position:absolute;left:23px;top:14px;width:15px;height:28px;border:solid var(--ink);border-width:0 4px 4px 0;transform:rotate(45deg)}
+.mk.warn:before{content:"";position:absolute;left:29px;top:15px;width:6px;height:23px;border-radius:3px;background:var(--warn)}
+.mk.warn:after{content:"";position:absolute;left:29px;top:43px;width:6px;height:6px;border-radius:50%;background:var(--warn)}
+.mk.err:before,.mk.err:after{content:"";position:absolute;left:30px;top:16px;width:5px;height:32px;border-radius:3px;background:var(--err);transform:rotate(45deg)}
+.mk.err:after{transform:rotate(-45deg)}
+.mk.clock:before{content:"";position:absolute;inset:14px;border-radius:50%;border:4px solid var(--navy)}
+.mk.clock:after{content:"";position:absolute;left:30px;top:22px;width:12px;height:12px;border-left:4px solid var(--navy);border-bottom:4px solid var(--navy);border-radius:2px}
+.mk.shield:before{content:"";position:absolute;left:21px;top:28px;width:22px;height:18px;border-radius:5px;background:var(--navy)}
+.mk.shield:after{content:"";position:absolute;left:25px;top:15px;width:8px;height:12px;border:4px solid var(--navy);border-bottom:0;border-radius:8px 8px 0 0}
+.mk.spin{background:var(--sky2)}
+.mk.spin:before{content:"";position:absolute;inset:14px;border-radius:50%;border:5px solid #fff;border-top-color:var(--navy);border-right-color:var(--navy)}
+.sp-btn{width:18px;height:18px;border-radius:50%;border:3px solid rgba(255,255,255,.35);border-top-color:#fff;border-right-color:#fff;flex:none;margin-right:10px}
+.btn.busy{background:var(--navy);color:#fff}
+.old{text-decoration:line-through;color:var(--muted)}
+.dimmed{opacity:.5}
+.tight{max-width:300px}
+.btn.off-dark{background:rgba(255,255,255,.16);color:rgba(255,255,255,.7)}
+.card.hl{border:2px solid var(--lime)}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav"><span class="back">Geri</span></div><div class="large">Ödeme özeti</div><div style="height:6px"></div><div style="padding-bottom:130px"><div class="stack g16"><div class="note">Ödemeniz işleniyor, lütfen bekleyin. Ekranı kapatmayın ve düğmeye tekrar dokunmayın.</div><div class="card stack g4">
+  <span class="small" style="font-weight:600">Aralık 2026 kirası · Moda Cad. 24/6, Kadıköy</span>
+  <div class="kv" style="font-size:15px"><span>Kira bedeli</span><b>18.000,00 ₺</b></div>
+  <div class="kv" style="font-size:15px"><span>Hizmet bedeli (%3)</span><b>540,00 ₺</b></div>
+  <div class="kv" style="font-size:15px"><span>Vergiler</span><b>108,00 ₺</b></div>
+  <div class="divider"></div>
+  <div class="kv" style="font-size:17px;align-items:baseline"><span style="font-weight:700;color:var(--navy)">Toplam</span><b style="font:800 24px var(--font-h);color:var(--navy)">18.648,00 ₺</b></div>
+</div><div class="card stack g12" style="padding:18px 18px 20px"><div class="stack"><div class="tl"><div class="rail"><span class="dot done"></span><span class="line done"></span></div><div class="txt"><b>Ödeme isteği alındı</b><span>Düğme bu andan itibaren kilitlendi.</span></div></div><div class="tl"><div class="rail"><span class="dot now"></span><span class="line"></span></div><div class="txt"><b>Banka doğrulaması hazırlanıyor</b><span>Kart •••• 4821</span></div></div><div class="tl"><div class="rail"><span class="dot"></span></div><div class="txt"><b>Sonuç</b><span>Tamamlanınca bu ekran güncellenir.</span></div></div></div></div></div></div></div>
+<div class="bottom"><span class="btn busy"><span class="sp-btn"></span>İşleniyor</span><span class="small" style="text-align:center">Aynı kira için ikinci bir çekim yapılmaz.</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · E04 Çift dokunma koruması</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav"><span class="back">Geri</span><span class="title">Ödeme özeti</span></div><div style="height:12px"></div><div style="padding-bottom:130px"><div class="stack g16"><div class="note">Ödemeniz işleniyor, lütfen bekleyin. Ekranı kapatmayın ve düğmeye tekrar dokunmayın.</div><div class="card stack g4">
+  <span class="small" style="font-weight:600">Aralık 2026 kirası · Moda Cad. 24/6, Kadıköy</span>
+  <div class="kv" style="font-size:15px"><span>Kira bedeli</span><b>18.000,00 ₺</b></div>
+  <div class="kv" style="font-size:15px"><span>Hizmet bedeli (%3)</span><b>540,00 ₺</b></div>
+  <div class="kv" style="font-size:15px"><span>Vergiler</span><b>108,00 ₺</b></div>
+  <div class="divider"></div>
+  <div class="kv" style="font-size:17px;align-items:baseline"><span style="font-weight:700;color:var(--navy)">Toplam</span><b style="font:800 24px var(--font-h);color:var(--navy)">18.648,00 ₺</b></div>
+</div><div class="card stack g12" style="padding:18px 18px 20px"><div class="stack"><div class="tl"><div class="rail"><span class="dot done"></span><span class="line done"></span></div><div class="txt"><b>Ödeme isteği alındı</b><span>Düğme bu andan itibaren kilitlendi.</span></div></div><div class="tl"><div class="rail"><span class="dot now"></span><span class="line"></span></div><div class="txt"><b>Banka doğrulaması hazırlanıyor</b><span>Kart •••• 4821</span></div></div><div class="tl"><div class="rail"><span class="dot"></span></div><div class="txt"><b>Sonuç</b><span>Tamamlanınca bu ekran güncellenir.</span></div></div></div></div></div></div></div>
+<div class="bottom"><span class="btn busy"><span class="sp-btn"></span>İşleniyor</span><span class="small" style="text-align:center">Aynı kira için ikinci bir çekim yapılmaz.</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · E04 Çift dokunma koruması</div></div>
+
+</div></body></html>

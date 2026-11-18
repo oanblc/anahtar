@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M67 Ana ekran widget’ı · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.screen.home-s{background:linear-gradient(170deg,#EAF2FA 0%,#C6DBF0 55%,#8FB5DF 100%)}
+.hs{position:absolute;inset:0;display:flex;flex-direction:column;gap:14px}
+.ios .hs{padding:70px 16px 0}.android .hs{padding:58px 16px 0}
+.wrow{display:flex;gap:14px}
+.wg{background:rgba(255,255,255,.94);border-radius:24px;padding:16px;display:flex;flex-direction:column;color:var(--ink);box-shadow:0 6px 18px rgba(43,80,120,.14)}
+.wg .lb{font-size:12.5px;font-weight:700;color:var(--muted)}
+.wg .am{font:800 22px/1 var(--font-h);letter-spacing:-.03em;color:var(--navy);font-variant-numeric:tabular-nums}
+.wg .dy{font-size:12.5px;color:var(--text)}
+.wsm{width:158px;height:158px;justify-content:space-between;flex:none}
+.wmd{flex:1;height:158px;min-width:0;justify-content:space-between}
+.pill{align-self:flex-start;background:var(--lime);color:var(--ink);font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px}
+.prog{height:6px;border-radius:3px;background:var(--line);position:relative;overflow:hidden}
+.prog i{position:absolute;left:0;top:0;bottom:0;width:84%;background:var(--navy);border-radius:3px}
+.wrow .ic i{width:54px;height:54px}
+.icons{display:flex;gap:14px;justify-content:space-between;margin-top:6px}
+.ic{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:var(--ink);width:68px}
+.ic i{display:block;width:62px;height:62px;border-radius:16px;background:rgba(255,255,255,.55)}
+.ic i.ah{background:var(--navy);position:relative}
+.ic i.ah:after{content:"";position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--lime)}
+.dock{position:absolute;left:12px;right:12px;bottom:26px;height:88px;border-radius:32px;background:rgba(255,255,255,.4);display:flex;align-items:center;justify-content:space-around;padding:0 14px}
+.dock i{display:block;width:62px;height:62px;border-radius:16px;background:rgba(255,255,255,.6)}
+.gl{background:#F3F8FD;border-radius:28px;padding:16px 18px;display:flex;flex-direction:column;justify-content:space-between;color:var(--ink);box-shadow:0 6px 18px rgba(43,80,120,.16)}
+.gl .lb{font-size:13px;font-weight:700;color:var(--muted)}
+.gl .am{font:800 26px/1 var(--font-h);letter-spacing:-.03em;color:var(--navy);font-variant-numeric:tabular-nums}
+.gl .dy{font-size:13px;color:var(--text)}
+.gsm{width:168px;height:168px;flex:none}
+.gmd{flex:1;min-width:0;height:168px}
+.gwide{width:100%;height:168px}
+.searchbar{position:absolute;left:16px;right:16px;bottom:30px;height:54px;border-radius:27px;background:rgba(255,255,255,.7);display:flex;align-items:center;padding:0 22px;color:var(--muted);font-size:15px}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen home-s">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+<div class="hs"><div class="wrow"><div class="wg wsm"><span class="lb">Sıradaki kira</span><div class="stack g4"><span class="am">18.648,00&nbsp;₺</span><span class="dy">Ödeme günü 7 Aralık</span></div><span class="pill">5 gün kaldı</span></div><div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:14px 0;justify-items:center;align-content:space-between;height:158px"><span class="ic"><i></i>Saat</span><span class="ic"><i></i>Notlar</span><span class="ic"><i class="ah"></i>Anahtar</span><span class="ic"><i></i>Ayarlar</span></div></div>
+  <div class="wg" style="height:158px;justify-content:space-between"><div class="row sp"><span class="lb">Sıradaki kira</span><span class="pill">5 gün kaldı</span></div>
+    <div class="stack g4"><span class="am" style="font-size:32px">18.648,00&nbsp;₺</span><span class="dy">Moda Cad. 24/6 · Aralık 2026</span></div>
+    <div class="stack g8"><div class="prog"><i></i></div><span class="dy">Ödeme günü 7 Aralık</span></div></div>
+  <div class="icons"><span class="ic"><i></i>Takvim</span><span class="ic"><i></i>Harita</span><span class="ic"><i></i>Fotoğraflar</span><span class="ic"><i></i>Hava</span></div>
+</div>
+<div class="dock"><i></i><i></i><i></i><i></i></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M67 Ana ekran widget’ı</div></div>
+
+<div class="unit"><div class="device android"><div class="screen home-s">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+<div class="hs"><div class="wrow"><div class="gl gsm"><span class="lb">Sıradaki kira</span><div class="stack g4"><span class="am" style="font-size:24px">18.648,00&nbsp;₺</span><span class="dy">Ödeme günü 7 Aralık</span></div><span class="pill">5 gün kaldı</span></div><div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:14px 0;justify-items:center;align-content:space-between;height:168px"><span class="ic"><i></i>Saat</span><span class="ic"><i></i>Notlar</span><span class="ic"><i class="ah"></i>Anahtar</span><span class="ic"><i></i>Ayarlar</span></div></div>
+  <div class="gl gwide" style="flex-direction:row;align-items:center;gap:16px"><div class="stack g8" style="flex:1;min-width:0"><span class="lb">Sıradaki kira</span><span class="am">18.648,00&nbsp;₺</span><span class="dy">Ödeme günü 7 Aralık · Moda Cad. 24/6</span></div><span class="pill">5 gün kaldı</span></div>
+  <div class="icons"><span class="ic"><i></i>Takvim</span><span class="ic"><i></i>Harita</span><span class="ic"><i></i>Fotoğraflar</span><span class="ic"><i></i>Hava</span></div>
+</div>
+<div class="searchbar">Ara</div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M67 Ana ekran widget’ı</div></div>
+
+</div>
+</body></html>

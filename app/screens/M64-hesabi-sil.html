@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M64 Hesabı sil · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.tog{width:50px;height:30px;border-radius:15px;background:var(--line2);position:relative;flex:none}
+.tog:after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.tog.on{background:var(--navy)}.tog.on:after{left:23px}
+.android .tog{width:52px;height:32px;border-radius:16px}
+.android .tog:after{top:4px;left:4px;width:24px;height:24px;box-shadow:none}
+.android .tog.on{background:var(--navy)}.android .tog.on:after{left:24px;width:24px;background:var(--lime)}
+.chev{width:8px;height:8px;border-right:2px solid #8CA0B5;border-top:2px solid #8CA0B5;transform:rotate(45deg);flex:none;margin:0 4px}
+.sec{font-size:13px;font-weight:700;color:var(--navy);margin:0 4px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--navy);flex:none;margin-top:8px}
+.link{font-size:14px;font-weight:700;color:var(--navy)}
+.btn.err{background:var(--err);color:#fff}
+.btn.errout{background:#fff;color:var(--err);border:1.5px solid #E7B9B2}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body pad-b">
+    <div class="nav"><span class="back">Geri</span></div>
+    <div class="large">Hesabı sil</div>
+    <div class="stack g16">
+<div class="note warn"><b>Aktif kira dosyanız var.</b> Moda Cad. 24/6 için açık kira dosyanız bulunuyor. Hesabınızı silebilmek için önce bu dosyanın kapatılması gerekir.</div>
+<div class="card stack g12" style="padding:16px">
+  <span class="t" style="font-size:15px;font-weight:700;color:var(--navy)">Hesabınız silindiğinde</span>
+  <div class="row g12" style="align-items:flex-start"><span class="dot"></span><span class="small" style="color:var(--text)">Profiliniz, kayıtlı kartlarınız ve oturum açık cihazlarınız kaldırılır.</span></div>
+  <div class="row g12" style="align-items:flex-start"><span class="dot"></span><span class="small" style="color:var(--text)">Yasal saklama süreleri nedeniyle ödeme ve sözleşme kayıtları anonim hâlde saklanır.</span></div>
+  <div class="row g12" style="align-items:flex-start"><span class="dot"></span><span class="small" style="color:var(--text)">Bu işlem geri alınamaz.</span></div>
+</div>
+<div class="field"><label>Onay için SİL yazın</label><div class="input"><span class="ph">SİL</span></div><span class="hint">Kira dosyası kapatılana kadar silme işlemi başlatılamaz.</span></div>
+</div>
+  </div>
+<div class="bottom"><span class="btn err" style="opacity:.45">Hesabımı sil</span><span class="btn ghost">Vazgeç</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M64 Hesabı sil</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body pad-b">
+    <div class="nav"><span class="back">Geri</span><span class="title">Hesabı sil</span></div>
+    <div style="height:10px"></div>
+    <div class="stack g16">
+<div class="note warn"><b>Aktif kira dosyanız var.</b> Moda Cad. 24/6 için açık kira dosyanız bulunuyor. Hesabınızı silebilmek için önce bu dosyanın kapatılması gerekir.</div>
+<div class="card stack g12" style="padding:16px">
+  <span class="t" style="font-size:15px;font-weight:700;color:var(--navy)">Hesabınız silindiğinde</span>
+  <div class="row g12" style="align-items:flex-start"><span class="dot"></span><span class="small" style="color:var(--text)">Profiliniz, kayıtlı kartlarınız ve oturum açık cihazlarınız kaldırılır.</span></div>
+  <div class="row g12" style="align-items:flex-start"><span class="dot"></span><span class="small" style="color:var(--text)">Yasal saklama süreleri nedeniyle ödeme ve sözleşme kayıtları anonim hâlde saklanır.</span></div>
+  <div class="row g12" style="align-items:flex-start"><span class="dot"></span><span class="small" style="color:var(--text)">Bu işlem geri alınamaz.</span></div>
+</div>
+<div class="field"><label>Onay için SİL yazın</label><div class="input"><span class="ph">SİL</span></div><span class="hint">Kira dosyası kapatılana kadar silme işlemi başlatılamaz.</span></div>
+</div>
+  </div>
+<div class="bottom"><span class="btn err" style="opacity:.45">Hesabımı sil</span><span class="btn ghost">Vazgeç</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M64 Hesabı sil</div></div>
+
+</div>
+</body></html>

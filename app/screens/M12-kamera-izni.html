@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M12 Kamera izni · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.hero{width:96px;height:96px;border-radius:30px;background:var(--navy);position:relative;align-self:flex-start}
+.hero:before{content:"";position:absolute;left:22px;top:30px;width:52px;height:38px;border-radius:10px;border:3.5px solid #fff}
+.hero:after{content:"";position:absolute;left:36px;top:40px;width:18px;height:18px;border-radius:50%;background:var(--lime)}
+.cam{width:34px;height:34px;border-radius:50%;background:var(--sky2);position:relative;margin:0 auto}
+.cam:before{content:"";position:absolute;left:8px;top:11px;width:18px;height:13px;border-radius:4px;border:2px solid var(--navy)}
+.cam:after{content:"";position:absolute;left:14.5px;top:14.5px;width:5px;height:5px;border-radius:50%;background:var(--navy)}
+.reason{display:flex;gap:12px;align-items:flex-start}
+.reason .n{width:26px;height:26px;border-radius:50%;background:var(--lime);color:var(--ink);font:800 13px var(--font-h);display:flex;align-items:center;justify-content:center;flex:none}
+.reason b{display:block;font-size:15px;color:var(--ink)}.reason span{font-size:13.5px;color:var(--text);line-height:1.5}
+.dm{font-size:13px;line-height:1.4;color:#1D3650}
+.ios .sysdlg{padding:20px 0 0;gap:0}.ios .sysdlg .tt{font-weight:700;font-size:17px;line-height:1.25;padding:0 18px;color:#000}
+.ios .sysdlg .dm{padding:6px 18px 18px;color:#000}
+.ios .sysdlg .bt{display:flex;border-top:1px solid #D0D4D9}.ios .sysdlg .bt span{flex:1;padding:13px 0;font-size:17px;color:#0A7AFF}.ios .sysdlg .bt span+span{border-left:1px solid #D0D4D9;font-weight:700}
+.android .sysdlg{gap:10px}.android .sysdlg .tt{font:500 17px/1.35 var(--font-b);text-align:center;color:#1D3650}
+.android .sysdlg .ab{display:flex;flex-direction:column;gap:6px;margin-top:6px}.android .sysdlg .ab span{padding:12px;border-radius:999px;text-align:center;font-weight:600;font-size:14.5px;color:var(--navy);border:1px solid var(--line2)}
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="stack g20" style="padding-top:40px">
+      <span class="hero"></span>
+      <div class="stack g8"><h1 class="h1">Kamera erişimi gerekiyor.</h1><p class="sub">Kamerayı yalnızca siz bir belge eklemek istediğinizde kullanırız.</p></div>
+      <div class="stack g16">
+        <div class="reason"><span class="n">1</span><div><b>Sözleşme tarama</b><span>Kira sözleşmenizin sayfalarını fotoğraflayarak dosyanıza yükleyebilirsiniz.</span></div></div>
+        <div class="reason"><span class="n">2</span><div><b>Fotoğraf ekleme</b><span>Arıza, hasar ve teslim tutanağı kayıtlarına fotoğraf ekleyebilirsiniz.</span></div></div>
+      </div>
+      <div class="note">Kimlik doğrulaması için kamera gerekmez. Kimliğiniz NFC ile okunur.</div>
+    </div>
+  </div>
+  <div class="bottom" style="padding-bottom:40px"><span class="btn primary">İzin ver</span><span class="btn text">Şimdi değil</span></div>
+  <div class="scrim" style="align-items:center"></div>
+  <div class="sysdlg"><div class="tt">“Anahtar” Kameranıza Erişmek İstiyor</div><div class="dm">Sözleşme sayfalarını taramak ve kira dosyanıza fotoğraf eklemek için kamera kullanılır.</div><div class="bt"><span>İzin Verme</span><span>Tamam</span></div></div>
+  <div class="home" style="z-index:10"></div>
+</div></div><div class="cap">iOS · M12 Kamera izni</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="stack g20" style="padding-top:44px">
+      <span class="hero"></span>
+      <div class="stack g8"><h1 class="h1" style="font-size:28px">Kamera erişimi gerekiyor.</h1><p class="sub">Kamerayı yalnızca siz bir belge eklemek istediğinizde kullanırız.</p></div>
+      <div class="stack g16">
+        <div class="reason"><span class="n">1</span><div><b>Sözleşme tarama</b><span>Kira sözleşmenizin sayfalarını fotoğraflayarak dosyanıza yükleyebilirsiniz.</span></div></div>
+        <div class="reason"><span class="n">2</span><div><b>Fotoğraf ekleme</b><span>Arıza, hasar ve teslim tutanağı kayıtlarına fotoğraf ekleyebilirsiniz.</span></div></div>
+      </div>
+      <div class="note">Kimlik doğrulaması için kamera gerekmez. Kimliğiniz NFC ile okunur.</div>
+    </div>
+  </div>
+  <div class="bottom" style="padding-bottom:40px"><span class="btn primary">İzin ver</span><span class="btn text">Şimdi değil</span></div>
+  <div class="scrim" style="align-items:center"></div>
+  <div class="sysdlg"><div class="cam"></div><div class="tt">Anahtar uygulamasının fotoğraf çekmesine ve video kaydetmesine izin verilsin mi?</div><div class="ab"><span>Uygulamayı kullanırken</span><span>Yalnızca bu kez</span><span>İzin verme</span></div></div>
+  <div class="home" style="z-index:10"></div>
+</div></div><div class="cap">Android · M12 Kamera izni</div></div>
+
+</div></body></html>

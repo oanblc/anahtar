@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M70 Ödeme bağlantısı · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.tog{width:50px;height:30px;border-radius:15px;background:var(--line2);position:relative;flex:none}
+.tog:after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+.tog.on{background:var(--navy)}.tog.on:after{left:23px}
+.android .tog{width:52px;height:32px;border-radius:16px}
+.android .tog:after{top:4px;left:4px;width:24px;height:24px;box-shadow:none}
+.android .tog.on{background:var(--navy)}.android .tog.on:after{left:24px;width:24px;background:var(--lime)}
+.chev{width:8px;height:8px;border-right:2px solid #8CA0B5;border-top:2px solid #8CA0B5;transform:rotate(45deg);flex:none;margin:0 4px}
+.sec{font-size:13px;font-weight:700;color:var(--navy);margin:0 4px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--navy);flex:none;margin-top:8px}
+.link{font-size:14px;font-weight:700;color:var(--navy)}
+.btn.err{background:var(--err);color:#fff}
+.btn.errout{background:#fff;color:var(--err);border:1.5px solid #E7B9B2}
+.web{position:absolute;left:0;right:0;background:var(--sky);display:flex;flex-direction:column;overflow:hidden}
+.ios .web{top:0;bottom:92px;padding:64px 20px 0}
+.android .web{top:100px;bottom:0;padding:18px 20px 0}
+.ios .urlbar{position:absolute;left:0;right:0;bottom:0;height:92px;background:rgba(246,249,253,.97);border-top:1px solid var(--line);padding:10px 16px 0;z-index:4}
+.ios .urlpill{height:46px;border-radius:14px;background:var(--sky2);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;color:var(--ink)}
+.android .urlbar{position:absolute;left:0;right:0;top:40px;height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px;padding:0 12px 0 14px;z-index:4}
+.android .urlpill{flex:1;height:42px;border-radius:21px;background:var(--sky);display:flex;align-items:center;padding:0 16px;font-size:14.5px;font-weight:600;color:var(--ink)}
+.dots3{width:4px;height:4px;border-radius:50%;background:var(--ink);box-shadow:0 -7px 0 var(--ink),0 7px 0 var(--ink);margin:0 10px}
+.tabn{width:24px;height:24px;border:2px solid var(--ink);border-radius:6px;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;color:var(--ink)}
+.sbw .sb{background:transparent}
+.storebtn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--lime);color:var(--ink);font:700 16px var(--font-b);padding:16px;border-radius:999px}
+.stp{width:22px;height:22px;border-radius:7px;background:var(--navy);position:relative;flex:none}
+.stp:after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:var(--lime)}
+.shdr{display:flex;justify-content:space-between;align-items:center;min-height:36px}
+.lbl{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--blue);text-transform:uppercase}
+.dim{height:1px;background:var(--line)}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="web">
+<div class="shdr"><span class="logo" style="font-size:22px">anahtar<b>.</b></span><span class="badge info">Ödeme bağlantısı</span></div>
+    <div class="stack g16" style="margin-top:18px">
+      <div class="stack g4"><span class="lbl">Aralık 2026 kirası</span><h1 class="h1" style="font-size:26px;line-height:1.15">Kira ödemenizi uygulamada tamamlayın</h1></div>
+      <div class="card stack g4" style="padding:16px">
+        <span class="small" style="font-weight:600">Moda Cad. 24/6, Kadıköy · Son ödeme günü 7 Aralık 2026</span>
+        <div class="kv"><span>Kira bedeli</span><b>18.000,00 ₺</b></div>
+        <div class="kv"><span>Hizmet bedeli (%3)</span><b>540,00 ₺</b></div>
+        <div class="kv"><span>Vergiler</span><b>108,00 ₺</b></div>
+        <div class="divider"></div>
+        <div class="kv" style="align-items:baseline"><span style="font-weight:700;color:var(--navy)">Toplam</span><b style="font:800 24px var(--font-h);color:var(--navy)">18.648,00&nbsp;₺</b></div>
+      </div>
+      <div class="stack g8">
+        <span class="btn primary">Uygulamada aç</span>
+        <span class="btn text" style="padding:8px">Bu cihazda web’den öde</span>
+      </div>
+      <p class="small" style="text-align:center;margin:0">Ödeme ev sahibi Mehmet Yılmaz’a en geç 3 iş günü içinde aktarılır.</p>
+    </div>
+  </div>
+  <div class="urlbar"><div class="urlpill">anahtar.app/ode</div></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M70 Ödeme bağlantısı</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="urlbar"><span class="urlpill">anahtar.app/ode</span><span class="tabn">1</span><span class="dots3"></span></div>
+  <div class="web">
+<div class="shdr"><span class="logo" style="font-size:22px">anahtar<b>.</b></span><span class="badge info">Ödeme bağlantısı</span></div>
+    <div class="stack g16" style="margin-top:18px">
+      <div class="stack g4"><span class="lbl">Aralık 2026 kirası</span><h1 class="h1" style="font-size:26px;line-height:1.15">Kira ödemenizi uygulamada tamamlayın</h1></div>
+      <div class="card stack g4" style="padding:16px">
+        <span class="small" style="font-weight:600">Moda Cad. 24/6, Kadıköy · Son ödeme günü 7 Aralık 2026</span>
+        <div class="kv"><span>Kira bedeli</span><b>18.000,00 ₺</b></div>
+        <div class="kv"><span>Hizmet bedeli (%3)</span><b>540,00 ₺</b></div>
+        <div class="kv"><span>Vergiler</span><b>108,00 ₺</b></div>
+        <div class="divider"></div>
+        <div class="kv" style="align-items:baseline"><span style="font-weight:700;color:var(--navy)">Toplam</span><b style="font:800 24px var(--font-h);color:var(--navy)">18.648,00&nbsp;₺</b></div>
+      </div>
+      <div class="stack g8">
+        <span class="btn primary">Uygulamada aç</span>
+        <span class="btn text" style="padding:8px">Bu cihazda web’den öde</span>
+      </div>
+      <p class="small" style="text-align:center;margin:0">Ödeme ev sahibi Mehmet Yılmaz’a en geç 3 iş günü içinde aktarılır.</p>
+    </div>
+  </div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M70 Ödeme bağlantısı</div></div>
+
+</div>
+</body></html>

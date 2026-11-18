@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E26 Telefon numarası değişti · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.android .h1{font-size:28px}
+.mark{width:64px;height:64px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font:800 30px var(--font-h);position:relative}
+.mark.warn{background:var(--warn-bg);color:var(--warn)}.mark.err{background:var(--err-bg);color:var(--err)}.mark.info{background:var(--sky2);color:var(--navy)}
+.mark.lock:before{content:"";width:28px;height:21px;border-radius:5px;background:var(--navy);position:absolute;bottom:17px}
+.mark.lock:after{content:"";width:16px;height:16px;border:4px solid var(--navy);border-bottom:0;border-radius:10px 10px 0 0;position:absolute;top:13px}
+.dots{display:flex;gap:8px}.dots i{width:12px;height:12px;border-radius:50%;background:var(--line2)}.dots i.on{background:var(--navy)}.dots i.bad{background:#C0392B}
+.phn{position:relative;width:118px;height:210px;border-radius:28px;background:#fff;border:2px solid var(--navy);flex:none}
+.phn .cam{position:absolute;left:11px;top:11px;width:34px;height:34px;border-radius:11px;background:var(--sky2);border:1.5px solid var(--line2)}
+.phn .zone{position:absolute;left:50%;top:40px;width:62px;height:62px;margin-left:-31px;border-radius:50%;border:2px dashed var(--blue);background:rgba(211,242,106,.35)}
+.android .phn .zone{top:68px}
+.phn .zone:after{content:"";position:absolute;inset:-12px;border-radius:50%;border:1.5px solid var(--line2)}
+.phn .crd{position:absolute;left:-30px;top:76px;width:176px;height:110px;border-radius:11px;background:var(--navy);transform:rotate(-8deg);box-shadow:0 10px 24px rgba(29,54,80,.25)}
+.phn .crd:before{content:"";position:absolute;right:14px;top:14px;width:27px;height:21px;border-radius:5px;background:var(--lime)}
+.phn .crd i{position:absolute;left:12px;height:6px;border-radius:3px;background:rgba(255,255,255,.35)}
+.phn.bad .crd{top:128px;left:-8px;transform:rotate(14deg)}
+.phn.bad .zone{border-color:#C0392B;background:rgba(192,57,43,.08)}
+.rad{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.rad.on{border-color:var(--navy)}.rad.on:after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--navy)}
+.sec{font:700 12px var(--font-b);letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.mini{font-size:13.5px;line-height:1.45;color:var(--text)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--navy);flex:none;margin-top:6px}
+.dot.g{background:#8CA0B5}
+.fade{opacity:.45}
+.pin{display:flex;gap:14px;justify-content:center}.pin i{width:16px;height:16px;border-radius:50%;border:2px solid var(--navy)}.pin i.on{background:var(--navy)}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span class="small" style="font-weight:600"></span></div>
+    <div class="stack g16" style="padding-top:14px">
+<div class="stack g8"><h1 class="h1">Telefon numaranızı değiştirin.</h1><p class="sub">Eski numaranıza erişiminiz yoksa kimliğinizi NFC ile yeniden doğrulayarak numaranızı güncelleyebilirsiniz.</p></div>
+<div class="field"><label>Eski numara</label><div class="input" style="background:var(--sky);color:var(--muted)">0 (5••) ••• •• 21</div></div>
+<div class="field"><label>Yeni telefon numarası</label><div class="input focus"><span>0 (532) 418 07 63</span></div></div>
+<div class="card stack g12" style="padding:16px"><span class="sec">Sıradaki adımlar</span>
+ <div class="row g12" style="align-items:flex-start;gap:12px"><span class="dot"></span><span class="mini">Kimlik kartınızı NFC ile okutun.</span></div>
+ <div class="row g12" style="align-items:flex-start;gap:12px"><span class="dot"></span><span class="mini">Yeni numaranıza gelen 6 haneli kodu girin.</span></div></div>
+<div class="note">Değişiklik tamamlanana kadar hesabınız eski numarayla kalır.</div>
+    </div>
+    <div class="bottom"><span class="btn primary">Kimlikle doğrulamaya geç</span><span class="btn text">Vazgeç</span></div>
+  </div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · E26 Telefon numarası değişti</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span class="title" style="flex:1">Numara değiştir</span></div>
+    <div class="stack g16" style="padding-top:14px">
+<div class="stack g8"><h1 class="h1">Telefon numaranızı değiştirin.</h1><p class="sub">Eski numaranıza erişiminiz yoksa kimliğinizi NFC ile yeniden doğrulayarak numaranızı güncelleyebilirsiniz.</p></div>
+<div class="field"><label>Eski numara</label><div class="input" style="background:var(--sky);color:var(--muted)">0 (5••) ••• •• 21</div></div>
+<div class="field"><label>Yeni telefon numarası</label><div class="input focus"><span>0 (532) 418 07 63</span></div></div>
+<div class="card stack g12" style="padding:16px"><span class="sec">Sıradaki adımlar</span>
+ <div class="row g12" style="align-items:flex-start;gap:12px"><span class="dot"></span><span class="mini">Kimlik kartınızı NFC ile okutun.</span></div>
+ <div class="row g12" style="align-items:flex-start;gap:12px"><span class="dot"></span><span class="mini">Yeni numaranıza gelen 6 haneli kodu girin.</span></div></div>
+<div class="note">Değişiklik tamamlanana kadar hesabınız eski numarayla kalır.</div>
+    </div>
+    <div class="bottom"><span class="btn primary">Kimlikle doğrulamaya geç</span><span class="btn text">Vazgeç</span></div>
+  </div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · E26 Telefon numarası değişti</div></div>
+
+</div>
+</body></html>

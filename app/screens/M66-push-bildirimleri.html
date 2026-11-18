@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M66 Push bildirimleri · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.screen.lock{background:linear-gradient(165deg,#1D3650 0%,#2B5078 42%,#5489C6 100%)}
+.screen.lock:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(211,242,106,.28),rgba(211,242,106,0) 65%);right:-160px;top:-120px}
+.screen.lock .sb{color:#fff}
+.clock{position:relative;text-align:center;color:#fff}
+.clock .d{font-size:17px;font-weight:600;opacity:.9}
+.clock .t{font:700 88px/1 var(--font-h);letter-spacing:-.03em;margin-top:2px}
+.appico{width:34px;height:34px;border-radius:9px;background:var(--navy);flex:none;position:relative;border:1px solid rgba(255,255,255,.25)}
+.appico:after{content:"";position:absolute;left:50%;top:50%;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:var(--lime)}
+.ios .nt{display:flex;gap:11px;padding:12px 14px;border-radius:22px;background:rgba(244,248,253,.78);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);color:var(--ink)}
+.ios .nt .appico{width:38px;height:38px;border-radius:10px}
+.nt .tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.nt .tt{font-size:15px;font-weight:700;line-height:1.3}
+.nt .bd{font-size:13.5px;line-height:1.38;color:#2F4A66}
+.nt .tm{font-size:12.5px;color:#4B6580;white-space:nowrap}
+.ios .nt .hd{display:flex;justify-content:space-between}
+.ios .nt .hd .tt{font-size:15px}
+.android .nt{display:flex;gap:12px;padding:12px 16px 13px;border-radius:22px;background:rgba(243,248,253,.96);color:var(--ink)}
+.android .nt .appico{width:22px;height:22px;border-radius:6px;border:0}
+.android .nt .appico:after{width:7px;height:7px;margin:-3.5px 0 0 -3.5px}
+.android .nt .meta{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:#4B6580}
+.android .nt .tt{margin-top:3px}
+.nlist{position:relative;display:flex;flex-direction:column}
+.ios .nlist{gap:8px;padding:0 10px}
+.android .nlist{gap:6px;padding:0 12px}
+.ios .lockbody{position:absolute;inset:0;padding:74px 0 0;display:flex;flex-direction:column;gap:22px}
+.android .lockbody{position:absolute;inset:0;padding:56px 0 0;display:flex;flex-direction:column;gap:18px}
+.android .clock{text-align:left;padding:0 26px}
+.android .clock .t{font-size:56px;letter-spacing:-.03em}
+.android .clock .d{font-size:15px}
+.bar{position:absolute;left:50%;bottom:8px;width:140px;height:5px;margin-left:-70px;border-radius:3px;background:#fff;opacity:.85;z-index:7}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen lock">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="lockbody">
+    <div class="clock"><div class="d">Çarşamba, 2 Aralık</div><div class="t">9:41</div></div>
+    <div class="nlist">
+<div class="nt"><span class="appico"></span><div class="tx"><div class="hd"><span class="tt">Ödeme günü yaklaşıyor</span><span class="tm">şimdi</span></div><span class="bd">Aralık kirası için son ödeme günü 7 Aralık. Tutar 18.648,00&nbsp;₺.</span></div></div>
+<div class="nt"><span class="appico"></span><div class="tx"><div class="hd"><span class="tt">Ödeme alındı</span><span class="tm">5 Kas</span></div><span class="bd">Kasım 2026 kirası ödemeniz alındı. Ev sahibine en geç 3 iş günü içinde aktarılır.</span></div></div>
+<div class="nt"><span class="appico"></span><div class="tx"><div class="hd"><span class="tt">Aktarım tamamlandı</span><span class="tm">8 Kas</span></div><span class="bd">Kasım 2026 kirası ev sahibi Mehmet Yılmaz’a ulaştı.</span></div></div>
+<div class="nt"><span class="appico"></span><div class="tx"><div class="hd"><span class="tt">Sözleşme doğrulandı</span><span class="tm">1 Mar</span></div><span class="bd">Moda Cad. 24/6 sözleşme belgeniz kontrol edildi. Ayrıntıları uygulamada görebilirsiniz.</span></div></div>
+<div class="nt"><span class="appico"></span><div class="tx"><div class="hd"><span class="tt">IBAN değişikliği doğrulaması</span><span class="tm">dün</span></div><span class="bd">Yeni IBAN doğrulanana kadar bekleyen ödemeler bekletilir. Doğrulamayı uygulamada tamamlayın.</span></div></div>
+<div class="nt"><span class="appico"></span><div class="tx"><div class="hd"><span class="tt">Kira artışı bildirimi</span><span class="tm">2 sa</span></div><span class="bd">Yeni dönem kira tutarı bildirildi. Ayrıntıları uygulamada inceleyebilirsiniz.</span></div></div>
+    </div>
+  </div>
+  <div class="bar"></div>
+</div></div><div class="cap">iOS · M66 Push bildirimleri</div></div>
+
+<div class="unit"><div class="device android"><div class="screen lock">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="lockbody">
+    <div class="clock"><div class="d">Çarşamba, 2 Aralık</div><div class="t">9:41</div></div>
+    <div class="nlist">
+<div class="nt"><div class="tx"><div class="meta"><span class="appico"></span><span>Anahtar</span><span>·</span><span>şimdi</span></div><span class="tt">Ödeme günü yaklaşıyor</span><span class="bd">Aralık kirası için son ödeme günü 7 Aralık. Tutar 18.648,00&nbsp;₺.</span></div></div>
+<div class="nt"><div class="tx"><div class="meta"><span class="appico"></span><span>Anahtar</span><span>·</span><span>5 Kas</span></div><span class="tt">Ödeme alındı</span><span class="bd">Kasım 2026 kirası ödemeniz alındı. Ev sahibine en geç 3 iş günü içinde aktarılır.</span></div></div>
+<div class="nt"><div class="tx"><div class="meta"><span class="appico"></span><span>Anahtar</span><span>·</span><span>8 Kas</span></div><span class="tt">Aktarım tamamlandı</span><span class="bd">Kasım 2026 kirası ev sahibi Mehmet Yılmaz’a ulaştı.</span></div></div>
+<div class="nt"><div class="tx"><div class="meta"><span class="appico"></span><span>Anahtar</span><span>·</span><span>1 Mar</span></div><span class="tt">Sözleşme doğrulandı</span><span class="bd">Moda Cad. 24/6 sözleşme belgeniz kontrol edildi. Ayrıntıları uygulamada görebilirsiniz.</span></div></div>
+<div class="nt"><div class="tx"><div class="meta"><span class="appico"></span><span>Anahtar</span><span>·</span><span>dün</span></div><span class="tt">IBAN değişikliği doğrulaması</span><span class="bd">Yeni IBAN doğrulanana kadar bekleyen ödemeler bekletilir. Doğrulamayı uygulamada tamamlayın.</span></div></div>
+<div class="nt"><div class="tx"><div class="meta"><span class="appico"></span><span>Anahtar</span><span>·</span><span>2 sa</span></div><span class="tt">Kira artışı bildirimi</span><span class="bd">Yeni dönem kira tutarı bildirildi. Ayrıntıları uygulamada inceleyebilirsiniz.</span></div></div>
+    </div>
+  </div>
+  <div class="bar"></div>
+</div></div><div class="cap">Android · M66 Push bildirimleri</div></div>
+
+</div>
+</body></html>

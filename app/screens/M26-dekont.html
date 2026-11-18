@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M26 Dekont · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.tl{display:flex;gap:14px}.tl .rail{display:flex;flex-direction:column;align-items:center;width:22px}
+.tl .dot{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.tl .dot.done{background:var(--navy);border-color:var(--navy)}.tl .dot.done:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.tl .dot.now{border-color:var(--navy);box-shadow:0 0 0 4px rgba(211,242,106,.7)}
+.tl .line{flex:1;width:2px;background:var(--line2);min-height:22px}.tl .line.done{background:var(--navy)}
+.tl .txt{padding-bottom:12px;display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}.tl:last-child .txt{padding-bottom:0}
+.tl .txt b{font-size:15px;color:var(--ink)}.tl .txt span{font-size:13px;color:var(--muted);line-height:1.45}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:14px;font-weight:600;padding:9px 16px;border-radius:999px;background:#fff;color:var(--navy);border:1.5px solid var(--line2)}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.cta{display:flex;gap:10px}.cta .btn{flex:1;padding:14px 10px;font-size:15px}
+.stepno{width:22px;height:22px;border-radius:50%;background:var(--sky2);color:var(--navy);font:700 12px var(--font-b);display:flex;align-items:center;justify-content:center;flex:none}
+.chev{width:8px;height:8px;border-right:2px solid var(--muted);border-top:2px solid var(--muted);transform:rotate(45deg);flex:none;margin:0 4px}
+.thumb{width:60px;height:60px;border-radius:14px;flex:none}
+.tx{height:5px;border-radius:3px;background:#D5DFEA;margin-top:6px}
+.vwr{background:#8DA2B8;border-radius:22px;padding:16px 0;display:flex;flex-direction:column;align-items:center;gap:10px;position:relative}
+.paper{background:#fff;width:64%;aspect-ratio:1/1.25;box-shadow:0 6px 18px rgba(16,24,32,.28);padding:7% 7%;display:flex;flex-direction:column;overflow:hidden}
+.paper .pt{font:800 9px var(--font-h);letter-spacing:.06em;color:var(--navy);text-align:center}
+.paper .pm{font:700 6px var(--font-b);color:var(--ink);margin-top:9px}
+.paper .bar{margin-top:auto;display:flex;gap:1.5px;height:16px;align-items:stretch}
+.paper .bar i{display:block;background:var(--ink);width:1.5px}.paper .bar i:nth-child(3n){width:3px}.paper .bar i:nth-child(4n){width:1px}
+.pg{background:rgba(16,24,32,.72);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px}
+.ta{min-height:96px;align-items:flex-start;padding:14px 16px;line-height:1.5}
+.ta .ph{color:#8CA0B5;font-size:15px}
+</style></head><body>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span></span></div><div class="large" style="margin:2px 0 12px">Dekont</div>
+    <div class="stack g12">
+<div class="card stack g12">
+  <div class="row sp"><span class="small" style="font-weight:700;color:var(--navy)">Kasım 2026 kira ödemesi</span><span class="badge ok">Ödendi</span></div>
+  <span class="amount num" style="font-size:34px">18.648,00 ₺</span>
+  <div class="cta"><span class="btn dark">Dekontu paylaş</span><span class="btn ghost">İndir</span></div>
+</div>
+<div class="card stack g4" style="padding:12px 18px">
+  <div class="kv"><span>Kira bedeli</span><b>18.000,00 ₺</b></div>
+  <div class="kv"><span>Hizmet bedeli (%3)</span><b>540,00 ₺</b></div>
+  <div class="kv"><span>Vergiler</span><b>108,00 ₺</b></div>
+  <div class="divider" style="margin:4px 0"></div>
+  <div class="kv"><span style="font-weight:700;color:var(--ink)">Toplam</span><b>18.648,00 ₺</b></div>
+  <div class="divider" style="margin:4px 0"></div>
+  <div class="kv"><span>Kart</span><b>•••• 4821</b></div>
+  <div class="kv"><span>Tarih</span><b>5 Kasım 2026, 11:08</b></div>
+  <div class="kv"><span>İşlem no</span><b>ANH-4821-0388</b></div>
+</div>
+<div class="card stack g12" style="padding:16px 18px">
+  <span class="small" style="font-weight:700;color:var(--navy)">Aktarım süreci</span>
+  <div class="stack"><div class="tl"><div class="rail"><span class="dot done"></span><span class="line done"></span></div><div class="txt"><b>Ödeme alındı</b><span>5 Kasım 2026, 11:08</span></div></div><div class="tl"><div class="rail"><span class="dot done"></span></div><div class="txt"><b>Ev sahibinin hesabında</b><span>8 Kasım 2026</span></div></div></div>
+</div></div>
+  </div>
+<div class="tabs"><span>Ana sayfa</span><span class="on">Ödemeler</span><span>Dosya</span><span>Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M26 Dekont</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav" style="min-height:48px"><span class="back">Geri</span><span class="title">Dekont</span></div><div style="height:6px"></div>
+    <div class="stack g12">
+<div class="card stack g12">
+  <div class="row sp"><span class="small" style="font-weight:700;color:var(--navy)">Kasım 2026 kira ödemesi</span><span class="badge ok">Ödendi</span></div>
+  <span class="amount num" style="font-size:34px">18.648,00 ₺</span>
+  <div class="cta"><span class="btn dark">Dekontu paylaş</span><span class="btn ghost">İndir</span></div>
+</div>
+<div class="card stack g4" style="padding:12px 18px">
+  <div class="kv"><span>Kira bedeli</span><b>18.000,00 ₺</b></div>
+  <div class="kv"><span>Hizmet bedeli (%3)</span><b>540,00 ₺</b></div>
+  <div class="kv"><span>Vergiler</span><b>108,00 ₺</b></div>
+  <div class="divider" style="margin:4px 0"></div>
+  <div class="kv"><span style="font-weight:700;color:var(--ink)">Toplam</span><b>18.648,00 ₺</b></div>
+  <div class="divider" style="margin:4px 0"></div>
+  <div class="kv"><span>Kart</span><b>•••• 4821</b></div>
+  <div class="kv"><span>Tarih</span><b>5 Kasım 2026, 11:08</b></div>
+  <div class="kv"><span>İşlem no</span><b>ANH-4821-0388</b></div>
+</div>
+<div class="card stack g12" style="padding:16px 18px">
+  <span class="small" style="font-weight:700;color:var(--navy)">Aktarım süreci</span>
+  <div class="stack"><div class="tl"><div class="rail"><span class="dot done"></span><span class="line done"></span></div><div class="txt"><b>Ödeme alındı</b><span>5 Kasım 2026, 11:08</span></div></div><div class="tl"><div class="rail"><span class="dot done"></span></div><div class="txt"><b>Ev sahibinin hesabında</b><span>8 Kasım 2026</span></div></div></div>
+</div></div>
+  </div>
+<div class="tabs"><span>Ana sayfa</span><span class="on">Ödemeler</span><span>Dosya</span><span>Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M26 Dekont</div></div>
+
+</div></body></html>

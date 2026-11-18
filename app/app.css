@@ -106,7 +106,7 @@ a{color:inherit;text-decoration:none}
 .avatar{width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;flex:none}
 
 /* alt sekme çubuğu (ikonsuz) */
-.tabs{position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);display:flex;gap:4px;z-index:4}
+.tabs{position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);display:flex;align-items:flex-start;gap:4px;z-index:4}
 .ios .tabs{height:88px;padding:10px 14px 0}
 .android .tabs{height:80px;padding:12px 10px 0;border-top:0;background:#F3F8FD}
 .tabs span{flex:1;text-align:center;font-size:12.5px;font-weight:600;color:var(--muted);padding:10px 0;border-radius:14px}
@@ -125,3 +125,7 @@ a{color:inherit;text-decoration:none}
 .sysdlg{position:absolute;z-index:9;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;padding:20px;display:flex;flex-direction:column;gap:12px;box-shadow:0 20px 50px rgba(0,0,0,.3)}
 .ios .sysdlg{width:270px;border-radius:14px;text-align:center}
 .android .sysdlg{width:312px;border-radius:28px}
+
+/* görsel alanları: dosya henüz yoksa açık mavi yer tutucu görünür */
+.imgbox{position:relative;overflow:hidden;background:#DCE8F3;border-radius:20px}
+.imgbox img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M33 Teslim tutanağı · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+
+.rooms{display:flex;gap:6px;overflow:hidden}
+.rm{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px;align-items:center;font-size:11.5px;font-weight:600;color:var(--muted);text-align:center}
+.rm i{display:block;width:100%;height:5px;border-radius:3px;background:var(--line2)}
+.rm.done i{background:var(--navy)}.rm.now{color:var(--navy)}.rm.now i{background:var(--blue)}
+.seg{display:flex;gap:8px}
+.seg span{flex:1;text-align:center;padding:13px 6px;border-radius:14px;border:1.5px solid var(--line2);background:#fff;font-size:14px;font-weight:600;color:var(--navy)}
+.seg span.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.meters{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.meters .input{min-height:46px;padding:0 12px;font-size:14px}
+.android .meters .input{padding:0 10px}
+.ta{align-items:flex-start;padding-top:12px;min-height:64px;line-height:1.45;font-size:14.5px}
+.pbar{display:flex;flex-direction:column;gap:8px}
+
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+<div class="nav" style="margin-top:4px"><span class="back">Geri</span></div><div class="large">Teslim tutanağı</div><div class="stack g16" style="margin-top:14px">
+<div class="stack g8"><div class="row sp"><span class="small" style="font-weight:600;color:var(--navy)">Moda Cad. 24/6 · Giriş tutanağı</span><span class="small num">2 / 5 oda</span></div>
+<div class="rooms"><div class="rm done"><i></i>Salon</div><div class="rm now"><i></i>Mutfak</div><div class="rm"><i></i>Banyo</div><div class="rm"><i></i>Yatak odası</div><div class="rm"><i></i>Sayaçlar</div></div></div>
+<div class="row sp"><h2 class="h2">Mutfak</h2><span class="badge info">Sırada</span></div>
+<div class="imgbox" style="height:130px;"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div>
+<div class="stack g8"><span class="small" style="font-weight:600;color:var(--navy)">Odanın durumu</span>
+<div class="seg"><span class="on">Sorunsuz</span><span>Not var</span></div></div>
+<div class="field"><label>Not</label><div class="input ta"><span class="ph">Varsa gözlemlediğiniz durumu yazabilirsiniz.</span></div></div>
+<div class="field"><label>Sayaç endeksleri</label>
+<div class="meters"><div class="input"><span class="ph">Elektrik</span></div><div class="input"><span class="ph">Su</span></div><div class="input"><span class="ph">Doğalgaz</span></div></div></div>
+</div>
+  </div>
+<div class="bottom"><div class="pbar"><div class="step"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div><span class="btn primary">Sonraki oda</span></div></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M33 Teslim tutanağı</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+<div class="nav" style="margin-top:0"><span class="back">Geri</span><span class="title grow">Teslim tutanağı</span></div><div class="stack g16" style="margin-top:10px">
+<div class="stack g8"><div class="row sp"><span class="small" style="font-weight:600;color:var(--navy)">Moda Cad. 24/6 · Giriş tutanağı</span><span class="small num">2 / 5 oda</span></div>
+<div class="rooms"><div class="rm done"><i></i>Salon</div><div class="rm now"><i></i>Mutfak</div><div class="rm"><i></i>Banyo</div><div class="rm"><i></i>Yatak odası</div><div class="rm"><i></i>Sayaçlar</div></div></div>
+<div class="row sp"><h2 class="h2">Mutfak</h2><span class="badge info">Sırada</span></div>
+<div class="imgbox" style="height:205px;"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div>
+<div class="stack g8"><span class="small" style="font-weight:600;color:var(--navy)">Odanın durumu</span>
+<div class="seg"><span class="on">Sorunsuz</span><span>Not var</span></div></div>
+<div class="field"><label>Not</label><div class="input ta"><span class="ph">Varsa gözlemlediğiniz durumu yazabilirsiniz.</span></div></div>
+<div class="field"><label>Sayaç endeksleri</label>
+<div class="meters"><div class="input"><span class="ph">Elektrik</span></div><div class="input"><span class="ph">Su</span></div><div class="input"><span class="ph">Doğalgaz</span></div></div></div>
+</div>
+  </div>
+<div class="bottom"><div class="pbar"><div class="step"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div><span class="btn primary">Sonraki oda</span></div></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M33 Teslim tutanağı</div></div>
+
+</div></body></html>

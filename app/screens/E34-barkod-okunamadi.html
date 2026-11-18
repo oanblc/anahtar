@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E34 Barkod okunamadı · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+
+.file{display:flex;align-items:center;gap:12px;background:#fff;border-radius:18px;padding:12px 14px}
+.pdf{width:40px;height:46px;border-radius:8px;background:var(--sky2);color:var(--navy);font:800 11px var(--font-b);display:flex;align-items:flex-end;justify-content:center;padding-bottom:6px;flex:none}
+.pdf.e{background:var(--err-bg);color:var(--err)}
+.fn{font-size:15px;font-weight:700;color:var(--ink)}
+.vs{display:flex;gap:12px;align-items:flex-start}
+.dot{width:22px;height:22px;border-radius:50%;flex:none;border:2px solid var(--line2);background:#fff;position:relative;margin-top:1px}
+.dot.done{background:var(--navy);border-color:var(--navy)}.dot.done:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.3px 2.3px 0;transform:rotate(45deg)}
+.dot.cur{border-color:var(--navy);box-shadow:0 0 0 3px rgba(211,242,106,.7)}
+.dot.x{background:var(--err);border-color:var(--err)}.dot.x:before,.dot.x:after{content:"";position:absolute;left:8px;top:3px;width:2.3px;height:12px;background:#fff;border-radius:2px;transform:rotate(45deg)}.dot.x:after{transform:rotate(-45deg)}
+.vs b{font-size:14.5px;color:var(--ink);display:block}.vs span{font-size:12.5px;color:var(--muted);line-height:1.45}
+.ib{font:700 17px var(--font-h);letter-spacing:.02em;color:var(--navy);font-variant-numeric:tabular-nums}
+.lbl{font-size:12.5px;font-weight:700;color:var(--navy);margin:0 0 8px}
+.opt{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:20px;padding:14px 16px;border:1.5px solid var(--line2)}
+.opt b{font:700 15.5px var(--font-h);color:var(--navy);display:block;margin-bottom:3px}.opt span.d{font-size:12.5px;line-height:1.45;color:var(--muted)}
+.opt.sel{border-color:var(--navy);box-shadow:0 0 0 3px rgba(211,242,106,.6)}
+.rad{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative;margin-top:1px}
+.rad.on{border-color:var(--navy)}.rad.on:after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--navy)}
+.bar{height:8px;border-radius:4px;background:var(--line);overflow:hidden}.bar i{display:block;height:100%;background:var(--navy);border-radius:4px}
+.hd{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.hd .t{font-size:16px;font-weight:700;color:var(--ink)}
+.sad{height:92px;display:flex;align-items:center}
+
+.vf{position:relative;height:165px;border-radius:22px;background:linear-gradient(160deg,#2a3d52,#16222f);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.doc{width:62%;height:68%;background:#f4f1ea;border-radius:6px;transform:rotate(-3deg);padding:14px 12px;display:flex;flex-direction:column;gap:7px;opacity:.9}
+.doc i{display:block;height:4px;border-radius:2px;background:#c9c5ba}.doc i.s{width:60%}
+.doc .bc{height:30px;margin-top:4px;background:repeating-linear-gradient(90deg,#3b3b3b 0 2px,transparent 2px 5px,#3b3b3b 5px 6px,transparent 6px 9px);opacity:.35;filter:blur(1.6px)}
+.fr{position:absolute;inset:18px 36px;pointer-events:none}
+.fr b{position:absolute;width:30px;height:30px;border:3px solid var(--lime)}
+.fr b:nth-child(1){left:0;top:0;border-right:0;border-bottom:0;border-radius:10px 0 0 0}
+.fr b:nth-child(2){right:0;top:0;border-left:0;border-bottom:0;border-radius:0 10px 0 0}
+.fr b:nth-child(3){left:0;bottom:0;border-right:0;border-top:0;border-radius:0 0 0 10px}
+.fr b:nth-child(4){right:0;bottom:0;border-left:0;border-top:0;border-radius:0 0 10px 0}
+.vtag{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);background:var(--warn-bg);color:var(--warn);font:700 12.5px var(--font-b);padding:6px 12px;border-radius:999px;white-space:nowrap}
+
+</style></head><body>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body pad-b">
+    <div class="nav"><span class="back">Geri</span></div><h1 class="large" style="margin:2px 0 4px">Sözleşmeyi tara</h1>
+    <div class="stack g12" style="margin-top:8px">
+
+      <div class="vf"><div class="doc"><i></i><i class="s"></i><i></i><i class="s"></i><div class="bc"></div></div><div class="fr"><b></b><b></b><b></b><b></b></div><span class="vtag" style="bottom:8px">Barkod okunamadı</span></div>
+      <div class="stack g4"><h2 class="h2">Barkodu okuyamadık.</h2><p class="sub" style="font-size:14px">Barkodun tamamı çerçevenin içinde ve net olmalı.</p></div>
+      <div class="card" style="padding:16px 16px 14px"><div class="stack g12">
+        <div class="vs"><i class="dot done"></i><div><b>Belgeyi düz bir zemine koyun</b><span>Kıvrılma ve gölge okumayı zorlaştırır.</span></div></div>
+        <div class="vs"><i class="dot done"></i><div><b>Işığı artırın</b><span>Telefonunuzun gölgesi belgeye düşmesin.</span></div></div>
+        <div class="vs"><i class="dot done"></i><div><b>Yaklaşın ve sabit tutun</b><span>Barkod çerçeveyi dolduracak kadar yakın olsun.</span></div></div>
+      </div></div>
+      <div class="note">e-Devlet'ten indirdiğiniz barkodlu PDF'i yüklemeniz daha güvenilirdir.</div>
+
+    </div>
+  </div>
+  <div class="bottom"><span class="btn primary">Yeniden tara</span><span class="btn ghost">e-Devlet PDF'i yükle</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · E34 Barkod okunamadı</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body pad-b">
+    <div class="nav"><span class="back">Geri</span><span class="title">Sözleşmeyi tara</span></div>
+    <div class="stack g12" style="margin-top:8px">
+
+      <div class="vf"><div class="doc"><i></i><i class="s"></i><i></i><i class="s"></i><div class="bc"></div></div><div class="fr"><b></b><b></b><b></b><b></b></div><span class="vtag" style="bottom:8px">Barkod okunamadı</span></div>
+      <div class="stack g4"><h2 class="h2">Barkodu okuyamadık.</h2><p class="sub" style="font-size:14px">Barkodun tamamı çerçevenin içinde ve net olmalı.</p></div>
+      <div class="card" style="padding:16px 16px 14px"><div class="stack g12">
+        <div class="vs"><i class="dot done"></i><div><b>Belgeyi düz bir zemine koyun</b><span>Kıvrılma ve gölge okumayı zorlaştırır.</span></div></div>
+        <div class="vs"><i class="dot done"></i><div><b>Işığı artırın</b><span>Telefonunuzun gölgesi belgeye düşmesin.</span></div></div>
+        <div class="vs"><i class="dot done"></i><div><b>Yaklaşın ve sabit tutun</b><span>Barkod çerçeveyi dolduracak kadar yakın olsun.</span></div></div>
+      </div></div>
+      <div class="note">e-Devlet'ten indirdiğiniz barkodlu PDF'i yüklemeniz daha güvenilirdir.</div>
+
+    </div>
+  </div>
+  <div class="bottom"><span class="btn primary">Yeniden tara</span><span class="btn ghost">e-Devlet PDF'i yükle</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · E34 Barkod okunamadı</div></div>
+
+</div></body></html>
