@@ -549,6 +549,158 @@
   ]
  },
  {
+  "title": "Danışman paneli (anlaşmalı danışman)",
+  "note": "Yetki belgesi doğrulanmış danışmanın web paneli; kamuya açık menüde yer almaz",
+  "pages": [
+   {
+    "file": "Danisman-Basvuru",
+    "title": "76 Danışman başvurusu",
+    "desc": "Davetli başvuru: ofis, yetki belgesi, vergi bilgisi",
+    "tags": [
+     "Dahili"
+    ]
+   },
+   {
+    "file": "Danisman-Dogrulama-Sonucu",
+    "title": "77 Başvuru sonucu",
+    "desc": "İnceleniyor, onaylandı, ek belge istendi",
+    "tags": [
+     "Dahili"
+    ]
+   },
+   {
+    "file": "Danisman-Panel",
+    "title": "78 Genel bakış",
+    "desc": "Aktif dosyalar, bugünkü teslim, bekleyen onaylar",
+    "tags": [
+     "Dahili"
+    ]
+   },
+   {
+    "file": "Danisman-Dosyalar",
+    "title": "79 Dosyalar",
+    "desc": "Dosya tablosu, filtreler, ilerleme",
+    "tags": [
+     "Dahili"
+    ]
+   },
+   {
+    "file": "Danisman-Dosya-Olustur",
+    "title": "80 Yeni dosya",
+    "desc": "Mülk, kira şartları, taraf daveti",
+    "tags": [
+     "Dahili"
+    ]
+   },
+   {
+    "file": "Danisman-Dosya-Detay",
+    "title": "81 Dosya detayı",
+    "desc": "8 adımlı çizelge, iki tarafın onay durumu",
+    "tags": [
+     "Dahili"
+    ]
+   },
+   {
+    "file": "Danisman-Teslim-Tutanagi",
+    "title": "82 Teslim tutanağı",
+    "desc": "Fotoğraflar, sayaçlar, depozito kaydı, onaylar",
+    "tags": [
+     "Dahili"
+    ]
+   },
+   {
+    "file": "Danisman-Sozlesme-Taslagi",
+    "title": "83 Sözleşme taslağı",
+    "desc": "Taslak önizleme ve onaya gönderme",
+    "tags": [
+     "Dahili"
+    ]
+   },
+   {
+    "file": "Danisman-Profil",
+    "title": "84 Profil ve ofis",
+    "desc": "Ofis, yetki belgesi, güvenlik",
+    "tags": [
+     "Dahili"
+    ]
+   },
+   {
+    "file": "Danisman-Bildirimler",
+    "title": "85 Bildirimler",
+    "desc": "Filtreli bildirim listesi",
+    "tags": [
+     "Dahili"
+    ]
+   },
+   {
+    "file": "Danisman-Destek",
+    "title": "86 Destek",
+    "desc": "Konu kartları, SSS, talep formu",
+    "tags": [
+     "Dahili"
+    ]
+   }
+  ]
+ },
+ {
+  "title": "Danışmanlı dosya: taraf onayları",
+  "note": "Kiracı ve ev sahibi tarafında danışman akışının onay sayfaları",
+  "pages": [
+   {
+    "file": "Davet-Danisman",
+    "title": "87 Danışmanlı davet",
+    "desc": "Anlaşmalı danışmandan gelen davet",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Sartlar-Onayi",
+    "title": "88 Şartlar onayı (kiracı)",
+    "desc": "Kira şartlarını onaylama veya düzeltme isteme",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Sartlar-Onayi",
+    "title": "89 Şartlar onayı (ev sahibi)",
+    "desc": "Kira şartlarını onaylama veya düzeltme isteme",
+    "tags": []
+   },
+   {
+    "file": "Kiraci-Taslak-Sozlesme-Onayi",
+    "title": "90 Taslak sözleşme onayı (kiracı)",
+    "desc": "Taslağı okuma ve onay",
+    "tags": []
+   },
+   {
+    "file": "Ev-Sahibi-Taslak-Sozlesme-Onayi",
+    "title": "91 Taslak sözleşme onayı (ev sahibi)",
+    "desc": "Taslağı okuma ve onay",
+    "tags": []
+   }
+  ]
+ },
+ {
+  "title": "Yönetim: danışman",
+  "note": "Yönetim paneline eklenen danışman sayfaları",
+  "pages": [
+   {
+    "file": "Yonetim-Danisman-Basvurulari",
+    "title": "92 Danışman başvuruları",
+    "desc": "Yetki belgesi inceleme kuyruğu",
+    "tags": [
+     "İç panel"
+    ]
+   },
+   {
+    "file": "Yonetim-Danisman-Dosyalari",
+    "title": "93 Danışman dosyaları",
+    "desc": "Dosya izleme, bekleyen onaylar, yetki askıya alma",
+    "tags": [
+     "İç panel"
+    ]
+   }
+  ]
+ },
+ {
   "title": "Yardımcı",
   "note": "Ana sayfadaki telefonun içindeki ekran",
   "pages": [

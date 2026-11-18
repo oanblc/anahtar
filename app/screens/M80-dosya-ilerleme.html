@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M80 Dosya ilerleme çizelgesi · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:13.5px;font-weight:600;padding:8px 14px;border-radius:999px;background:#fff;color:var(--navy);border:1.5px solid var(--line2);white-space:nowrap}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--blue);flex:none;margin-top:5px;align-self:flex-start}.dot.rd{background:transparent}
+.item.nt{align-items:flex-start;padding:13px 16px;gap:10px}.item.nt .t{line-height:1.3}.item.nt .d{line-height:1.4}.item.nt.un .t{font-weight:800}
+.tm{font-size:12px;color:var(--muted);white-space:nowrap;padding-top:2px}
+.chev{width:9px;height:9px;border-right:2.2px solid var(--navy);border-bottom:2.2px solid var(--navy);transform:rotate(-45deg);flex:none}
+.topic{background:#fff;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:3px}
+.topic b{font:700 16px var(--font-h);color:var(--navy)}.topic span{font-size:12.5px;color:var(--muted);line-height:1.4}
+.faq{padding:14px 16px;border-bottom:1px solid var(--line)}.faq:last-child{border-bottom:0}
+.faq .q{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14.5px;font-weight:600;color:var(--ink)}
+.faq .a{font-size:13.5px;line-height:1.55;color:var(--text);margin-top:8px}
+.plus{width:12px;height:12px;position:relative;flex:none}.plus:before,.plus:after{content:"";position:absolute;background:var(--navy);border-radius:1px}
+.plus:before{left:0;right:0;top:5px;height:2px}.plus:after{top:0;bottom:0;left:5px;width:2px}.plus.open:after{display:none}
+.tl{display:flex;gap:14px}.tl .rail{display:flex;flex-direction:column;align-items:center;width:22px}
+.tl .dt{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.tl .dt.done{background:var(--navy);border-color:var(--navy)}.tl .dt.done:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.tl .dt.now{border-color:var(--navy);box-shadow:0 0 0 4px rgba(211,242,106,.7)}
+.tl .ln{flex:1;width:2px;background:var(--line2);min-height:10px}.tl .ln.done{background:var(--navy)}
+.tl .txt{padding-bottom:12px;display:flex;flex-direction:column;gap:2px;padding-top:1px}.tl:last-child .txt{padding-bottom:0}
+.tl .txt b{font-size:14.5px;color:var(--ink)}.tl .txt.pend b{color:var(--muted);font-weight:600}.tl .txt span{font-size:12.5px;color:var(--muted);line-height:1.45}
+.radio{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.radio.on{border-color:var(--navy)}.radio.on:after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--navy)}
+.role{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:20px;border:1.5px solid var(--line2);background:#fff}
+.role.sel{border-color:var(--navy);box-shadow:0 0 0 3px rgba(211,242,106,.6)}
+.role .col{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}.role .t{font-size:16px;font-weight:700;color:var(--ink)}.role .d{font-size:13px;color:var(--muted)}
+.lab{font-size:12.5px;color:rgba(255,255,255,.72)}
+.bl{display:flex;gap:10px;font-size:13.5px;line-height:1.45;color:var(--text);padding:3px 0}.bl:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--navy);flex:none;margin-top:7px}
+.bl.no:before{background:transparent;border:1.5px solid var(--muted)}
+.menu .item{padding:13px 16px}
+.hd{font:700 13px var(--font-b);color:var(--navy);letter-spacing:.02em}
+</style></head><body>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav"><span class="back">Geri</span><span></span></div><div class="large" style="margin:4px 0 12px">Kira dosyası</div><div class="stack g12">
+<div class="row sp"><span class="small">Dosya DSY-2026-0142 · Moda Cad. 24/6</span><span class="badge info">4 / 8</span></div>
+<div class="card dark stack g8" style="padding:16px 18px"><span class="lab" style="font-weight:700">Sizden beklenen adım</span><span style="font:700 18px/1.25 var(--font-h)">Teslim tutanağını onaylayın</span><span style="font-size:13.5px;line-height:1.5;opacity:.85">Fotoğrafları, sayaç endekslerini ve depozito dekontunu kontrol edip tek kullanımlık kodla onaylayın.</span><span style="font-size:12.5px;opacity:.75">Ev sahibi Mehmet Yılmaz henüz onaylamadı.</span><span class="btn primary" style="margin-top:4px;padding:14px">Tutanağı incele</span></div>
+<div class="card" style="padding:16px 18px"><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln done"></span></div><div class="txt "><b>Taslak</b></div></div><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln done"></span></div><div class="txt "><b>Taraflar davet edildi</b></div></div><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln "></span></div><div class="txt "><b>Şartlar onayda</b></div></div><div class="tl"><div class="rail"><span class="dt now"></span><span class="ln "></span></div><div class="txt "><b>Teslim tutanağı onayı</b></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>Sözleşme taslağı onayı</b></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>e-Devlet barkodu bekleniyor</b><span>Ev sahibi kendi e-Devlet hesabından yükler.</span></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>Ekip incelemesi</b></div></div><div class="tl"><div class="rail"><span class="dt "></span></div><div class="txt pend"><b>Tamamlandı, ödeme açıldı</b></div></div></div></div></div>
+  <div class="tabs"><span>Ana sayfa</span><span>Ödemeler</span><span class="on">Dosya</span><span>Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M80 Dosya ilerleme · Kiracı</div></div>
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav" style="min-height:48px"><span class="back">Geri</span><span class="title grow" style="">Kira dosyası</span></div><div style="height:8px"></div><div class="stack g12">
+<div class="row sp"><span class="small">Dosya DSY-2026-0142 · Moda Cad. 24/6</span><span class="badge info">4 / 8</span></div>
+<div class="card dark stack g8" style="padding:16px 18px"><span class="lab" style="font-weight:700">Sizden beklenen adım</span><span style="font:700 18px/1.25 var(--font-h)">Teslim tutanağını onaylayın</span><span style="font-size:13.5px;line-height:1.5;opacity:.85">Fotoğrafları, sayaç endekslerini ve depozito dekontunu kontrol edip tek kullanımlık kodla onaylayın.</span><span style="font-size:12.5px;opacity:.75">Ev sahibi Mehmet Yılmaz henüz onaylamadı.</span><span class="btn primary" style="margin-top:4px;padding:14px">Tutanağı incele</span></div>
+<div class="card" style="padding:16px 18px"><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln done"></span></div><div class="txt "><b>Taslak</b></div></div><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln done"></span></div><div class="txt "><b>Taraflar davet edildi</b></div></div><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln "></span></div><div class="txt "><b>Şartlar onayda</b></div></div><div class="tl"><div class="rail"><span class="dt now"></span><span class="ln "></span></div><div class="txt "><b>Teslim tutanağı onayı</b></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>Sözleşme taslağı onayı</b></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>e-Devlet barkodu bekleniyor</b><span>Ev sahibi kendi e-Devlet hesabından yükler.</span></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>Ekip incelemesi</b></div></div><div class="tl"><div class="rail"><span class="dt "></span></div><div class="txt pend"><b>Tamamlandı, ödeme açıldı</b></div></div></div></div></div>
+  <div class="tabs"><span>Ana sayfa</span><span>Ödemeler</span><span class="on">Dosya</span><span>Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M80 Dosya ilerleme · Kiracı</div></div>
+</div>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav"><span class="back">Geri</span><span></span></div><div class="large" style="margin:4px 0 12px">Kira dosyası</div><div class="stack g12">
+<div class="row sp"><span class="small">Dosya DSY-2026-0142 · Moda Cad. 24/6</span><span class="badge info">4 / 8</span></div>
+<div class="card dark stack g8" style="padding:16px 18px"><span class="lab" style="font-weight:700">Sizden beklenen adım</span><span style="font:700 18px/1.25 var(--font-h)">Teslim tutanağını onaylayın</span><span style="font-size:13.5px;line-height:1.5;opacity:.85">Fotoğrafları, sayaç endekslerini ve depozito dekontunu kontrol edip tek kullanımlık kodla onaylayın.</span><span style="font-size:12.5px;opacity:.75">Kiracı Elif Kaya tutanağı onayladı.</span><span class="btn primary" style="margin-top:4px;padding:14px">Tutanağı incele</span></div>
+<div class="card" style="padding:16px 18px"><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln done"></span></div><div class="txt "><b>Taslak</b></div></div><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln done"></span></div><div class="txt "><b>Taraflar davet edildi</b></div></div><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln "></span></div><div class="txt "><b>Şartlar onayda</b></div></div><div class="tl"><div class="rail"><span class="dt now"></span><span class="ln "></span></div><div class="txt "><b>Teslim tutanağı onayı</b></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>Sözleşme taslağı onayı</b></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>e-Devlet barkodu bekleniyor</b><span>Siz kendi e-Devlet hesabınızdan yüklersiniz.</span></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>Ekip incelemesi</b></div></div><div class="tl"><div class="rail"><span class="dt "></span></div><div class="txt pend"><b>Tamamlandı, ödeme açıldı</b></div></div></div></div></div>
+  <div class="tabs"><span>Ana sayfa</span><span class="on">Mülkler</span><span>Tahsilat</span><span>Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M80 Dosya ilerleme · Ev sahibi</div></div>
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav" style="min-height:48px"><span class="back">Geri</span><span class="title grow" style="">Kira dosyası</span></div><div style="height:8px"></div><div class="stack g12">
+<div class="row sp"><span class="small">Dosya DSY-2026-0142 · Moda Cad. 24/6</span><span class="badge info">4 / 8</span></div>
+<div class="card dark stack g8" style="padding:16px 18px"><span class="lab" style="font-weight:700">Sizden beklenen adım</span><span style="font:700 18px/1.25 var(--font-h)">Teslim tutanağını onaylayın</span><span style="font-size:13.5px;line-height:1.5;opacity:.85">Fotoğrafları, sayaç endekslerini ve depozito dekontunu kontrol edip tek kullanımlık kodla onaylayın.</span><span style="font-size:12.5px;opacity:.75">Kiracı Elif Kaya tutanağı onayladı.</span><span class="btn primary" style="margin-top:4px;padding:14px">Tutanağı incele</span></div>
+<div class="card" style="padding:16px 18px"><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln done"></span></div><div class="txt "><b>Taslak</b></div></div><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln done"></span></div><div class="txt "><b>Taraflar davet edildi</b></div></div><div class="tl"><div class="rail"><span class="dt done"></span><span class="ln "></span></div><div class="txt "><b>Şartlar onayda</b></div></div><div class="tl"><div class="rail"><span class="dt now"></span><span class="ln "></span></div><div class="txt "><b>Teslim tutanağı onayı</b></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>Sözleşme taslağı onayı</b></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>e-Devlet barkodu bekleniyor</b><span>Siz kendi e-Devlet hesabınızdan yüklersiniz.</span></div></div><div class="tl"><div class="rail"><span class="dt "></span><span class="ln "></span></div><div class="txt pend"><b>Ekip incelemesi</b></div></div><div class="tl"><div class="rail"><span class="dt "></span></div><div class="txt pend"><b>Tamamlandı, ödeme açıldı</b></div></div></div></div></div>
+  <div class="tabs"><span>Ana sayfa</span><span class="on">Mülkler</span><span>Tahsilat</span><span>Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M80 Dosya ilerleme · Ev sahibi</div></div>
+</div>
+</body></html>

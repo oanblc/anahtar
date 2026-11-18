@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E77 Taraf tutanağı reddetti · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.android .h1{font-size:28px}
+.mark{display:block;width:56px;height:56px;border-radius:50%;flex:none;position:relative}
+.mark.warn{background:var(--warn-bg)}.mark.err{background:var(--err-bg)}.mark.info{background:var(--sky2)}
+.mark.warn:before{content:"";position:absolute;left:25px;top:13px;width:6px;height:22px;border-radius:3px;background:var(--warn)}
+.mark.warn:after{content:"";position:absolute;left:25px;top:39px;width:6px;height:6px;border-radius:50%;background:var(--warn)}
+.mark.err:before,.mark.err:after{content:"";position:absolute;left:25px;top:13px;width:5px;height:30px;border-radius:3px;background:var(--err);transform:rotate(45deg)}
+.mark.err:after{transform:rotate(-45deg)}
+.mark.info:before{content:"";position:absolute;left:25px;top:22px;width:6px;height:21px;border-radius:3px;background:var(--navy)}
+.mark.info:after{content:"";position:absolute;left:25px;top:12px;width:6px;height:6px;border-radius:50%;background:var(--navy)}
+.mark.clock:before{content:"";position:absolute;inset:12px;border-radius:50%;border:4px solid var(--navy)}
+.mark.clock:after{content:"";position:absolute;left:26px;top:19px;width:10px;height:10px;border-left:4px solid var(--navy);border-bottom:4px solid var(--navy);border-radius:2px}
+.mark.pin:before{content:"";position:absolute;left:18px;top:12px;width:20px;height:20px;border-radius:50% 50% 50% 0;background:var(--navy);transform:rotate(-45deg)}
+.mark.pin:after{content:"";position:absolute;left:25px;top:19px;width:6px;height:6px;border-radius:50%;background:#fff}
+.mark.pin.err:before{background:var(--err);width:20px;height:20px;border-radius:50% 50% 50% 0;left:18px;top:12px;transform:rotate(-45deg)}
+.mark.pin.err:after{background:#fff;transform:none;height:6px;width:6px;left:25px;top:19px}
+.sec{font:700 12px var(--font-b);letter-spacing:.06em;color:var(--muted);text-transform:uppercase}
+.mini{font-size:13.5px;line-height:1.45;color:var(--text)}
+.hd{display:flex;gap:14px;align-items:flex-start}
+.rad{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.thumb{width:42px;height:42px;border-radius:10px;flex:none}
+.pbar{height:6px;border-radius:3px;background:var(--line2);overflow:hidden}.pbar i{display:block;height:100%;background:var(--navy);border-radius:3px}
+.mapbox{position:relative;height:96px;border-radius:18px;background:var(--sky2);overflow:hidden}
+.mapbox:before{content:"";position:absolute;left:0;right:0;top:46px;height:10px;background:#fff;opacity:.8;transform:rotate(-6deg)}
+.mapbox:after{content:"";position:absolute;top:0;bottom:0;left:52%;width:10px;background:#fff;opacity:.8;transform:rotate(8deg)}
+.mapbox .pt{position:absolute;width:16px;height:16px;border-radius:50%;border:3px solid #fff;z-index:2}
+.mapbox .p1{left:26px;top:52px;background:var(--navy)}.mapbox .p2{right:34px;top:20px;background:#C0392B}
+.mapbox .ln{position:absolute;left:40px;right:46px;top:44px;border-top:2.5px dashed var(--navy);transform:rotate(-12deg);z-index:1}
+.mapbox .lb{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);z-index:3;background:#fff;border-radius:999px;padding:4px 10px;font:700 12px var(--font-b);color:var(--ink);white-space:nowrap}
+.mk{position:absolute;border:3px solid #C0392B;border-radius:50%;background:rgba(192,57,43,.12)}
+.clause{background:#fff;border-radius:20px;padding:16px;font-size:14px;line-height:1.6;color:var(--text)}
+.clause b{color:var(--ink)}
+.hl{background:rgba(211,242,106,.75);border-radius:4px;padding:1px 3px;color:var(--ink);font-weight:700}
+.old{text-decoration:line-through;color:var(--err);background:var(--err-bg);border-radius:4px;padding:1px 3px}
+.dsc{position:relative;padding-left:14px}.dsc:before{content:"";position:absolute;left:0;top:2px;bottom:2px;width:4px;border-radius:2px;background:var(--navy)}
+.sysd{position:absolute;z-index:9;left:50%;bottom:150px;transform:translateX(-50%);background:#fff;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.ios .sysd{width:270px;border-radius:14px;text-align:center}
+.ios .sysd .tt{font-weight:700;font-size:17px;line-height:1.25;padding:20px 18px 0;color:#000}
+.ios .sysd .dm{font-size:13px;line-height:1.4;padding:6px 18px 18px;color:#000}
+.ios .sysd .bt{display:flex;border-top:1px solid #D0D4D9}.ios .sysd .bt span{flex:1;padding:13px 0;font-size:17px;color:#0A7AFF}.ios .sysd .bt span+span{border-left:1px solid #D0D4D9;font-weight:700}
+.android .sysd{width:312px;border-radius:28px;padding:22px 22px 14px}
+.android .sysd .tt{font:500 20px/1.3 var(--font-b);color:#1D3650;margin-bottom:10px}
+.android .sysd .dm{font-size:14px;line-height:1.5;color:#3F5A75}
+.android .sysd .bt{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}.android .sysd .bt span{padding:10px 14px;font-weight:700;font-size:14px;color:var(--navy)}
+</style></head><body>
+<div class="pair">
+
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span class="small" style="font-weight:600">DSY-2026-0142</span></div>
+    <div class="stack g16" style="padding-top:12px;padding-bottom:190px">
+<div class="stack g12"><div><span class="mark warn "></span></div><div class="stack g8"><h1 class="h1">Mehmet Yılmaz tutanağı reddetti</h1><p class="sub">Ev sahibi, Mutfak bölümündeki bir durumu belirterek teslim tutanağını onaylamadı.</p></div></div>
+<div class="imgbox" style="height:130px"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"><span class="mk" style="left:120px;top:74px;width:96px;height:28px;border-radius:12px"></span></div>
+<div class="card stack g8" style="padding:16px"><span class="sec">Ev sahibinin notu · Mutfak</span><span class="t" style="font-size:16px;font-weight:700;color:var(--ink)">“Mutfak tezgâhında çizik var”</span><span class="small">Elif Kaya tutanağı onayladı. Mehmet Yılmaz'ın onayı bekleniyor.</span></div>
+<div class="note">Odayı yeniden çekebilir ya da notu tutanağa ekleyip iki tarafa yeniden onaya sunabilirsiniz.</div>
+    </div>
+    <div class="bottom"><span class="btn primary">Mutfağı yeniden çek</span><span class="btn ghost">Notu kabul ettir</span></div>
+  </div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · E77 Taraf tutanağı reddetti</div></div>
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+    <div class="nav"><span class="back">Geri</span><span class="title" style="flex:1">Teslim tutanağı</span></div>
+    <div class="stack g16" style="padding-top:12px;padding-bottom:190px">
+<div class="stack g12"><div><span class="mark warn "></span></div><div class="stack g8"><h1 class="h1">Mehmet Yılmaz tutanağı reddetti</h1><p class="sub">Ev sahibi, Mutfak bölümündeki bir durumu belirterek teslim tutanağını onaylamadı.</p></div></div>
+<div class="imgbox" style="height:130px"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"><span class="mk" style="left:120px;top:74px;width:96px;height:28px;border-radius:12px"></span></div>
+<div class="card stack g8" style="padding:16px"><span class="sec">Ev sahibinin notu · Mutfak</span><span class="t" style="font-size:16px;font-weight:700;color:var(--ink)">“Mutfak tezgâhında çizik var”</span><span class="small">Elif Kaya tutanağı onayladı. Mehmet Yılmaz'ın onayı bekleniyor.</span></div>
+<div class="note">Odayı yeniden çekebilir ya da notu tutanağa ekleyip iki tarafa yeniden onaya sunabilirsiniz.</div>
+    </div>
+    <div class="bottom"><span class="btn primary">Mutfağı yeniden çek</span><span class="btn ghost">Notu kabul ettir</span></div>
+  </div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · E77 Taraf tutanağı reddetti</div></div>
+
+</div>
+</body></html>

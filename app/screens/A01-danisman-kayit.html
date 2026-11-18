@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A01 Danışman başvurusu · Anahtar danışman uygulaması</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.tl{display:flex;gap:12px}.tl .rail{display:flex;flex-direction:column;align-items:center;width:20px}
+.tl .dot{width:20px;height:20px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.tl .dot.done{background:var(--navy);border-color:var(--navy)}.tl .dot.done:after{content:"";position:absolute;left:5px;top:1px;width:4px;height:9px;border:solid #fff;border-width:0 2.2px 2.2px 0;transform:rotate(45deg)}
+.tl .dot.now{border-color:var(--navy);box-shadow:0 0 0 4px rgba(211,242,106,.7)}
+.tl .line{flex:1;width:2px;background:var(--line2);min-height:10px}.tl .line.done{background:var(--navy)}
+.tl .txt{padding-bottom:12px;display:flex;flex-direction:column;gap:1px;font-size:14px;color:var(--muted)}.tl:last-child .txt{padding-bottom:0}
+.tl .txt b{font-size:14.5px;color:var(--ink)}.tl.todo .txt b{color:var(--muted);font-weight:600}
+.seg{display:flex;gap:8px}
+.seg span{flex:1;text-align:center;padding:13px 4px;border-radius:14px;border:1.5px solid var(--line2);background:#fff;font-size:13.5px;font-weight:600;color:var(--navy)}
+.android .seg span{border-radius:10px}
+.seg span.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.chips{display:flex;gap:8px;overflow:hidden}
+.chip{padding:9px 14px;border-radius:999px;background:#fff;border:1.5px solid var(--line2);font-size:13.5px;font-weight:600;color:var(--navy);white-space:nowrap}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.upl{border:2px dashed var(--line2);background:#fff;border-radius:20px;padding:18px;display:flex;align-items:center;gap:14px}
+.upl .frame{width:52px;height:64px;border-radius:8px;border:2px solid var(--navy);position:relative;flex:none;background:var(--sky)}
+.upl .frame:before{content:"";position:absolute;left:8px;right:8px;top:12px;height:3px;background:var(--navy);box-shadow:0 8px 0 var(--navy),0 16px 0 var(--navy),0 24px 0 var(--line2)}
+.upl .frame:after{content:"";position:absolute;right:-9px;bottom:-9px;width:22px;height:22px;border-radius:50%;background:var(--lime);border:2px solid var(--navy)}
+.fc{background:#fff;border-radius:20px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.fc .a{font:700 16px var(--font-h);color:var(--navy)}
+.fc .p{font-size:13px;color:var(--muted);line-height:1.4}
+.fc .pr{display:flex;align-items:center;gap:10px}.fc .pr .step{flex:1;gap:3px}.fc .pr .step i{height:5px}
+.fc .pr span{font-size:12px;font-weight:600;color:var(--navy);white-space:nowrap}
+.dot2{width:10px;height:10px;border-radius:50%;background:var(--navy);flex:none}
+.dot2.w{background:#E0A526}.dot2.o{background:var(--lime);border:1.5px solid var(--navy)}
+.sum{background:#fff;border-radius:20px;padding:14px 16px}
+.big{font:800 36px/1 var(--font-h);letter-spacing:-.03em;color:var(--navy)}
+</style></head><body>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+<div style="height:12px"></div><div class="large">Danışman başvurusu</div><div class="stack g12" style="margin-top:0px">
+<p class="sub">Anlaşmalı danışman olarak çalışmak için ofis ve yetki belgesi bilgilerinizi paylaşın.</p>
+<div class="field"><label>Ofis adı</label><div class="input"><span class="">Aksoy Gayrimenkul Danışmanlık</span></div></div><div class="field"><label>Yetki belgesi no</label><div class="input"><span class="">34-••••-0142</span></div></div><div class="field"><label>Vergi no</label><div class="input"><span class="">•••••• 4821</span></div></div>
+<div class="field"><label>Yetki belgesi görseli</label><div class="upl"><div class="frame"></div><div class="stack g4"><span style="font-weight:700;font-size:15px;color:var(--navy)">Belgeyi çekin veya yükleyin</span><span class="hint">Belgenin tamamı okunaklı görünmelidir.</span></div></div></div>
+<div class="note">Yetki belgeniz ekibimizce doğrulanmadan hesabınız açılmaz.</div>
+</div>
+  </div>
+<div class="bottom"><span class="btn primary">Başvuruyu gönder</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · A01 Danışman başvurusu</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body">
+<div class="nav" style="margin-top:0"><span class="title grow">Danışman başvurusu</span></div><div class="stack g12" style="margin-top:8px">
+<p class="sub">Anlaşmalı danışman olarak çalışmak için ofis ve yetki belgesi bilgilerinizi paylaşın.</p>
+<div class="field"><label>Ofis adı</label><div class="input"><span class="">Aksoy Gayrimenkul Danışmanlık</span></div></div><div class="field"><label>Yetki belgesi no</label><div class="input"><span class="">34-••••-0142</span></div></div><div class="field"><label>Vergi no</label><div class="input"><span class="">•••••• 4821</span></div></div>
+<div class="field"><label>Yetki belgesi görseli</label><div class="upl"><div class="frame"></div><div class="stack g4"><span style="font-weight:700;font-size:15px;color:var(--navy)">Belgeyi çekin veya yükleyin</span><span class="hint">Belgenin tamamı okunaklı görünmelidir.</span></div></div></div>
+<div class="note">Yetki belgeniz ekibimizce doğrulanmadan hesabınız açılmaz.</div>
+</div>
+  </div>
+<div class="bottom"><span class="btn primary">Başvuruyu gönder</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · A01 Danışman başvurusu</div></div>
+
+</div></body></html>

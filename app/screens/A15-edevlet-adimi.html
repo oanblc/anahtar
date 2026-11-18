@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A15 e-Devlet adımı · Anahtar danışman uygulaması</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+
+.rows{display:flex;flex-direction:column}
+.pr{height:5px;border-radius:3px;background:var(--line2);overflow:hidden}.pr i{display:block;height:100%;background:var(--navy)}
+.dot{width:26px;height:26px;border-radius:50%;flex:none;border:2px solid var(--line2);background:#fff}
+.dot.done{background:var(--navy);border-color:var(--navy);position:relative}
+.dot.done:after{content:"";position:absolute;left:8px;top:3px;width:5px;height:10px;border:solid #fff;border-width:0 2.2px 2.2px 0;transform:rotate(45deg)}
+.dot.now{border-color:var(--blue);background:var(--sky2)}
+.seg{display:flex;gap:8px}
+.seg span{flex:1;text-align:center;padding:11px 6px;border-radius:14px;border:1.5px solid var(--line2);background:#fff;font-size:14px;font-weight:600;color:var(--navy)}
+.seg span.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.android .seg span{border-radius:10px}
+.thumb{width:56px;height:56px;border-radius:12px;flex:none}
+.chip{display:inline-flex;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:var(--sky2);color:var(--navy)}
+
+.st{display:flex;gap:14px;align-items:flex-start;padding:14px 16px;border-bottom:1px solid var(--line)}
+.st:last-child{border-bottom:0}
+.st .n{width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font:700 15px var(--font-h);display:flex;align-items:center;justify-content:center;flex:none}
+.st .t{font-size:15px;font-weight:700;color:var(--ink)}.st .d{font-size:13.5px;color:var(--text);line-height:1.45;margin-top:2px}
+.wait{display:flex;gap:12px;align-items:center;background:var(--warn-bg);border-radius:18px;padding:14px 16px;color:var(--warn);font-weight:700;font-size:14.5px;line-height:1.35}
+.wait:before{content:"";width:12px;height:12px;border-radius:50%;background:#E8A200;flex:none}
+
+</style></head><body>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav" style="margin-top:4px"><span class="back">Geri</span></div><div class="large">e-Devlet adımı</div><div class="stack g16" style="margin-top:6px"><p class="sub">Barkodlu sözleşmeyi ev sahibi kendi e-Devlet hesabından alır. Bu adımda siz yalnızca yönlendirirsiniz; belgeyi siz yüklemezsiniz.</p>
+<div class="list"><div class="st"><span class="n">1</span><div><div class="t">Ev sahibi e-Devlet'e girer</div><div class="d">Mehmet Yılmaz, kendi hesabıyla e-Devlet Kapısı'na giriş yapar.</div></div></div>
+<div class="st"><span class="n">2</span><div><div class="t">Belgeyi alır</div><div class="d">Barkodlu kira sözleşmesi PDF'ini kendi hesabından indirir.</div></div></div>
+<div class="st"><span class="n">3</span><div><div class="t">Anahtar'a yükler</div><div class="d">PDF'i kendi Anahtar uygulamasından dosyaya yükler.</div></div></div></div>
+<div class="wait"><span>Ev sahibinden barkodlu PDF bekleniyor</span></div>
+<div class="note">Ev sahibi PDF'i yüklediğinde ekibimiz barkodu inceler. İnceleme sonucu dosya durumunda ve bildirimlerinizde görünür.</div></div></div><div class="bottom"><span class="btn primary">Hatırlatma gönder</span><span class="btn text" style="padding:6px">Dosyaya dön</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · A15 e-Devlet adımı</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav" style="margin-top:0"><span class="back">Geri</span><span class="title grow">e-Devlet adımı</span></div><div class="stack g16" style="margin-top:6px"><p class="sub">Barkodlu sözleşmeyi ev sahibi kendi e-Devlet hesabından alır. Bu adımda siz yalnızca yönlendirirsiniz; belgeyi siz yüklemezsiniz.</p>
+<div class="list"><div class="st"><span class="n">1</span><div><div class="t">Ev sahibi e-Devlet'e girer</div><div class="d">Mehmet Yılmaz, kendi hesabıyla e-Devlet Kapısı'na giriş yapar.</div></div></div>
+<div class="st"><span class="n">2</span><div><div class="t">Belgeyi alır</div><div class="d">Barkodlu kira sözleşmesi PDF'ini kendi hesabından indirir.</div></div></div>
+<div class="st"><span class="n">3</span><div><div class="t">Anahtar'a yükler</div><div class="d">PDF'i kendi Anahtar uygulamasından dosyaya yükler.</div></div></div></div>
+<div class="wait"><span>Ev sahibinden barkodlu PDF bekleniyor</span></div>
+<div class="note">Ev sahibi PDF'i yüklediğinde ekibimiz barkodu inceler. İnceleme sonucu dosya durumunda ve bildirimlerinizde görünür.</div></div></div><div class="bottom"><span class="btn primary">Hatırlatma gönder</span><span class="btn text" style="padding:6px">Dosyaya dön</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · A15 e-Devlet adımı</div></div>
+
+</div></body></html>

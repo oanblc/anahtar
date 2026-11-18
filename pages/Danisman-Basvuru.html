@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anahtar Danışman Başvuru Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0;background:#fff;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#1D3650}
+a{color:inherit;text-decoration:none}
+input::placeholder,textarea::placeholder{color:#8AA0B6}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid #2B5078;outline-offset:3px}
+
+</style>
+<link rel="stylesheet" href="../assets/mobile.css">
+</head>
+<body>
+
+<div style="width:100%;max-width:1368px;margin:0 auto;padding:16px 24px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px;background:#fff;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#1D3650">
+<header style="display:flex;align-items:center;justify-content:space-between;padding:12px 24px;box-sizing:border-box;gap:12px;flex-wrap:wrap">
+  <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:28px;letter-spacing:-0.03em;color:#2B5078">anahtar<span style="color:#5489C6">.</span></span>
+  <span style="font-size:15px;color:#3F5A75">Davetle gelen danışman başvurusu</span>
+</header>
+<div style="background:#EAF2FA;border-radius:40px;padding:40px 20px;display:flex;justify-content:center;box-sizing:border-box">
+<section style="flex:1 1 auto;width:100%;max-width:760px;min-width:0;box-sizing:border-box;background:#fff;border-radius:28px;padding:48px 56px;display:flex;flex-direction:column;gap:26px">
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <span style="align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:0.06em;color:#2B5078;background:#D3E3F2;padding:5px 12px;border-radius:999px">DAVETLİ BAŞVURU</span>
+    <h1 style="margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:36px;line-height:1.08;letter-spacing:-0.035em;color:#2B5078">Anlaşmalı danışman başvurusu</h1>
+    <p style="margin:0;font-size:16px;line-height:1.65;color:#3F5A75">Ekibimizin size ilettiği davet bağlantısıyla bu sayfaya ulaştınız. Ofis bilgilerinizi ve yetki belgenizi girin; belgeniz doğrulandıktan sonra danışman hesabınız açılır.</p>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#2B5078">Ofis bilgileri</span>
+    <div style="display:flex;gap:14px;flex-wrap:wrap"><div style="flex:2 1 300px;min-width:0;display:flex;flex-direction:column;gap:8px"><label for="ofis" style="font-size:14px;font-weight:600;color:#2B5078">Ofis ticari unvanı</label><input id="ofis" type="text" placeholder="Örn. Aksoy Gayrimenkul Danışmanlık" value="" style="box-sizing:border-box;width:100%;border:1.5px solid #CBDDEF;border-radius:16px;padding:15px 18px;font-size:16px;font-family:inherit;color:#1D3650;background:#fff;outline:0" ></div><div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:8px"><label for="yetkili" style="font-size:14px;font-weight:600;color:#2B5078">Yetkili adı soyadı</label><input id="yetkili" type="text" placeholder="Deniz Aksoy" value="" style="box-sizing:border-box;width:100%;border:1.5px solid #CBDDEF;border-radius:16px;padding:15px 18px;font-size:16px;font-family:inherit;color:#1D3650;background:#fff;outline:0" ></div></div>
+    <div style="display:flex;gap:14px;flex-wrap:wrap"><div style="flex:2 1 300px;min-width:0;display:flex;flex-direction:column;gap:8px"><label for="adres" style="font-size:14px;font-weight:600;color:#2B5078">Ofis adresi</label><input id="adres" type="text" placeholder="Mahalle, cadde, no, ilçe / il" value="" style="box-sizing:border-box;width:100%;border:1.5px solid #CBDDEF;border-radius:16px;padding:15px 18px;font-size:16px;font-family:inherit;color:#1D3650;background:#fff;outline:0" ></div><div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:8px"><label for="otel" style="font-size:14px;font-weight:600;color:#2B5078">Ofis telefonu</label><input id="otel" type="text" placeholder="0 (2__) ___ __ __" value="" style="box-sizing:border-box;width:100%;border:1.5px solid #CBDDEF;border-radius:16px;padding:15px 18px;font-size:16px;font-family:inherit;color:#1D3650;background:#fff;outline:0" ></div></div>
+    <div style="display:flex;gap:14px;flex-wrap:wrap"><div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:8px"><label for="cep" style="font-size:14px;font-weight:600;color:#2B5078">Yetkili cep telefonu</label><input id="cep" type="text" placeholder="0 (5__) ___ __ __" value="" style="box-sizing:border-box;width:100%;border:1.5px solid #CBDDEF;border-radius:16px;padding:15px 18px;font-size:16px;font-family:inherit;color:#1D3650;background:#fff;outline:0" ></div><div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:8px"><label for="mail" style="font-size:14px;font-weight:600;color:#2B5078">E-posta</label><input id="mail" type="email" placeholder="ornek@ofis.com" value="" style="box-sizing:border-box;width:100%;border:1.5px solid #CBDDEF;border-radius:16px;padding:15px 18px;font-size:16px;font-family:inherit;color:#1D3650;background:#fff;outline:0" ></div></div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:16px">
+    <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#2B5078">Yetki belgesi ve vergi bilgisi</span>
+    <div style="display:flex;gap:14px;flex-wrap:wrap"><div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:8px"><label for="yb" style="font-size:14px;font-weight:600;color:#2B5078">Yetki belgesi numarası</label><input id="yb" type="text" placeholder="34-____-____" value="" style="box-sizing:border-box;width:100%;border:1.5px solid #CBDDEF;border-radius:16px;padding:15px 18px;font-size:16px;font-family:inherit;color:#1D3650;background:#fff;outline:0" ></div><div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:8px"><label for="vn" style="font-size:14px;font-weight:600;color:#2B5078">Vergi numarası</label><input id="vn" type="text" placeholder="10 haneli vergi numarası" value="" style="box-sizing:border-box;width:100%;border:1.5px solid #CBDDEF;border-radius:16px;padding:15px 18px;font-size:16px;font-family:inherit;color:#1D3650;background:#fff;outline:0" ></div><div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:8px"><label for="vd" style="font-size:14px;font-weight:600;color:#2B5078">Vergi dairesi</label><input id="vd" type="text" placeholder="Örn. Kadıköy" value="" style="box-sizing:border-box;width:100%;border:1.5px solid #CBDDEF;border-radius:16px;padding:15px 18px;font-size:16px;font-family:inherit;color:#1D3650;background:#fff;outline:0" ></div></div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <span style="font-size:14px;font-weight:600;color:#2B5078">Yetki belgesi görseli</span>
+      <label for="belge" style="cursor:pointer;box-sizing:border-box;border:2px dashed #9DB8D3;border-radius:20px;background:#F5F9FD;padding:28px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+        <span style="flex:none;width:52px;height:64px;border-radius:8px;background:#fff;border:2px solid #9DB8D3;box-sizing:border-box;padding:10px 8px;display:flex;flex-direction:column;gap:6px"><span style="height:3px;background:#CBDDEF;border-radius:2px"></span><span style="height:3px;background:#CBDDEF;border-radius:2px"></span><span style="height:3px;width:60%;background:#CBDDEF;border-radius:2px"></span></span>
+        <span style="flex:1 1 220px;display:flex;flex-direction:column;gap:3px"><span style="font-size:15px;font-weight:600;color:#1D3650">Belgenizin net bir fotoğrafını veya PDF dosyasını seçin</span><span style="font-size:13px;color:#536C87">JPG, PNG veya PDF · en fazla 10 MB · tüm köşeler ve belge numarası okunaklı olmalı</span></span>
+        <span style="font-size:14px;font-weight:700;color:#2B5078;border:1.5px solid #9DB8D3;padding:11px 20px;border-radius:999px;background:#fff">Dosya seç</span>
+        <input id="belge" type="file" accept=".jpg,.jpeg,.png,.pdf" style="position:absolute;width:1px;height:1px;opacity:0">
+      </label>
+    </div>
+  </div>
+
+  <div style="background:#EAF2FA;border-radius:18px;padding:16px 18px;font-size:14px;line-height:1.65;color:#3F5A75"><b style="color:#2B5078">Yetki belgesi doğrulanmadan hesap açılmaz.</b> Belgenizin numarası ve görseli ekibimizce kontrol edilir; bu sürede dosya oluşturamaz ve tarafları davet edemezsiniz. Ek belge gerekirse size bildirim gönderilir.</div>
+
+  <div style="display:flex;flex-direction:column;gap:14px">
+    <label style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.6;color:#3F5A75"><input type="checkbox" style="margin-top:3px;width:18px;height:18px;accent-color:#2B5078"><span>Girdiğim bilgilerin ve belgenin doğru olduğunu, aydınlatma metnini ve danışman kullanım koşullarını okuduğumu onaylıyorum.</span></label>
+    <a href="Danisman-Dogrulama-Sonucu.html" style="text-align:center;font-size:17px;font-weight:700;color:#1D3650;background:#D3F26A;padding:18px;border-radius:999px">Başvuruyu gönder</a>
+    <span style="font-size:13px;line-height:1.6;color:#536C87;text-align:center">Başvurunuz ekibimiz tarafından en geç 2 iş günü içinde incelenir; sonuç e-posta ve SMS ile bildirilir.</span>
+  </div>
+</section>
+</div>
+</div>
+
+<script src="../assets/mobile.js"></script>
+
+</body>
+</html>

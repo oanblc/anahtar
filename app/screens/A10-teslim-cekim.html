@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A10 Oda çekimi · Anahtar danışman uygulaması</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+
+.rows{display:flex;flex-direction:column}
+.pr{height:5px;border-radius:3px;background:var(--line2);overflow:hidden}.pr i{display:block;height:100%;background:var(--navy)}
+.dot{width:26px;height:26px;border-radius:50%;flex:none;border:2px solid var(--line2);background:#fff}
+.dot.done{background:var(--navy);border-color:var(--navy);position:relative}
+.dot.done:after{content:"";position:absolute;left:8px;top:3px;width:5px;height:10px;border:solid #fff;border-width:0 2.2px 2.2px 0;transform:rotate(45deg)}
+.dot.now{border-color:var(--blue);background:var(--sky2)}
+.seg{display:flex;gap:8px}
+.seg span{flex:1;text-align:center;padding:11px 6px;border-radius:14px;border:1.5px solid var(--line2);background:#fff;font-size:14px;font-weight:600;color:var(--navy)}
+.seg span.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.android .seg span{border-radius:10px}
+.thumb{width:56px;height:56px;border-radius:12px;flex:none}
+.chip{display:inline-flex;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:var(--sky2);color:var(--navy)}
+
+.screen.cam{background:#0B1118}
+.cam .sb{color:#fff}.cam .home{background:#fff}
+.vf{position:absolute;inset:0}
+.vf img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vf:after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,14,20,.6),rgba(8,14,20,0) 22%,rgba(8,14,20,0) 55%,rgba(8,14,20,.78))}
+.grid3{position:absolute;inset:0;z-index:1;background:linear-gradient(to right,transparent 33.2%,rgba(255,255,255,.28) 33.3%,transparent 33.5%,transparent 66.5%,rgba(255,255,255,.28) 66.6%,transparent 66.8%),linear-gradient(to bottom,transparent 33.2%,rgba(255,255,255,.28) 33.3%,transparent 33.5%,transparent 66.5%,rgba(255,255,255,.28) 66.6%,transparent 66.8%)}
+.corner{position:absolute;width:26px;height:26px;border:solid #fff;z-index:2;opacity:.9}
+.c1{border-width:3px 0 0 3px;border-radius:6px 0 0 0}.c2{border-width:3px 3px 0 0;border-radius:0 6px 0 0}.c3{border-width:0 0 3px 3px;border-radius:0 0 0 6px}.c4{border-width:0 3px 3px 0;border-radius:0 0 6px 0}
+.top{position:absolute;left:0;right:0;z-index:4;display:flex;align-items:center;justify-content:space-between;padding:0 20px;color:#fff}
+.ios .top{top:58px}.android .top{top:48px}
+.top .room{font:800 20px var(--font-h);letter-spacing:-.01em;text-align:center}
+.top .room small{display:block;font:600 12px var(--font-b);opacity:.85;letter-spacing:.02em;margin-top:2px}
+.pill{font-size:14px;font-weight:700;padding:8px 14px;border-radius:999px;background:rgba(16,24,32,.55);color:#fff}
+.cnt{font-variant-numeric:tabular-nums;background:var(--lime);color:var(--ink)}
+.stamp{position:absolute;left:16px;right:16px;z-index:4;background:rgba(16,24,32,.62);border-radius:12px;padding:10px 14px;color:#fff;font-size:12.5px;font-weight:600;line-height:1.4;display:flex;align-items:center;gap:10px}
+.stamp:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lime);flex:none}
+.ctrl{position:absolute;left:0;right:0;bottom:0;z-index:4;color:#fff}
+.strip{display:flex;gap:8px;padding:0 20px;align-items:center}
+.strip .thumb{width:48px;height:48px;border-radius:10px;border:2px solid #fff;overflow:hidden;position:relative}
+.strip .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.strip .empty{width:48px;height:48px;border-radius:10px;border:1.5px dashed rgba(255,255,255,.55);flex:none}
+.shutter{position:relative;width:78px;height:78px;border-radius:50%;border:4px solid #fff;flex:none}
+.shutter:after{content:"";position:absolute;inset:5px;border-radius:50%;background:#fff}
+.ios .ctrl{padding-bottom:38px}
+.ios .modes{display:flex;justify-content:center;gap:22px;font-size:13px;font-weight:700;margin:14px 0 18px;letter-spacing:.04em}
+.ios .modes span{opacity:.7}.ios .modes span.on{opacity:1;color:var(--lime)}
+.ios .shrow{display:flex;align-items:center;justify-content:space-between;padding:0 34px}
+.sidebtn{font-size:14px;font-weight:700;min-width:70px}
+.sidebtn.r{text-align:right}
+.android .ctrl{padding-bottom:34px}
+.android .shrow{display:flex;align-items:center;justify-content:space-between;padding:0 28px}
+.android .shutter{width:76px;height:76px;border-color:rgba(255,255,255,.55);background:var(--lime);}
+.android .shutter:after{display:none}
+.android .shutter:before{content:"";position:absolute;inset:-9px;border-radius:50%;border:2.5px solid #fff}
+.android .pill.done{background:var(--lime);color:var(--ink);border-radius:12px;padding:12px 18px}
+.android .flash{font-size:13px;font-weight:700;padding:10px 14px;border-radius:12px;background:rgba(16,24,32,.55)}
+.android .hint2{text-align:center;font-size:12.5px;font-weight:600;opacity:.85;margin:0 0 16px}
+
+</style></head><body>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen cam"><div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div><div class="vf"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div><div class="grid3"></div><i class="corner c1" style="left:28px;top:256px"></i><i class="corner c2" style="right:28px;top:256px"></i><i class="corner c3" style="left:28px;bottom:246px"></i><i class="corner c4" style="right:28px;bottom:246px"></i><div class="top"><span class="pill">Kapat</span><div class="room">Mutfak<small>Teslim tutanağı</small></div><span class="pill cnt">3 / 6</span></div>
+<div class="stamp" style="top:196px"><span>2 Aralık 2026 14:07 · Moda Cad. 24/6 yakınında</span></div>
+<div class="ctrl"><div class="strip"><div class="thumb"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div><div class="thumb"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div><div class="thumb"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div></div><div class="modes"><span>VİDEO</span><span class="on">FOTOĞRAF</span><span>PANORAMA</span></div>
+<div class="shrow"><span class="sidebtn">Flaş kapalı</span><span class="shutter"></span><span class="sidebtn r">Bitti</span></div></div><div class="home"></div></div></div><div class="cap">iOS · A10 Oda çekimi</div></div>
+
+<div class="unit"><div class="device android"><div class="screen cam"><div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div><div class="vf"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div><div class="grid3"></div><i class="corner c1" style="left:28px;top:256px"></i><i class="corner c2" style="right:28px;top:256px"></i><i class="corner c3" style="left:28px;bottom:270px"></i><i class="corner c4" style="right:28px;bottom:270px"></i><div class="top"><span class="pill">Kapat</span><div class="room">Mutfak<small>Teslim tutanağı</small></div><span class="pill cnt">3 / 6</span></div>
+<div class="stamp" style="top:196px"><span>2 Aralık 2026 14:07 · Moda Cad. 24/6 yakınında</span></div>
+<div class="ctrl"><div class="strip"><div class="thumb"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div><div class="thumb"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div><div class="thumb"><img src="../../assets/img/B_mutfak.jpg" alt="" onerror="this.style.display='none'"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div></div><div style="height:16px"></div><p class="hint2">Tarih, saat ve konum fotoğrafa işlenir.</p>
+<div class="shrow"><span class="flash">Flaş kapalı</span><span class="shutter"></span><span class="pill done">Bitti</span></div></div><div class="home"></div></div></div><div class="cap">Android · A10 Oda çekimi</div></div>
+
+</div></body></html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A12 Depozito dekontu · Anahtar danışman uygulaması</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+
+.rows{display:flex;flex-direction:column}
+.pr{height:5px;border-radius:3px;background:var(--line2);overflow:hidden}.pr i{display:block;height:100%;background:var(--navy)}
+.dot{width:26px;height:26px;border-radius:50%;flex:none;border:2px solid var(--line2);background:#fff}
+.dot.done{background:var(--navy);border-color:var(--navy);position:relative}
+.dot.done:after{content:"";position:absolute;left:8px;top:3px;width:5px;height:10px;border:solid #fff;border-width:0 2.2px 2.2px 0;transform:rotate(45deg)}
+.dot.now{border-color:var(--blue);background:var(--sky2)}
+.seg{display:flex;gap:8px}
+.seg span{flex:1;text-align:center;padding:11px 6px;border-radius:14px;border:1.5px solid var(--line2);background:#fff;font-size:14px;font-weight:600;color:var(--navy)}
+.seg span.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.android .seg span{border-radius:10px}
+.thumb{width:56px;height:56px;border-radius:12px;flex:none}
+.chip{display:inline-flex;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:var(--sky2);color:var(--navy)}
+
+.amtc{background:var(--navy);color:#fff;border-radius:24px;padding:14px 18px}
+.amtc .l{font-size:13px;opacity:.8}.amtc .amount{font-size:38px;margin-top:4px}
+.up{border:2px dashed var(--line2);border-radius:20px;background:#fff;padding:14px;display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center}
+.docp{width:44px;height:56px;border-radius:8px;border:2px solid var(--line2);background:var(--sky);position:relative}
+.docp:before{content:"";position:absolute;left:9px;right:9px;top:12px;height:3px;border-radius:2px;background:var(--line2);box-shadow:0 9px 0 var(--line2),0 18px 0 var(--line2),0 27px 0 var(--line2)}
+.two{display:flex;gap:10px;width:100%}.two .btn{padding:13px;font-size:15px}
+.sel:after{content:"";width:8px;height:8px;border-right:2px solid var(--navy);border-bottom:2px solid var(--navy);transform:rotate(45deg);margin-left:auto}
+
+</style></head><body>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav" style="margin-top:4px"><span class="back">Geri</span></div><div class="large">Depozito</div><div class="stack g12" style="margin-top:6px">
+<div class="amtc"><div class="l">Depozito tutarı</div><div class="amount">36.000,00 ₺</div></div>
+<div class="up"><div class="docp"></div><div class="stack g4"><span class="t" style="font-size:15px;font-weight:700;color:var(--ink)">Dekont fotoğrafı</span><span class="small">Banka dekontunun tamamı görünecek şekilde çekin.</span></div><div class="two"><span class="btn dark">Kamera</span><span class="btn ghost">Galeri</span></div></div>
+<div class="row" style="gap:10px;align-items:flex-start"><div class="field" style="flex:1"><label>Banka</label><div class="input sel" style="padding:0 12px"><span>Ziraat Bankası</span></div></div>
+<div class="field" style="flex:1"><label>Dekont tarihi</label><div class="input sel" style="padding:0 12px"><span>2 Aralık 2026</span></div></div></div>
+<div class="note">Depozito kaydı iki tarafın onayına gider; Anahtar depozitoyu saklamaz, yalnızca kaydeder.</div>
+</div></div><div class="bottom"><span class="btn primary">Kaydet ve özete geç</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · A12 Depozito dekontu</div></div>
+
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav" style="margin-top:0"><span class="back">Geri</span><span class="title grow">Depozito</span></div><div class="stack g12" style="margin-top:6px">
+<div class="amtc"><div class="l">Depozito tutarı</div><div class="amount">36.000,00 ₺</div></div>
+<div class="up"><div class="docp"></div><div class="stack g4"><span class="t" style="font-size:15px;font-weight:700;color:var(--ink)">Dekont fotoğrafı</span><span class="small">Banka dekontunun tamamı görünecek şekilde çekin.</span></div><div class="two"><span class="btn dark">Kamera</span><span class="btn ghost">Galeri</span></div></div>
+<div class="row" style="gap:10px;align-items:flex-start"><div class="field" style="flex:1"><label>Banka</label><div class="input sel" style="padding:0 12px"><span>Ziraat Bankası</span></div></div>
+<div class="field" style="flex:1"><label>Dekont tarihi</label><div class="input sel" style="padding:0 12px"><span>2 Aralık 2026</span></div></div></div>
+<div class="note">Depozito kaydı iki tarafın onayına gider; Anahtar depozitoyu saklamaz, yalnızca kaydeder.</div>
+</div></div><div class="bottom"><span class="btn primary">Kaydet ve özete geç</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · A12 Depozito dekontu</div></div>
+
+</div></body></html>

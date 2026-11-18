@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M81 Rol değiştirici, üç rol · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:13.5px;font-weight:600;padding:8px 14px;border-radius:999px;background:#fff;color:var(--navy);border:1.5px solid var(--line2);white-space:nowrap}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--blue);flex:none;margin-top:5px;align-self:flex-start}.dot.rd{background:transparent}
+.item.nt{align-items:flex-start;padding:13px 16px;gap:10px}.item.nt .t{line-height:1.3}.item.nt .d{line-height:1.4}.item.nt.un .t{font-weight:800}
+.tm{font-size:12px;color:var(--muted);white-space:nowrap;padding-top:2px}
+.chev{width:9px;height:9px;border-right:2.2px solid var(--navy);border-bottom:2.2px solid var(--navy);transform:rotate(-45deg);flex:none}
+.topic{background:#fff;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:3px}
+.topic b{font:700 16px var(--font-h);color:var(--navy)}.topic span{font-size:12.5px;color:var(--muted);line-height:1.4}
+.faq{padding:14px 16px;border-bottom:1px solid var(--line)}.faq:last-child{border-bottom:0}
+.faq .q{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14.5px;font-weight:600;color:var(--ink)}
+.faq .a{font-size:13.5px;line-height:1.55;color:var(--text);margin-top:8px}
+.plus{width:12px;height:12px;position:relative;flex:none}.plus:before,.plus:after{content:"";position:absolute;background:var(--navy);border-radius:1px}
+.plus:before{left:0;right:0;top:5px;height:2px}.plus:after{top:0;bottom:0;left:5px;width:2px}.plus.open:after{display:none}
+.tl{display:flex;gap:14px}.tl .rail{display:flex;flex-direction:column;align-items:center;width:22px}
+.tl .dt{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.tl .dt.done{background:var(--navy);border-color:var(--navy)}.tl .dt.done:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.tl .dt.now{border-color:var(--navy);box-shadow:0 0 0 4px rgba(211,242,106,.7)}
+.tl .ln{flex:1;width:2px;background:var(--line2);min-height:10px}.tl .ln.done{background:var(--navy)}
+.tl .txt{padding-bottom:12px;display:flex;flex-direction:column;gap:2px;padding-top:1px}.tl:last-child .txt{padding-bottom:0}
+.tl .txt b{font-size:14.5px;color:var(--ink)}.tl .txt.pend b{color:var(--muted);font-weight:600}.tl .txt span{font-size:12.5px;color:var(--muted);line-height:1.45}
+.radio{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.radio.on{border-color:var(--navy)}.radio.on:after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--navy)}
+.role{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:20px;border:1.5px solid var(--line2);background:#fff}
+.role.sel{border-color:var(--navy);box-shadow:0 0 0 3px rgba(211,242,106,.6)}
+.role .col{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}.role .t{font-size:16px;font-weight:700;color:var(--ink)}.role .d{font-size:13px;color:var(--muted)}
+.lab{font-size:12.5px;color:rgba(255,255,255,.72)}
+.bl{display:flex;gap:10px;font-size:13.5px;line-height:1.45;color:var(--text);padding:3px 0}.bl:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--navy);flex:none;margin-top:7px}
+.bl.no:before{background:transparent;border:1.5px solid var(--muted)}
+.menu .item{padding:13px 16px}
+.hd{font:700 13px var(--font-b);color:var(--navy);letter-spacing:.02em}
+</style></head><body>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="row sp" style="min-height:44px"><span class="logo" style="font-size:22px">anahtar<b>.</b></span><span class="avatar">EK</span></div>
+<div class="large" style="margin:6px 0 16px">Merhaba Elif</div>
+<div class="stack g20"><div class="card dark stack g16" style="padding:20px">
+<div class="row sp"><span style="font-size:14px;font-weight:600;opacity:.85">Aralık 2026 kirası</span><span class="badge" style="background:rgba(255,255,255,.16);color:#fff">5 gün kaldı</span></div>
+<div class="stack g4"><span class="amount num">18.648,00 ₺</span><span style="font-size:13px;opacity:.75">Son ödeme günü 7 Aralık 2026 · Moda Cad. 24/6</span></div><span class="btn primary">Kartla öde</span></div></div></div>
+  <div class="tabs"><span class="on">Ana sayfa</span><span>Ödemeler</span><span>Dosya</span><span>Profil</span></div><div class="scrim"><div class="sheet" style="padding-bottom:36px;gap:14px"><div class="row sp" style="margin-top:-6px"><span class="small" style="font-weight:600;color:var(--navy);width:60px">Vazgeç</span><span class="h2" style="font-size:18px">Rol değiştir</span><span style="width:60px"></span></div>
+<p class="sub" style="margin-top:-6px">Aynı hesapla birden fazla rolde kullanabilirsiniz. Devam etmek istediğiniz rolü seçin.</p>
+<div class="stack g12">
+<div class="role"><div class="col"><span class="t">Kiracı</span><span class="d">Moda Cad. 24/6, Kadıköy</span></div><span class="badge ok">Aktif rol</span><span class="radio"></span></div>
+<div class="role"><div class="col"><span class="t">Ev sahibi</span><span class="d">2 mülk</span></div><span class="radio"></span></div>
+<div class="role sel"><div class="col"><span class="t">Danışman</span><span class="d">Aksoy Gayrimenkul Danışmanlık</span><span><span class="badge info" style="font-size:11px;padding:3px 8px;display:inline-block;margin-top:3px">Doğrulanmış danışman</span></span></div><span class="radio on"></span></div>
+</div>
+<div class="note" style="font-size:12.5px">Danışman rolü yalnızca yetki belgesi doğrulanmış danışmanlarda görünür.</div>
+<span class="btn primary">Rolü değiştir</span></div></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · M81 Rol değiştirici (3 rol)</div></div>
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="row sp" style="min-height:44px"><span class="logo" style="font-size:22px">anahtar<b>.</b></span><span class="avatar">EK</span></div>
+<div class="large" style="margin:6px 0 16px">Merhaba Elif</div>
+<div class="stack g20"><div class="card dark stack g16" style="padding:20px">
+<div class="row sp"><span style="font-size:14px;font-weight:600;opacity:.85">Aralık 2026 kirası</span><span class="badge" style="background:rgba(255,255,255,.16);color:#fff">5 gün kaldı</span></div>
+<div class="stack g4"><span class="amount num">18.648,00 ₺</span><span style="font-size:13px;opacity:.75">Son ödeme günü 7 Aralık 2026 · Moda Cad. 24/6</span></div><span class="btn primary">Kartla öde</span></div></div></div>
+  <div class="tabs"><span class="on">Ana sayfa</span><span>Ödemeler</span><span>Dosya</span><span>Profil</span></div><div class="scrim"><div class="sheet" style="padding-bottom:40px;gap:14px"><div class="row sp"><span class="h2" style="font-size:19px">Rol değiştir</span><span class="small" style="font-weight:700;color:var(--navy)">Kapat</span></div>
+<p class="sub" style="margin-top:-6px">Aynı hesapla birden fazla rolde kullanabilirsiniz. Devam etmek istediğiniz rolü seçin.</p>
+<div class="stack g12">
+<div class="role"><div class="col"><span class="t">Kiracı</span><span class="d">Moda Cad. 24/6, Kadıköy</span></div><span class="badge ok">Aktif rol</span><span class="radio"></span></div>
+<div class="role"><div class="col"><span class="t">Ev sahibi</span><span class="d">2 mülk</span></div><span class="radio"></span></div>
+<div class="role sel"><div class="col"><span class="t">Danışman</span><span class="d">Aksoy Gayrimenkul Danışmanlık</span><span><span class="badge info" style="font-size:11px;padding:3px 8px;display:inline-block;margin-top:3px">Doğrulanmış danışman</span></span></div><span class="radio on"></span></div>
+</div>
+<div class="note" style="font-size:12.5px">Danışman rolü yalnızca yetki belgesi doğrulanmış danışmanlarda görünür.</div>
+<span class="btn primary">Rolü değiştir</span></div></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · M81 Rol değiştirici (3 rol)</div></div>
+</div>
+</body></html>

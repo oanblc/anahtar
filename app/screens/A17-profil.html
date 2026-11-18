@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A17 Danışman profili · Anahtar uygulama</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../app.css">
+<style>
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:13.5px;font-weight:600;padding:8px 14px;border-radius:999px;background:#fff;color:var(--navy);border:1.5px solid var(--line2);white-space:nowrap}
+.chip.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--blue);flex:none;margin-top:5px;align-self:flex-start}.dot.rd{background:transparent}
+.item.nt{align-items:flex-start;padding:13px 16px;gap:10px}.item.nt .t{line-height:1.3}.item.nt .d{line-height:1.4}.item.nt.un .t{font-weight:800}
+.tm{font-size:12px;color:var(--muted);white-space:nowrap;padding-top:2px}
+.chev{width:9px;height:9px;border-right:2.2px solid var(--navy);border-bottom:2.2px solid var(--navy);transform:rotate(-45deg);flex:none}
+.topic{background:#fff;border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:3px}
+.topic b{font:700 16px var(--font-h);color:var(--navy)}.topic span{font-size:12.5px;color:var(--muted);line-height:1.4}
+.faq{padding:14px 16px;border-bottom:1px solid var(--line)}.faq:last-child{border-bottom:0}
+.faq .q{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14.5px;font-weight:600;color:var(--ink)}
+.faq .a{font-size:13.5px;line-height:1.55;color:var(--text);margin-top:8px}
+.plus{width:12px;height:12px;position:relative;flex:none}.plus:before,.plus:after{content:"";position:absolute;background:var(--navy);border-radius:1px}
+.plus:before{left:0;right:0;top:5px;height:2px}.plus:after{top:0;bottom:0;left:5px;width:2px}.plus.open:after{display:none}
+.tl{display:flex;gap:14px}.tl .rail{display:flex;flex-direction:column;align-items:center;width:22px}
+.tl .dt{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.tl .dt.done{background:var(--navy);border-color:var(--navy)}.tl .dt.done:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.tl .dt.now{border-color:var(--navy);box-shadow:0 0 0 4px rgba(211,242,106,.7)}
+.tl .ln{flex:1;width:2px;background:var(--line2);min-height:10px}.tl .ln.done{background:var(--navy)}
+.tl .txt{padding-bottom:12px;display:flex;flex-direction:column;gap:2px;padding-top:1px}.tl:last-child .txt{padding-bottom:0}
+.tl .txt b{font-size:14.5px;color:var(--ink)}.tl .txt.pend b{color:var(--muted);font-weight:600}.tl .txt span{font-size:12.5px;color:var(--muted);line-height:1.45}
+.radio{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);background:#fff;flex:none;position:relative}
+.radio.on{border-color:var(--navy)}.radio.on:after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--navy)}
+.role{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:20px;border:1.5px solid var(--line2);background:#fff}
+.role.sel{border-color:var(--navy);box-shadow:0 0 0 3px rgba(211,242,106,.6)}
+.role .col{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}.role .t{font-size:16px;font-weight:700;color:var(--ink)}.role .d{font-size:13px;color:var(--muted)}
+.lab{font-size:12.5px;color:rgba(255,255,255,.72)}
+.bl{display:flex;gap:10px;font-size:13.5px;line-height:1.45;color:var(--text);padding:3px 0}.bl:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--navy);flex:none;margin-top:7px}
+.bl.no:before{background:transparent;border:1.5px solid var(--muted)}
+.menu .item{padding:13px 16px}
+.hd{font:700 13px var(--font-b);color:var(--navy);letter-spacing:.02em}
+</style></head><body>
+<div class="pair">
+<div class="unit"><div class="device ios"><div class="screen">
+  <div class="island"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div style="height:10px"></div><div class="large" style="margin:4px 0 12px">Profil</div><div class="stack g16">
+<div class="card dark stack g12" style="padding:18px">
+ <div class="row" style="gap:14px"><span class="avatar" style="width:52px;height:52px;background:var(--lime);color:var(--ink);font-size:17px">DA</span><div class="stack g4" style="min-width:0"><span style="font:800 20px var(--font-h);letter-spacing:-.01em">Deniz Aksoy</span><span style="font-size:13.5px;opacity:.8">Aksoy Gayrimenkul Danışmanlık</span></div></div>
+ <div class="row sp" style="gap:10px;flex-wrap:wrap"><span class="badge ok">Doğrulanmış danışman</span><span style="font-size:12.5px;opacity:.8;white-space:nowrap" class="num">Yetki no 34-••••-0142</span></div>
+</div>
+<div class="list menu"><div class="item"><div class="col"><span class="t">Ofis bilgileri</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Yetki belgesi</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Bildirim tercihleri</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Güvenlik</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Kişisel verilerim</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Destek</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Hakkında</span></div><span class="chev"></span></div></div>
+<span class="btn ghost" style="color:var(--err);border-color:#EBC3BD;padding:14px">Çıkış yap</span></div></div>
+  <div class="tabs"><span>Ana sayfa</span><span>Dosyalar</span><span>Bildirimler</span><span class="on">Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">iOS · A17 Danışman profili</div></div>
+<div class="unit"><div class="device android"><div class="screen">
+  <div class="punch"></div><div class="sb"><span>9:41</span><span class="r"><i class="sig"></i><i class="bat"></i></span></div>
+  <div class="body"><div class="nav" style="min-height:48px"><span class="title grow" style="padding-left:4px">Profil</span></div><div style="height:8px"></div><div class="stack g16">
+<div class="card dark stack g12" style="padding:18px">
+ <div class="row" style="gap:14px"><span class="avatar" style="width:52px;height:52px;background:var(--lime);color:var(--ink);font-size:17px">DA</span><div class="stack g4" style="min-width:0"><span style="font:800 20px var(--font-h);letter-spacing:-.01em">Deniz Aksoy</span><span style="font-size:13.5px;opacity:.8">Aksoy Gayrimenkul Danışmanlık</span></div></div>
+ <div class="row sp" style="gap:10px;flex-wrap:wrap"><span class="badge ok">Doğrulanmış danışman</span><span style="font-size:12.5px;opacity:.8;white-space:nowrap" class="num">Yetki no 34-••••-0142</span></div>
+</div>
+<div class="list menu"><div class="item"><div class="col"><span class="t">Ofis bilgileri</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Yetki belgesi</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Bildirim tercihleri</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Güvenlik</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Kişisel verilerim</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Destek</span></div><span class="chev"></span></div><div class="item"><div class="col"><span class="t">Hakkında</span></div><span class="chev"></span></div></div>
+<span class="btn ghost" style="color:var(--err);border-color:#EBC3BD;padding:14px">Çıkış yap</span></div></div>
+  <div class="tabs"><span>Ana sayfa</span><span>Dosyalar</span><span>Bildirimler</span><span class="on">Profil</span></div>
+  <div class="home"></div>
+</div></div><div class="cap">Android · A17 Danışman profili</div></div>
+</div>
+</body></html>

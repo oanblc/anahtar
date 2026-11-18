@@ -10,25 +10,28 @@ def title(p):
     t=re.sub(r'\s*[·|-]\s*Anahtar.*$','',t)
     return t
 def clean(p):
-    return html.escape(re.sub(r"^[ME]\d+[a-z]?\s*","",title(p)))
-def code(n): return re.match(r'([ME]\d+[a-z]?)',n).group(1)
+    return html.escape(re.sub(r"^[MEA]\d+[a-z]?\s*","",title(p)))
+def code(n): return re.match(r'([MEA]\d+[a-z]?)',n).group(1)
 def num(n):
-    m=re.match(r'([ME])(\d+)([a-z]?)',n); return (m.group(1),int(m.group(2)),m.group(3),n)
+    m=re.match(r'([MEA])(\d+)([a-z]?)',n); return ({'M':0,'A':1,'E':2}[m.group(1)],int(m.group(2)),m.group(3),n)
 GR=[("Uygulama kabuğu ve sistem",lambda c,n:c=='M' and n<=7),
 ("Kayıt, kimlik ve güvenlik kurulumu",lambda c,n:c=='M' and (8<=n<=20)),
 ("Kiracı",lambda c,n:c=='M' and (21<=n<=41 or n==62)),
 ("Ev sahibi",lambda c,n:c=='M' and (42<=n<=58)),
 ("Ortak ayarlar ve yüzeyler",lambda c,n:c=='M' and (59<=n<=70) and n!=62),
+("Danışman uygulaması",lambda c,n:c=='A'),
+("Danışmanlı dosya: kiracı ve ev sahibi onayları",lambda c,n:c=='M' and n>=71),
 ("Uç durumlar: ödeme",lambda c,n:c=='E' and n<=17),
 ("Uç durumlar: kayıt, hesap ve NFC",lambda c,n:c=='E' and (18<=n<=30 or 68<=n<=70)),
 ("Uç durumlar: sözleşme, IBAN ve davet",lambda c,n:c=='E' and 31<=n<=43),
-("Uç durumlar: bildirim, cihaz ve ağ",lambda c,n:c=='E' and 44<=n<=67)]
+("Uç durumlar: bildirim, cihaz ve ağ",lambda c,n:c=='E' and 44<=n<=67),
+("Uç durumlar: danışman akışı",lambda c,n:c=='E' and n>=71)]
 files=sorted((p for p in (R/'screens').glob('*.html')),key=lambda p:num(p.stem))
 used=set();sec='';total=0
 for t,f in GR:
     cards=''
     for p in files:
-        c,n,_,_=num(p.stem)
+        c=p.stem[0]; n=num(p.stem)[1]
         if p.stem in used or not f(c,n): continue
         used.add(p.stem);total+=1
         img=f'onizleme/{p.stem}.png'
