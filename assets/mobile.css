@@ -1,0 +1,72 @@
+/* Anahtar mobil katmanı: 820 px ve altı. Sayfalar masaüstü için yazıldı; bu dosya mobil düzeni üstüne uygular. */
+.mb-btn{display:none}
+@media (max-width:820px){
+  html{-webkit-text-size-adjust:100%}
+  body{overflow-x:hidden}
+  img,video{max-width:100%}
+
+  /* dış kap ve bölümler */
+  body > div{padding:12px !important;gap:14px !important}
+  section,header,footer,main,aside{padding-left:20px !important;padding-right:20px !important}
+  section{padding-top:36px !important;padding-bottom:44px !important}
+  [style*="border-radius:40px"]{border-radius:28px !important}
+  [style*="border-radius:32px"]{border-radius:24px !important}
+  main{padding-top:20px !important;padding-bottom:24px !important}
+
+  /* başlıklar */
+  h1{font-size:clamp(28px,8.2vw,36px) !important;line-height:1.1 !important;letter-spacing:-0.03em !important}
+  h2{font-size:clamp(24px,6.6vw,29px) !important;line-height:1.15 !important}
+  h3{font-size:19px !important}
+  p{max-width:none !important}
+  [style*="font-size:66px"],[style*="font-size:56px"],[style*="font-size:52px"],[style*="font-size:48px"]{font-size:clamp(30px,9vw,40px) !important}
+  [style*="font-size:44px"],[style*="font-size:40px"]{font-size:clamp(28px,8vw,34px) !important}
+
+  /* esnek satırlar sığmıyorsa alt alta */
+  [style*="flex:1 1 500px"],[style*="flex:1 1 640px"],[style*="flex:1 1 560px"],[style*="flex:1 1 520px"],[style*="flex:1 1 480px"],[style*="flex:1 1 420px"],[style*="flex:1 1 400px"],[style*="flex:0 1 600px"],[style*="flex:0 0 260px"]{flex:1 1 100% !important;width:100% !important;max-width:none !important}
+  [style*="min-width:3"],[style*="min-width:4"],[style*="min-width:5"],[style*="min-width:6"]{min-width:0 !important}
+  [style*="max-width:6"],[style*="max-width:5"],[style*="max-width:7"],[style*="max-width:8"]{max-width:100% !important}
+  [style*="width:4"][style*="px"],[style*="width:5"][style*="px"],[style*="width:6"][style*="px"],[style*="width:7"][style*="px"]{max-width:100%}
+
+  /* ızgaralar */
+  [style*="grid-template-columns:repeat(3"],[style*="grid-template-columns:repeat(4"],[style*="grid-template-columns:repeat(2"],[style*="grid-template-columns:repeat(auto"]{grid-template-columns:1fr !important}
+  [style*="grid-template-columns:repeat(7"]{grid-template-columns:repeat(7,minmax(0,1fr)) !important;gap:4px !important}
+
+  /* tablo benzeri ızgaralar: yatay kaydırma */
+  .mb-scroll{display:block;width:100%;min-width:0 !important;contain:inline-size;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%;border-radius:20px}
+  .mb-scroll > *{min-width:760px}
+
+  /* çubuk grafikler */
+  [style*="align-items:flex-end"][style*="height:210px"]{gap:8px !important}
+  [style*="width:26px"][style*="border-radius:8px 8px 0 0"]{width:15px !important}
+
+  [style*="flex:1;display:flex;flex-direction:column;align-items:center"]{min-width:0 !important;text-align:center}
+  [style*="flex:1;display:flex;flex-direction:column;align-items:center"] > span{font-size:11px !important}
+
+  /* butonlar ve form alanları */
+  a[style*="padding:18px 30px"],a[style*="padding:17px"],a[style*="padding:16px"]{display:block;text-align:center}
+  input,select,textarea{font-size:16px !important;max-width:100%}
+  button{min-height:44px}
+
+  /* üst menü */
+  header nav{display:none !important;width:100%;flex-direction:column !important;gap:4px !important;padding:8px 0}
+  header nav a{padding:12px 4px;font-size:16px !important;border-bottom:1px solid rgba(43,80,120,.12)}
+  header.mb-open nav{display:flex !important}
+  header{padding-top:16px !important;padding-bottom:16px !important;gap:12px !important}
+  header > div:last-child{margin-left:auto}
+  header > div:last-child a{padding:10px 12px !important;font-size:14px !important}
+  .mb-btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 16px;border:1.5px solid #A8CBE8;border-radius:999px;background:#fff;color:#2B5078;font:600 14px 'Plus Jakarta Sans',sans-serif;cursor:pointer}
+
+  /* panel yan menüsü: üst çubuğa dönüşür */
+  aside{flex:1 1 100% !important;width:100% !important;padding-top:14px !important;padding-bottom:14px !important;flex-direction:row !important;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px !important;border-radius:24px !important}
+  aside > nav{display:none !important;width:100%;order:3}
+  aside.mb-open > nav{display:flex !important}
+  aside > div:not(.mb-brand){display:none !important}
+  aside.mb-open > div:not(.mb-brand){display:flex !important;width:100%;order:4}
+  aside > div.mb-brand{padding:0 !important}
+  aside > div.mb-brand > :not(a){display:none !important}
+  aside > a{padding:0 !important;font-size:24px !important}
+  aside .mb-btn{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3);color:#fff}
+  /* liste satırları: sığmayan rozet ve bağlantılar alt satıra geçer */
+  .mb-row{flex-wrap:wrap !important;row-gap:8px !important}
+  .mb-row > [style*="flex:1"]{flex:1 1 150px !important;min-width:150px !important}
+}

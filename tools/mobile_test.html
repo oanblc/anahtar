@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><body><pre id="out">running</pre>
+<script>
+var pages=PAGES, res=[], i=0;
+function next(){
+  if(i>=pages.length){document.getElementById('out').textContent=JSON.stringify(res);document.title='done';return;}
+  var n=pages[i++], f=document.createElement('iframe');
+  f.style.cssText='width:390px;height:844px;border:0;position:absolute;left:0;top:0';
+  f.onload=function(){setTimeout(function(){
+    try{var d=f.contentDocument,w=d.documentElement.scrollWidth,h=d.documentElement.scrollHeight,bad=[];
+      d.querySelectorAll('body *').forEach(function(e){var r=e.getBoundingClientRect();
+        if(r.right>392&&r.width>0&&!e.closest('.mb-scroll')&&getComputedStyle(e).position!=='fixed'){bad.push(e.tagName+':'+(e.textContent||'').trim().slice(0,25)+':'+Math.round(r.right))}});
+      var ws=d.querySelectorAll('.mb-scroll > section, .mb-scroll > main, .mb-scroll > aside, .mb-scroll > header').length; if(ws)bad.push('SCROLL-SARAR-BOLUMU:'+ws); res.push({n:n,w:ws?999:w,h:h,bad:bad.slice(0,4),nb:bad.length});
+    }catch(e){res.push({n:n,err:String(e)})}
+    f.remove();next();},500)};
+  f.src='../pages/'+n+'.html';document.body.appendChild(f);
+}
+next();
+</script>

@@ -59,12 +59,12 @@ footer{padding:36px 8px;font-size:13px;line-height:1.7;color:#536C87}
 </style></head><body><div class="wrap">
 <header class="top"><a class="logo" href="index.html">anahtar<i>.</i></a><span style="font-size:14px;font-weight:600;color:#536C87">Site haritası · @@TOTAL@@ sayfa</span></header>
 <div class="hero"><h1>Tüm sayfalar tek yerde.</h1>
-<p>Kiracı, ev sahibi, yönetim ve kurumsal paneller dahil @@TOTAL@@ masaüstü sayfası aşağıda gruplandı. Bir karta tıklayarak sayfayı açabilirsiniz. Mobil tasarımlar henüz hazırlanmadı.</p>
+<p>Kiracı, ev sahibi, yönetim ve kurumsal paneller dahil @@TOTAL@@ sayfa aşağıda gruplandı. Bir karta tıklayarak sayfayı açabilirsiniz. Sayfalar telefon genişliğinde de çalışır; tarayıcı pencerenizi daraltarak ya da telefondan açarak mobil görünümü inceleyebilirsiniz.</p>
 <div class="row"><a class="btn" href="pages/Main.html">Anasayfayı aç</a><a class="btn alt" href="pages/Ucretler.html">Ücret hesaplayıcı</a></div></div>
 <div class="bar"><input id="q" type="search" placeholder="Sayfa ara: ödeme, depozito, sözleşme…" aria-label="Sayfa ara"><nav class="nav">@@NAV@@</nav></div>
 @@SECS@@
 <div class="empty" id="empty">Aramanızla eşleşen sayfa bulunamadı.</div>
-<footer>Sayfalar bağımsız HTML dosyalarıdır; yazı tipleri için internet bağlantısı gerekir. Yönetim ve kurumsal sayfalar iç kullanım içindir, genel sitede yer almaz. Yasal metinler taslaktır.</footer>
+<footer>Sayfalar bağımsız HTML dosyalarıdır (masaüstü ve mobil düzen aynı dosyada); yazı tipleri için internet bağlantısı gerekir. Yönetim ve kurumsal sayfalar iç kullanım içindir, genel sitede yer almaz. Yasal metinler taslaktır.</footer>
 </div>
 <script>
 var q=document.getElementById('q'),cards=[].slice.call(document.querySelectorAll('.card')),secs=[].slice.call(document.querySelectorAll('section'));

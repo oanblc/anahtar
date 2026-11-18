@@ -1,6 +1,6 @@
 # Anahtar Web (statik sayfalar)
 
-Online kira ödeme platformu için 76 masaüstü sayfası (1440 px). Mobil tasarımlar henüz yok.
+Online kira ödeme platformu için 76 sayfa. Masaüstü (1440 px) ve mobil (390 px) düzen aynı dosyada; mobil uyarlama `assets/mobile.css` ve `assets/mobile.js` ile yapılır.
 
 ## Açma
 - `index.html` dosyasını tarayıcıda açın (site haritası; tüm sayfalara buradan gidilir).
@@ -11,6 +11,7 @@ Online kira ödeme platformu için 76 masaüstü sayfası (1440 px). Mobil tasar
 - `pages/` sayfalar, `assets/img/` görseller, `assets/thumbs/` site haritası önizlemeleri
 - `tools/pages.json` sayfa listesi; `python3 tools/build_index.py` ile `index.html` yeniden üretilir
 - `tools/export_static.py` tasarım kaynaklarından (.dc.html) sayfaları üretir
+- `tools/run_mobile_test.sh` tüm sayfaları 390 px'te yatay taşma için tarar; `tools/mobile_shots.sh` mobil ekran görüntüleri alır
 - `tools/make_thumbs.sh` önizlemeleri yeniden çeker (headless Chrome)
 
 ## Notlar
